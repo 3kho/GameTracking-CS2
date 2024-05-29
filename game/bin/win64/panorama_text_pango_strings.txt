@@ -21,7 +21,7 @@
 	Questionable extension field!
 	TYPE_BOOL
 	TYPE_ENUM
-	V_qsort_s
+	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strEndsWith
 	_V_strncmp
@@ -29,7 +29,6 @@
 	``@ PP@
 	enum_type
 	extension
-	g_VProfCurrentProfile
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
 	json_name
@@ -70,7 +69,7 @@
   Problem     : Enum value did not match field type:
   Problem     : Field is not the right type for this message:
  !"#$$$$$$
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$(
  !"#$%&'()*+,-./0123
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
@@ -87,12 +86,11 @@
  (%s)
  (08@HPX`hpx
  (08@HPX`j
- (08@HPXbPA
+ (08@HPXb
  (08@HPZ
- (08@HRPA
+ (08@HR
  (08@J
- (08@JPA
- (0X`hpzPA
+ (0X`hpz
  (INVALID PSS PARAMETERS)
  (Negative)
  .!p*
@@ -320,6 +318,7 @@
 #GameUI_Language_German
 #GameUI_Language_Greek
 #GameUI_Language_Hungarian
+#GameUI_Language_Indonesian
 #GameUI_Language_Italian
 #GameUI_Language_Japanese
 #GameUI_Language_Korean
@@ -349,6 +348,7 @@
 #Valve_SelectLanguage_German
 #Valve_SelectLanguage_Greek
 #Valve_SelectLanguage_Hungarian
+#Valve_SelectLanguage_Indonesian
 #Valve_SelectLanguage_Italian
 #Valve_SelectLanguage_Japanese
 #Valve_SelectLanguage_Korean
@@ -437,7 +437,6 @@ $d`D-laM
 $f;Zv9l
 $g#8lu#
 $hRh 
-%	V_stricmp_fast
 %'%1%=%C%K%O%s%
 %)(*$J
 %*s            
@@ -647,7 +646,6 @@ $hRh
 (t$PH
 (t$`H
 (t$`L
-(t$p3
 (t$pH
 (unknown)
 (wMww
@@ -655,6 +653,7 @@ $hRh
 (|$0@
 (|$PD
 (|$PI
+(|$`3
 (|$pD
 )	~,Vg
 )!)#)?)G)])e)i)o)u)
@@ -721,12 +720,14 @@ $hRh
 )|$PL
 )|$pD
 )|B?d!
+*	V_qsort_s
 *	W/'
 *%*/*O*U*_*e*k*m*s*
 *,vJEd
 *1~Pt
 *?#1*?#1
 *D]WO"#y&
+*J{bZ
 *StO9>T
 *Y$ve
 *]r\)
@@ -1228,7 +1229,6 @@ $hRh
 02V8[
 08@HP
 08@HR
-08@JPA
 0;Q5[
 0><[cZUg^>
 0A]_^][
@@ -1317,7 +1317,7 @@ $hRh
 220323000000Z
 220801000000Z
 230714000000Z
-230926152937Z0/
+240522183322Z0/
 241009235959Z0a1
 2:3maJ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1484,7 +1484,7 @@ $hRh
 8A_A^A]^
 8A_A^^[
 8A__^[
-8B9|;0u
+8B9\10u
 8D$ t4f
 8D$@t
 8D$Xt
@@ -1694,7 +1694,6 @@ $hRh
 =&sf9
 =L&i>
 =O?AqP
-=b8tb
 =imb;D
 =rIQU
 =trF6,#
@@ -1734,24 +1733,26 @@ $hRh
 ?8bunz8
 ?:kP<
 ??0CDirIterator@@QEAA@PEBD0I@Z
+??0CTSListBase@@QEAA@XZ
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??0CUtlBuffer@@QEAA@HHH@Z
 ??0CUtlMemoryPoolBase@@QEAA@HHHW4MemoryPoolGrowType_t@@PEBDW4MemAllocAttribute_t@@@Z
 ??1CDirIterator@@QEAA@XZ
+??1CTSListBase@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
 ??1CUtlMemoryPoolBase@@QEAA@XZ
 ??YCUtlString@@QEAAAEAV0@PEBD@Z
 ?@En[vP
 ?Alloc@CUtlMemoryPoolBase@@QEAAPEAXXZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?Clear@CStrAutoEncode@@QEAAXXZ
 ?ClearDestruct@CUtlMemoryPoolBase@@IEAAXP6AXPEAX@Z@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
 ?EnsureCapacity@CUtlBuffer@@QEAAXH@Z
-?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
-?ExitScope@CVProfile@@QEAAXXZ
+?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@@Z
 ?Free@CUtlMemoryPoolBase@@QEAAXPEAX@Z
 ?FreeInts@CVariableBitStringBase@@AEAAXXZ
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
@@ -1760,11 +1761,12 @@ $hRh
 ?InitEmpty@CStrAutoEncode@@AEAAXXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?NextFile@CDirIterator@@QEAA_NXZ
+?Pop@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?PopulateUTF8@CStrAutoEncode@@AEBAXXZ
 ?Purge@CBufferString@@QEAAXH@Z
+?Push@CTSListBase@@QEAAXPEAUTSLNodeBase_t@@@Z
 ?Put@CUtlBuffer@@QEAAXPEBXH@Z
 ?QY^&
 ?R0I?
@@ -1870,7 +1872,7 @@ $hRh
 @BH]f
 @HHcB$;B(u
 @HPX&I
-@HPX`hvp
+@HPX`hv@
 @HcC(H
 @L;D$
 @MfKZ
@@ -2343,6 +2345,7 @@ A_A\_
 A_A\_[]
 A_A\_^
 A_A\_^[
+A_A\_^[]
 A_A\_^]
 A_A]A\^
 A_A]A\^[
@@ -2656,7 +2659,7 @@ C847u
 C:\buildworker\csgo_rel_win64\build\_build_\panorama\_vpc_panorama_text_pango\default\win64\_msvc_\Retail\panorama_text_pango.pdb
 C:\buildworker\csgo_rel_win64\build\src\panorama\text\uifontfileloaderlinux.cpp
 C:\buildworker\csgo_rel_win64\build\src\panorama\text\uitextlayoutpango.cpp
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C@H98t$H
 C@L;B
 C@L;G
@@ -2946,7 +2949,6 @@ CT$HH
 CT$PH
 CT$hL
 CT$pH
-CTSListBase: Misaligned list
 CType
 CUIEncryptedFontFilePB
 CUIFontFilePB
@@ -2960,6 +2962,7 @@ CUITextLayoutPango::HitTestPoint
 CUITextLayoutPango::Initialize
 CUtlLinkedList overflow! (exhausted memory allocator)
 CUtlRBTree overflow with %u elements!
+CUtlRBTree<struct CUtlOrderedMapBase<struct panorama::UITextLayoutProperties_t *,struct panorama::UITextOpacityMaskData_t,class CDefLessPtr<struct panorama::UITextLayoutProperties_t>,int>::Node_t,class CUtlOrderedMapBase<struct panorama::UITextLayoutProperties_t *,struct panorama::UITextOpacityMaskData_t,class CDefLessPtr<struct panorama::UITextLayoutProperties_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct panorama::UITextLayoutProperties_t *,struct panorama::UITextOpacityMaskData_t,class CDefLessPtr<struct panorama::UITextLayoutProperties_t>,int>::Node_t,int>,int> >::Insert
 CWD>~3
 C\$PH
 C\$hH
@@ -2997,7 +3000,6 @@ Code=
 Cofactor: 
 CompareStringEx
 CompareStringW
-ConnectInterfaceSingletons
 Content-Disposition: attachment;
 Content-Length: %d
 Content-Transfer-Encoding: base64%s
@@ -3023,11 +3025,11 @@ CryptReleaseContext
 Ct$0H
 Ct$HH
 CweHc
-Cx;C|t
 Czech
 C|$pH
 C|$xL
 D	!|H
+D	V_stricmp_fast
 D 7D9
 D W?{W
 D g)*
@@ -3232,7 +3234,7 @@ D+@tD+B
 D+A@H
 D+D$,
 D+L$03
-D+mGA
+D+eWA
 D+s$D+s D;
 D.Hog^
 D.]ppM
@@ -3325,6 +3327,7 @@ D8t$ht
 D8{8u+H
 D8|$`t
 D8}?t	H
+D9%z{
 D9)t[
 D9@(|
 D9AHu
@@ -3948,7 +3951,6 @@ EnumValueDescriptorProto
 EnumValueOptions
 Enums must contain at least one value.
 EovVY
-Ep;8r	;x
 Eric Young's PKCS#1 RSA
 Error in encoding
 Error parsing text-format 
@@ -4094,7 +4096,9 @@ FlushConsoleInputBuffer
 FlushFileBuffers
 Fm{#t
 FontManager_001
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 Found invalid proto option data for: 
+Fp	Lz1
 FreeEnvironmentStringsW
 FreeLibrary
 French
@@ -4171,8 +4175,8 @@ GOST94-NULL-GOST94
 GPD	u
 GPD	}
 GRAPHICSTRING
+GT$8A
 GT$8H
-GT$hA
 GXL9f 
 G[R{(
 GameResourceServiceClientV001
@@ -4330,8 +4334,8 @@ H9+uEA
 H9/u&L
 H92tBA
 H97u+A
-H9=1;!
-H9=1a
+H9=1W
+H9=a0!
 H9A s
 H9A u
 H9A u'
@@ -4440,6 +4444,7 @@ HE3B@E3C
 HEAD 
 HH:mm:ss
 HHcA H
+HKQEi
 HMAC GOST 34.11-94
 HMAC routines
 HMAC-MD5
@@ -4667,6 +4672,7 @@ Import
 Import "
 Independent
 Index out-of-bounds (field is empty).
+Indonesian
 Inherit all
 Inhibit Policy Mapping
 InitOnceBeginInitialize
@@ -4868,7 +4874,6 @@ L$HIc
 L$HM#
 L$HM3
 L$Hf;
-L$HfH
 L$HtnL
 L$LHc
 L$PE3
@@ -5002,7 +5007,6 @@ LINEBUFFER_CTRL
 LIST_ADD
 LITE_RUNTIME
 LOAD_IV
-LOG_GENERAL
 LOG_MESSAGE
 LONG_C2I
 Label
@@ -5044,7 +5048,6 @@ LocalKeySet
 LocaleNameToLCID
 Localize_001
 Location
-LoggingSystem_IsChannelEnabled
 LoggingSystem_RegisterLoggingChannel
 LqH!)8
 LwH'LwH'LwH'LwH'LwH'LwH'LwH'LwH'
@@ -5396,8 +5399,7 @@ P-224
 P-256
 P-384
 P-521
-P08@JPA
-P08Jpg
+P08@J
 P1	98"
 P:   
 P>q_Y~
@@ -5647,7 +5649,6 @@ Plat_LoadSDL
 Plat_NeedsLowFragmentation
 Plat_RegisterModule
 Plat_RequireSDL
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Pm8A?
 PmR"H?
 Policy Qualifier CPS
@@ -6438,6 +6439,7 @@ USERNOTICE
 USVWATAUAVAWH
 USVWATAUAWH
 USVWATAVAWH
+USVWATAWH
 USVWAVH
 UTCTIME
 UTF-16LEUNICODE
@@ -6838,6 +6840,8 @@ Y9"SD
 Y93a=7c@
 Y;C;8V
 Y>kX>M
+YBL`#
+YC,.,
 YD$@f
 YMI( 
 YO}':
@@ -7153,6 +7157,7 @@ aRecord
 aS&v&*
 a]?xG
 aaControls
+ab&iF#
 abcdefghijklmnopqrstuvwxyz
 ac-auditEntity
 ac-proxying
@@ -7985,7 +7990,6 @@ duplicate zone id
 dutch
 dynamic
 dynlock
-e	Warning
 e	cCPtH
 e A_A^A\_]
 e$ChX f~&]
@@ -8104,7 +8108,6 @@ entityUInfo
 enveloped-data
 err asn1 lib
 err ec lib
-error
 error adding recipient
 error converting private key
 error converting zone
@@ -8426,7 +8429,6 @@ homePostalAddress
 homeTelephoneNumber
 host unreachable
 houseIdentifier
-hpzPA
 http request
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
@@ -8702,6 +8704,7 @@ id-smime-mod-oid
 id-smime-spq
 id-smime-spq-ets-sqt-unotice
 id-smime-spq-ets-sqt-uri
+id_ID
 idea-cbc
 idea-cfb
 idea-ecb
@@ -8745,6 +8748,7 @@ incorrect policy syntax tag
 index too large
 index too small
 indirectCRL
+indonesian
 ineID
 infinite
 infinity
@@ -9269,6 +9273,7 @@ nJ0fA
 nJ4fA
 nJ8fA
 nL9d$@t
+nL]W{[
 nSRecord
 nStf,a
 nSw}Z	u
@@ -9729,7 +9734,6 @@ p.prime
 p.tpBasis
 p08@H^
 p0R^G'
-p0j`5
 p88Hp88H
 p;>}	H
 p;Y>u
@@ -9854,7 +9858,6 @@ pango_layout_set_width
 pango_layout_set_wrap
 pango_layout_xy_to_index
 panorama/fonts/fonts.conf
-panorama::CUITextLayoutPango::Initialize
 panorama_text_pango
 panorama_text_pango.dll
 parameter
@@ -10061,7 +10064,6 @@ qS>g?h3
 qTm_fC=
 qcStatements
 qf`ny
-qn'>p
 qualifiers
 qualityLabelledData
 r	Vr.>T
@@ -10536,7 +10538,6 @@ srtp could not allocate profiles
 srtp protection profile list too long
 srtp unknown protection profile
 ss3Y!
-ssQ;J
 ssfD;M
 ssl ctx has no default ssl version
 ssl handshake failure
@@ -10930,7 +10931,6 @@ targetInformation
 tbJ9|
 tbsRequest
 tbsResponseData
-tc9{h~T
 tchinese
 teHcC
 telephoneNumber
@@ -11021,7 +11021,7 @@ tsa untrusted
 tsfff
 tst info setup error
 tuKcD
-tuL9=!
+tuL9=
 turkish
 tvLcs
 tw8\$4
@@ -11408,7 +11408,6 @@ x509_info
 x509_pkey
 x509_req
 x509_store
-x6;Ch}1;C|
 x<<Dx<<D%
 xA_A\_^
 xA_A^A\_
@@ -11639,6 +11638,7 @@ zxNIjo
 ~-fff
 ~2HcE,I
 ~;fff
+~>LceOD
 ~@fff
 ~If D
 ~LHcC

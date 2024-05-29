@@ -95,6 +95,14 @@
 	
 	generictype(string) : "Generic Hint" : "" : "String identifying what the hint type is, if generic."
 
+	priority(choices): "Priority" : 0 : "Relative importance of this hint. Will factor into how NPCs will choose a hint." =
+	[
+		0: "Low"
+		1: "Medium"
+		2: "High"
+		3: "Critical"
+	]
+
 	animgraph_entry_cmd(string) : "Animgraph Entry Command" : "" : "Animgraph command that NPCs using this hint should apply to their animgraph when they start using it."
 	animgraph_entry_tag(string) : "Animgraph Entry Finish Tag" : "" : "The name of the Animgraph tag that will be fired when the NPC has finished playing the animgraph entry."
 	animgraph_exit_cmd(string) : "Animgraph Exit Command" : "" : "Animgraph command that NPCs using this hint should apply to their animgraph when they want to stop using it."
@@ -136,6 +144,8 @@
 		2 : "Alert"
 		3 : "Combat"
 	]
+
+	cooldown(float) : "Cooldown" : 0 : "After use, how long does another NPC has to wait in order to use this hint (in seconds)."
 
 	// Inputs
 	input EnableHint(void) : "Enable hint."
@@ -251,7 +261,7 @@
 [
 	subclass_name( vdata_choice:scripts/npc_units.vdata ) : "Unit Name" : "" : "Name of the NPC Unit."
 	squadname(String) [ group="NPC Properties" ] : "Squad Name" : : "NPCs that are in the same squad (i.e. have matching squad names) will share information about enemies, and will take turns attacking and covering each other."
-	hintgroup(String) [ group="NPC Properties" ] : "Hint Group" : "" : "Hint groups are used by NPCs to restrict their hint-node searching to a subset of the map's hint nodes. Only hint nodes with matching hint group names will be considered by this NPC. Note that if this is empty, the NPC will be able to use any hint node, even nodes that have a hint group specified."
+	hintgroup(String) [ group="NPC Properties" ] : "Hint Groups" : "" : "Comma-separated list of hint groups. Hint groups are used by NPCs to restrict their hint-node searching to a subset of the map's hint nodes. Only hint nodes with matching hint group names will be considered by this NPC. If this is empty, the NPC will only be able to use hint nodes that do not have a group."
 
 	spawnflags(Flags) = 
 	[
@@ -269,20 +279,6 @@
 		8192: "Don't drop weapons" : 0
 		16384 : "Ignore player push (dont give way to player)" : 0
 	]
-
-	//initialidle(string) [ group="NPC Properties" ] : "Initial Idle Activity" :: "Activity the NPC should use to idle until becomes alert"
-	sleepstate(choices) [ group="NPC Properties" ] : "Sleep State" : 0 : "Holds the NPC in stasis until specified condition. See also 'Wake Radius' and 'Wake Squad'." =
-	[
-		0 : "None"
-		1 : "Waiting for threat"
-		2 : "Waiting for PVS"
-		3 : "Waiting for input, ignore PVS"
-		4 : "Auto PVS"
-		5 : "Auto PVS after PVS"
-	]
-
-	wakeradius(float) [ group="NPC Properties" ] : "Wake Radius" : 0 : "Auto-wake if player within this distance"
-	wakesquad(boolean) [ group="NPC Properties" ] : "Wake Squad" : 0 : "Wake all of the NPCs squadmates if the NPC is woken"
 
 	enemyfilter(target_destination) [ group="NPC Properties" ] : "Enemy Filter" : "" : "Filter by which to filter potential enemies"
 
@@ -314,10 +310,10 @@
 	output OnDamagedByPlayer(void) : "Fired when this NPC is hurt by a player."
 	output OnDamagedByPlayerSquad(void) : "Fired when this NPC is hurt by a player OR by one of the player's squadmates."
 	output OnDenyCommanderUse(void) : "Fired when this NPC has refused to join the player's squad."
-	output OnSleep(void) : "Fired when this NPC enters a sleep state."
-	output OnWake(void) : "Fired when this NPC comes out of a sleep state."
 	output OnPlayerUse(void) : "Fired when a player +Uses this npc."
 	output OnUse(void) : "Fired when ANYTHING calls Use on this npc (such as other NPCs)."
+	output OnStartTouchMaterial(void) : "Fired when NPC touches a surface material defined in the touch material modifier."
+	output OnEndTouchMaterial(void) : "Fired when NPC leaves a surface material defined in the touch material modifier."
 
 	// Inputs
 	input OverrideHealth(integer) : "Overrides this entity's health, ignoring max health constraints. This is for prototyping only and all uses of this input should be audited before shipping! Values <=0 are ignored."
@@ -333,7 +329,6 @@
 	input Extinguish(void) : "Extinguish ourself if we're on fire"
 	input Break(void) : "Break, smash into pieces"
 	input SetSquad(string) : "Set the name of this NPC's squad. It will be removed from any existing squad automatically. Leaving the parameter blank will remove the NPC from any existing squad."
-	input Wake(void) : "Wakes up the NPC if it is sleeping."
 	input ForgetEntity(string) : "Clears out the NPC's knowledge of a named entity."
 	input GagEnable(void) : "Turn on the NPC Gag flag. NPC won't speak outside of choreographed scenes."
 	input GagDisable(void) : "Turn off the NPC Gag flag."
@@ -388,7 +383,21 @@
 		0 : "Default"
 		1 : "No hull check"
 	]
-	
+
+	ZeroPitchAndRoll(boolean) : "Zero Pitch and Roll on Spawn" : 1 : "Should we only orient the NPC using the YAW of the destination or spawner, or should we allow any angle?"
+
+	// Tactical Search Spawn		
+	centered_entity(target_destination) [ group="Tactical Search Spawn" ]: "Centered Entity" : "" : "Entity to center the tactical search spawn test around.  Filling in this field will enable this spawning path.  Requiers AI_DefaultNPC currently."
+	near_dist_min(float) [ group="Tactical Search Spawn" ]: "Distance Min" : "128" : "Minimum distance allowed from the origin of the centered entity."
+	near_dist_max(float) [ group="Tactical Search Spawn" ]: "Distance Max" : "1024" : "Maximum distance allowed from the origin of the centered entity."
+	vis_view_angle(float)  [group="Tactical Search Spawn" ]: "View Angle" : "-1" : "View angle used, if other than -1, to create side planes of a view frustum."
+	view_angle_optional(boolean) [group="Tactical Search Spawn" ]: "View Angle Optional" : "0" : "If enalbed, allow the search to fallback to outside the defined view angle in order to find a spawn position."
+	nav_filter_tag(string) [ group="Tactical Search Spawn" ]: "Nav Filter Tag Name" : "" : "Nav tag filter constraint requirement."
+	material_filter_name(string) [ group="Tactical Search Spawn" ]: "Material Filter Name" : "" : "Ground material contraint requirement.  Defined in material's surface properties."
+	spawn_randomization_radius(float) [ group="Tactical Search Spawn" ]: "Spawn Randomization Radius" : "0" : "Calculate a random spawn point within this radius centered around the center entity (WIP)."
+	allow_non_z_nav(boolean) [ group="Tactical Search Spawn" ]: "Allow Non-Z Nav" : 0 : "Allow non-Z up nav meshes as part of the path search."
+
+
 	// Outputs
 	output OnSpawnNPC(string) : "Fired when an NPC is spawned. The activator is the NPC, and the string is the name of the NPC." 
 	output OnAllSpawned(void) : "Fired when the spawned is exhausted (all children have been spawned)."
@@ -407,8 +416,9 @@
 	input SpawnInRadius(void) : "Spawn an NPC somewhere within the maker's radius."
 	input SpawnInLine(void) : "Spawn an NPC somewhere within a line behind the maker."
 	input SpawnMultiple(integer) : "Spawn multiple NPCs (uses destination group, else radius)."
-	input ChangeDestinationGroup(string) : "Switch to a different set of Destination entities."
+	input ChangeDestinationGroup(target_destination) : "Switch to a different set of Destination entities."
 	input SetMinimumSpawnDistance(integer) : "Set the minimum spawn distance from player to destination node."
+	input SetSpawnEntity(target_destination) : "Select (override) the entity to center the spawn destination around."
 ]
 
 @BaseClass base(BaseNPC) = VehicleDriverNPC
@@ -438,7 +448,7 @@
 	input Stop(void) : "Tell the driver to stop driving."
 ]
 
-@PointClass base(Targetname, Parentname) tags( Info ) drawangles() iconsprite("editor/info_npc_spawn_destination.vmat") = info_npc_spawn_destination : 
+@PointClass base(Targetname, Parentname) tags( Info ) drawangles{} iconsprite("editor/info_npc_spawn_destination.vmat") = info_npc_spawn_destination : 
 	"NPC Spawn Destination. (Consult npc_template_maker help for more info)"
 [
 	ReuseDelay(float) : "Reuse Delay" : 1 : "After an NPC is spawned at this destination, the delay before this destination is eligible for selection again."
@@ -654,27 +664,6 @@
 	
 ]
 
-
-//@PointClass base(LeadGoalBase) tags( AI ) iconsprite("editor/ai_goal_lead.vmat") = ai_goal_lead_weapon : 
-//	"AI Goal Lead (Weapon). A version of the ai_goal_lead entity that requires the player to have the specified weapon before the Actor(s) will lead the player to their target."
-//[
-//	WeaponName(choices) : "Weapon" : "weapon_bugbait" =
-//	[
-//		"weapon_bugbait" : "Bugbait"
-//		"weapon_smg1" : "SMG1"
-//		"weapon_ar2"  : "AR2"
-//	]
-//
-//	MissingWeaponConceptModifier(string) : "Missing weapon concept modifier"
-//	
-//	SearchType(choices) : "Search Type" : 0 : "How to search for the entities using the targetname." = 
-//	[
-//		0 : "Entity Name"
-//		1 : "Classname"
-//	] 
-//]
-
-
 @BaseClass base(AIGoalBase) = FollowGoal
 [
 	actor(target_name_or_class) : "Actor(s) to affect"
@@ -832,17 +821,6 @@
 	output OnQueueMoved(float) : "Fired when the queue moves. Outputs the number of NPCs left in the queue."
 	output OnNPCStartedLeavingQueue(string) : "Fired when the NPC at the head of the queue starts to leave. The activator is the NPC, and the string is the name of the NPC."
 	output OnNPCLeftQueue(string) : "Fired when the NPC at the head of the queue leaves. The activator is the NPC, and the string is the name of the NPC."
-]
-
-
-@PointClass base(Targetname) tags( AI ) size(-8 -8 -8, 8 8 8) = ai_changetarget : "Change Target"
-[
-	target(target_destination) : "Target entity" : : "Name of entity whose target will be changed."
-	m_iszNewTarget(string) : "New Target"
-
-	// Inputs
-	input Kill( void ) : "Removes this entity from the world"
-	input Activate( void ) : "Changes the entities target"
 ]
 
 
@@ -1006,28 +984,24 @@
 // Logic Entities
 //
 //-------------------------------------------------------------------------c
-@PointClass color(0 0 255) base(Targetname) tags( Choreo )  iconsprite("editor/choreo_scene.vmat") = logic_scripted_scenario :
-	"Manages the flow of scenes with branches and stuff like that"
+@PointClass color(0 0 255) 
+	base(Targetname) 
+	tags( Choreo )  
+	selected_line( 255 255 255, targetname, target1 )
+	selected_line( 255 255 255, targetname, target2 )
+	selected_line( 255 255 255, targetname, target3 )
+	selected_line( 255 255 255, targetname, target4 )
+	selected_line( 255 255 255, targetname, target5 )
+	selected_line( 255 255 255, targetname, target6 )
+	selected_line( 255 255 255, targetname, target7 )
+	selected_line( 255 255 255, targetname, target8 )
+	iconsprite("editor/choreo_scene.vmat") = logic_choreographed_scene :
+		"Manages a choreographed scene of one or more actors."
 
 [
-	subclass_name( subclass_choice:scripts/misc.vdata ) : "Scenario Class" : "" : ""
-
-	input BeginScenario(void) : "Starts playback of the scenario"
-	input SetBlackboardValue(string) : "Set the value of a blackboard variable"
-	input TriggerEvent(string) : "Trigger an event by name. Events are handled by event listener nodes"
-	input SwitchToNode(string) : "Switch to a node by name. Current active node will be canceled"
-]
-
-
-@PointClass color(0 0 255) base(Targetname) tags( Choreo )  iconsprite("editor/choreo_scene.vmat") = logic_choreographed_scene :
-	"Manages a choreographed scene of one or more actors."
-
-[
-	// vcd_def( scene ) { asset_specific_keys_destination="vcd_keys" }
-	// vcd_keys(kv3) <-- populated based on whatever 'vcd_def' needs
-
 	// Keys
 	SceneFile(scene) { asset_specific_keys_destination="vcd_keys" } : "Scene file"
+	// vcd_keys( string ) <-- populated based on whatever 'SceneFile' needs
 
 	// Links
 	target1(target_destination) : "Target 1"
@@ -1142,34 +1116,50 @@
 
 	soundtype(choices) : "Sound Type" : 0 : "The type of sound or smell will determine the reaction of NPCs that sense it." =
 	[
-		0: "Select one"
-		1: "Combat"
-		2: "World"
-		//4: "Player (Don't use)"
-		8: "Danger"
-		16: "Bullet Impact"
-		32: "Carcass"
-		64: "Meat"
-		128: "Garbage"
-		256: "Thumper"
-		4096: "Move Away - Most NPCs will clear the radius of this sound when heard."
-		16384 : "Readiness - Low"
-		32768 : "Readiness - Medium"
-		65536 : "Readiness - High"
+		0 : "Select one"
+		1 : "Combat"
+		//2 : "Player (Don't use)"
+		3 : "Danger"
+		4 : "Bullet Impact"
+		5 : "Thumper"
+		//6 : "Physics Danger"
+		7 : "Move Away - Most NPCs will clear the radius of this sound when heard."
+		//8 : "Player Vehicle"
+		9 : "Glass Break"
+		//10 : "Physics Object"
 	]
 
 	soundcontext(choices) : "Additional sound context (optional)" : 0 : "Optional settings specifying such things as who can or cannot hear the sound." =
 	[
 		0 : "Select one"
-		8388608 : "Only Combine hear"
-		67108864 : "Combine cannot hear"
+		1 : "Gunfire"
+		2 : "Only Combine hear"
+		//4 : "React to Source"
+		8 : "Explosion"
+		16 : "Combine cannot hear"
+		//32 : "Danger Approaching"
+		64 : "Player Allies only hear"
+		128 : "Cause Hearers to blindly panic"
 	]
 
 	locationproxy(target_destination) : "Location Proxy" : "" : "The name of an entity to use as a proxy to determine the location at which to make the sound. If you specify an entity here, the sound will be made at that entity's location (!player included)" 
 ]
 
 
-@PointClass base( BaseNPCMaker) tags( Logic ) iconsprite("editor/npc_maker.vmat") = npc_template_maker : 
+@PointClass base( BaseNPCMaker) tags( Logic ) iconsprite("editor/npc_maker.vmat")
+	metadata
+	{
+		create_entity_template_lumps = 
+		[
+			{
+				lumpMode = "SingleTemplate"
+				sourceKey = "TemplateName"
+				targetWorldKey = "worldName"
+				targetLumpKey = "entityLumpName"
+			}
+		]
+	}
+= npc_template_maker : 
 	"An entity that creates NPCs. The NPCs it creates are clones of a template NPC. NPCs are spawned around this maker's origin, or at specified destination points."
 [
 	spawnflags(Flags) = 

@@ -1,10 +1,10 @@
 		[ FAIL ] - Manifest contains an illegal resource name "%s"!
 	!s99
-	HcC8L
-	V_qsort_s
+	HcC8N
+	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+	_V_StringAfterPrefix
 	_V_strncpy
-	g_VProfCurrentProfile
 	g_bUpdateStringTokenDatabase
 	g_pMemAlloc
 	kE>fvw
@@ -37,6 +37,7 @@
  Hc)L
  Hc9H
  HcY E3
+ Hci(M
  Lc)H
  LcY@E3
  Type Descriptor'
@@ -47,7 +48,6 @@
 !>6'Y
 !hn7!
 !m_bNeedsSort
-%	V_stricmp_fast
 %d %d %d
 %d %d %d %d
 %f %f
@@ -73,6 +73,7 @@
 (t$PH
 )>6{1n
 )t$@H
+*	V_qsort_s
 ** Forcing all resource loads to fail: "%s"
 *** Bad deletion request: Refcount for %s resource "%s" (%016llX) is greater than zero. (%d)!
 *StO9>T
@@ -87,6 +88,7 @@
 ,7L9>t	H
 ,W5y+
 ,YA1A
+--tools_resource_listeners_default_deferred
 -exit_on_resource_load_failure
 -force_all_resource_loads_to_fail
 -no_spread_finalize
@@ -95,7 +97,7 @@
 -start_resource_profiling
 -tools
 .00cfg
-.?AV<lambda_1>@?1??InitForFileRead@CAsyncResourceDataRequest@@AEAAXPEBUResourceBindingBase_t@@_NW4ResourceManifestLoadPriority_t@@1PEBD@Z@
+.?AV<lambda_1>@?1??InitForFileRead@CAsyncResourceDataRequest@@AEAAXPEBUResourceBindingBase_t@@W4ResourceManifestLoadPriority_t@@_NPEBD@Z@
 .?AV?$CBaseAppSystem@VIResourceSystem@@@@
 .?AV?$CConCommandMemberAccessor@VCResourceSystemProfiler@@@@
 .?AV?$CDefaultKV3TransferResourceTypeManager@$0HEHDGFHEHG@@@
@@ -106,7 +108,7 @@
 .?AV?$CTier2AppSystem@VIResourceSystem@@$0A@@@
 .?AV?$ITSHashConstructor@UResourceBindingBase_t@@@@
 .?AV?$_Func_base@XPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??InitForFileRead@CAsyncResourceDataRequest@@AEAAXPEBUResourceBindingBase_t@@_NW4ResourceManifestLoadPriority_t@@1PEBD@Z@XPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??InitForFileRead@CAsyncResourceDataRequest@@AEAAXPEBUResourceBindingBase_t@@W4ResourceManifestLoadPriority_t@@_NPEBD@Z@XPEAVIAsyncReadRequest2@@W4AsyncRequestStatus_t@@@std@@
 .?AVCAsyncProcessDataThread@CAsyncResourceDataRequest@@
 .?AVCAsyncResourceDataRequest@@
 .?AVCCodeResourceManifestManager@@
@@ -192,6 +194,10 @@
 .rdata$T
 .rdata$r
 .rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
 .rdata$zzzdbg
 .rtc$IAA
 .rtc$IZZ
@@ -208,6 +214,7 @@
 .xJ>Hf
 .xdata
 .xdata$x
+.|ZZ*!\
 />58d%
 0 0 0
 0 0 0 0
@@ -225,7 +232,6 @@
 0A_A^_^]
 0iN>/
 0w0c1
-0z;7(
 0}0i1
 130801120000Z
 1<.	/>:
@@ -235,7 +241,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-230926000038Z0/
+240522183325Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -264,6 +270,8 @@
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+8JX]Y:
+8]y.\Z
 9)~P3
 98t H
 9>~@H
@@ -272,12 +280,15 @@
 9t$Hu
 9y@~,H
 9|$8u
+9|$@u
 9|$Hu
 9|$xu
 ;H9>&X
 ;I9}(tiH
 <	u%H
 <	u)Mcp
+<	u5I
+<	ubI
 < t=<	t9
 <0:08
 <Anonymous>
@@ -291,7 +302,6 @@
 <undefined>
 <unknown KV3 basic type '%s' (%d)>
 <unknown>
-=GCG		
 =imb;D
 =rIQU
 >0<0:
@@ -300,6 +310,7 @@
 ?7zQ6$
 ?:kP<
 ??0CStackTop_Base@@IEAA@XZ
+??0CTSListBase@@QEAA@XZ
 ??0CThread@@QEAA@XZ
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
@@ -310,6 +321,7 @@
 ??0CUtlMemoryPoolBase@@QEAA@HHHW4MemoryPoolGrowType_t@@PEBDW4MemAllocAttribute_t@@@Z
 ??0CUtlSymbolTable@@QEAA@HH_N@Z
 ??1CStackTop_Base@@IEAA@XZ
+??1CTSListBase@@QEAA@XZ
 ??1CThread@@UEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
@@ -322,15 +334,14 @@
 ?Alloc@CRawAllocator@@SAPEAXW4RawAllocatorType_t@@_KPEA_K@Z
 ?Alloc@CUtlMemoryBlockAllocator@@QEAAII@Z
 ?Alloc@CUtlMemoryPoolBase@@QEAAPEAXXZ
+?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
-?Clear@CUtlMemoryPoolBase@@QEAAXXZ
-?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
-?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
-?ExitScope@CVProfile@@QEAAXXZ
+?ClearDestruct@CUtlMemoryPoolBase@@IEAAXP6AXPEAX@Z@Z
+?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@@Z
 ?Find@CUtlSymbolTable@@QEBA?AVCUtlSymbol@@PEBD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?FixupPathName@CBufferString@@QEAAPEBDD@Z
@@ -356,10 +367,12 @@
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
 ?OnExit@CThread@@MEAAXXZ
+?Pop@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?Printf@CUtlBuffer@@QEAAXPEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?Purge@CUtlMemoryBlockAllocator@@QEAAXXZ
 ?Purge@CUtlString@@QEAAXXZ
+?Push@CTSListBase@@QEAAXPEAUTSLNodeBase_t@@@Z
 ?Put@CUtlBuffer@@QEAAXPEBXH@Z
 ?QY^&
 ?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
@@ -369,7 +382,6 @@
 ?SeekPut@CUtlBuffer@@QEAAXW4SeekType_t@1@H@Z
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CUtlString@@QEAAXPEBD@Z
-?SetDirect@CUtlString@@QEAAXPEBDH@Z
 ?SetExtension@CBufferString@@QEAAPEBDPEBD_N@Z
 ?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SetName@CThread@@QEAAXPEBD@Z
@@ -390,13 +402,12 @@
 @.data
 @.reloc
 @84)u
-@8=5C
+@8=uQ
 @8j(t
 @8k(t
 @8w$t
 @8z$u
 @8z%u
-@8zFt
 @8{(u
 @8{UuNH
 @8~@t
@@ -423,8 +434,6 @@
 @SVWATAUAVAWH
 @SVWATAWH
 @SVWH
-@SWAVAWH
-@SWAVH
 @SWAWH
 @UATAUAVAWH
 @UATAWH
@@ -438,6 +447,7 @@
 @USVWAUH
 @USVWH
 @UVWATAUAVAWH
+@UVWAWH
 @UVWH
 @VAVH
 @VAWH
@@ -450,6 +460,7 @@
 @_RDATA
 @l9Al
 @l9AlA
+A8wFt
 A8}(u
 A>pP&
 AABB_t
@@ -469,8 +480,8 @@ A^A]A\
 A^A]A\^]
 A^A]A\_^[]
 A^A][]
+A^A]_[]
 A^_^[]
-A^_^][
 A_A\_^]
 A_A]^[
 A_A]_[
@@ -484,11 +495,12 @@ A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]^]
-A_A^A]_[
 A_A^A]_]
 A_A^]
 A_A^_
 A_A^_[]
+A__^]
+ActivityStoppedAutomatically
 AlignedByteArray not properly aligned
 An attempt was made to create a resource manifest with debug name "%s" while the resource system was shutting down.
 AnimGraphEditorUtils001
@@ -512,6 +524,7 @@ BPI9@P}
 BPI9AP}
 BPI9AP}ZL
 BPI9CP}
+Bad FLC data for resource '%s': %s
 Bad KV3 data for resource '%s': %s
 BakedLODBuilderMgr001
 Bellevue1
@@ -522,6 +535,7 @@ C H!)H
 C0Hc	H
 C:\buildworker\csgo_rel_win64\build\_build_\resourcesystem\_vpc_resourcesystem\default\win64\_msvc_\Retail\resourcesystem.pdb
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\tslist.h
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlsortvector.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utltshash.h
 C:\buildworker\csgo_rel_win64\build\src\resourcesystem\asyncresourcedatarequest.cpp
@@ -529,11 +543,8 @@ C:\buildworker\csgo_rel_win64\build\src\resourcesystem\loadingresource.cpp
 C:\buildworker\csgo_rel_win64\build\src\resourcesystem\profilehelpers.cpp
 C:\buildworker\csgo_rel_win64\build\src\resourcesystem\resourcesystem.cpp
 C:\buildworker\csgo_rel_win64\build\src\resourcesystem\streamingresourcedata.cpp
-C:\buildworker\csgo_rel_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
 CAsyncResourceDataRequest
 CColorGradient
-CD$8@
 CD$8D
 CExampleSchemaVData_Monomorphic
 CExampleSchemaVData_PolymorphicBase
@@ -560,22 +571,17 @@ CResourceSystem PreShutdown()
 CResourceSystem Shutdown
 CResourceSystem::BlockingFinishAllCurrentlyLoadingManifests is blocking
 CResourceSystem::BlockingLoadResourceByNameIntoJustInTimeManifest
-CResourceSystem::DeleteResource
 CResourceSystem::FindOrCreateProceduralResource: Passed in an empty name for a procedural resource!
 CResourceSystem::FindOrRegisterResourceByName
-CResourceSystem::ForceSynchronizationAndBlockUntilManifestLoaded
 CResourceSystem::ForceSynchronizationAndBlockUntilManifestLoaded blocked for %.3f ms on %s [%s]
 CResourceSystem::InstallTypeManager
 CResourceSystem::MaybeExitBecauseOfResourceLoadFailure
-CResourceSystem::Update_Internal
-CSchemaClassInfo::ReportClassError
 CSoundEventName
 CStreamingResourceData::~CStreamingResourceData
 CStrongHandle
 CStrongHandleCopyable
 CStrongHandleVoid
 CStrongHandleVolatile
-CTSListBase: Misaligned list
 CTSQueue corruption
 CTSQueue: Misaligned queue
 CTSQueue<class CResourceManifest *,0>::Push
@@ -588,6 +594,7 @@ CUtlMemory_RawAllocator<class CUtlHashtableEntry<unsigned int,struct empty_t> >:
 CUtlMemory_RawAllocator<unsigned int>::EnsureCapacity
 CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlRBTree overflow with %u elements!
+CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int> >::Insert
 CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlMemory<struct CResourceManifest::LoadingResourceReference_t,int> > >::Find
 CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlMemory<struct CResourceManifest::LoadingResourceReference_t,int> > >::FindLessOrEqual
 CUtlSortVector<struct CResourceManifest::LoadingResourceReference_t,class CUtlSortVectorDefaultLess<struct CResourceManifest::LoadingResourceReference_t>,class CUtlVector<struct CResourceManifest::LoadingResourceReference_t,int,class CUtlMemory<struct CResourceManifest::LoadingResourceReference_t,int> > >::Insert
@@ -599,20 +606,20 @@ CWeakHandleVoid
 Cannot allocate abstract class
 Cannot deduce for class
 Cast of %s loses value information (returning %s)
+Class does not allow allocation from its schema binding
 ClientToolsInfo_001
 CloseHandle
 CommandLine
-ConnectInterfaceSingletons
 ConstantInfo_t
 CorExitProcess
 Couldn't load KV3 for resource: %s
 CreateEventW
 CreateFileW
 CreateInterface
+D	V_stricmp_fast
 D!l$xA
 D$ /H
 D$ E3
-D$ F9<(
 D$ H;
 D$ L;
 D$ fD;
@@ -620,7 +627,6 @@ D$(;D$,
 D$(@8~@t*H
 D$(E3
 D$(H;
-D$(fH
 D$(fI
 D$(hH
 D$0@8{
@@ -632,6 +638,7 @@ D$8H;
 D$8L9
 D$8L;
 D$8fff
+D$@E3
 D$@H+
 D$@H;
 D$@H=
@@ -641,16 +648,13 @@ D$HtOH
 D$PE3
 D$PH+
 D$PI;
-D$XfH
-D$hfH
+D$lE3
 D$pE3
 D$pH;
 D$pL;
 D81uUL9r
 D8t$ht
-D;c0~
 DATAH
-DATAI
 DISABLED
 December
 DeleteCriticalSection
@@ -669,7 +673,6 @@ E0HcH
 E0Lc`
 E8q(u
 E;n0~qMcf
-E;|$<
 EH*?H
 EHHcI
 ENABLED
@@ -682,7 +685,6 @@ ERROR: No type manager for resource "%s"!
 ERROR: Reentrant call to CResourceSystem::BlockUntilManifestLoaded() while already in a frame update!
 ERROR: Reentrant call to CResourceSystem::FrameUpdate()!
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
-ETWResourceFrameMark
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EconItemToolModel_001
 EncodePointer
@@ -692,7 +694,9 @@ EnterCriticalSection
 EnumProcessModules
 Error initializing resource manager for resource type "%lld"!
 Error loading resource "%s" (Invalid header version: %d != %d)
+Error loading resource "%s" file size %d > allocated buffer size %d
 Error loading resource manifest "%s" (No DATA block)
+EventSetInformation
 ExitProcess
 FATAL ERROR: %s resource '%s' (%016llX) is the wrong resource type! (This is likely caused by a hash collision between the strings '%s' and '%s')
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
@@ -720,6 +724,7 @@ FIELD_ENGINE_TIME
 FIELD_FLOAT32
 FIELD_FLOAT64
 FIELD_FUNCTION
+FIELD_GLOBALSYMBOL
 FIELD_HMATERIAL
 FIELD_HMODEL
 FIELD_HPARTICLESYSTEMDEFINITION
@@ -778,10 +783,12 @@ FIELD_VMATRIX
 FIELD_VMATRIX_WORLDSPACE
 FIELD_VOID
 FIELD_WORLD_GROUP_ID
+FLCID
 FLOAT32
 FPSRH
 Failed loading resource "%s" (%s)
 Failed to allocate an instance of a class
+Failed to apply FLC data to resource '%s': %s
 Failed to determine polymorphic class name
 Failed to enumerate process modules.
 Failed to find [K32]EnumProcessModules and [K32]GetModuleFileNameExA.
@@ -807,7 +814,9 @@ FlsSetValue
 FlushFileBuffers
 FontManager_001
 Forgot to remove resource type manager for type %s!
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 FourQuaternions
+Frame
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
@@ -818,24 +827,23 @@ FuseVariableIndex_t
 FuseVariableType_t
 GD$(H
 GD$8A
+GD$8E3
 GD$8H
 GD$8I
 GD$hH
 GL$8H
-GL$xI
 GT$(D
 GT$(H
 GT$(L
 GT$8A
-GT$8E3
 GT$8H
 GT$8L
 GUHE3
-GUXE3
+GUhE3
 G\$(H
 G\$8H
 G\$8I
-G\$HL
+G\$XL
 G\$xL
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -847,6 +855,7 @@ GetCommandLineA
 GetCommandLineW
 GetConsoleMode
 GetConsoleOutputCP
+GetCurrentPackageId
 GetCurrentProcess
 GetCurrentProcessId
 GetCurrentThreadId
@@ -871,21 +880,24 @@ GetStartupInfoW
 GetStdHandle
 GetStringTypeW
 GetSystemTimeAsFileTime
+GetSystemTimePreciseAsFileTime
+GetTempPath2W
 Gl9Bl~
 Gradient()
 Gt$(H
+Gt$xH
 G|$(L
 G|$HA
-G|$HH
+G|$xD
 H!D$ I
 H!T$0D
 H-^Eu
 H9(t8
+H9+t2H
 H9+tZ
 H93t7H
 H97u+A
 H99tjH
-H9=GM
 H9BP}
 H9PP|
 H9|$ t
@@ -893,15 +905,14 @@ H9|$(t
 H;XXs
 H;xXu5
 HH:mm:ss
-H]t?C
 HammerMapLoader001
 Hc+;k
 Hc/;o
+HcC(Hcw4;
 HcD$ 
 HcE_H
 HcF@H
 HcG H
-HcG(Ict$4;
 HcK H
 HcO H
 HcO8Hc
@@ -916,13 +927,12 @@ HelpSystem_001
 HostStateMgr001
 I+4$H
 I9CP}
-I>^(V;
+IKV3TransferInterface_ResourceLoad
 INT16
 INT32
 INVALID
 IPulseSystem_001
 IS_TYPESAFE_INTEGER
-Ic4$I
 Ic]HA
 Idle (ResourceSystemSleep)
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
@@ -931,15 +941,17 @@ InfoForResourceTypeCAnimationGroup
 InfoForResourceTypeCCSGOEconItem
 InfoForResourceTypeCChoreoSceneFileData
 InfoForResourceTypeCCompositeMaterialKit
-InfoForResourceTypeCDACGameDefsData
 InfoForResourceTypeCDOTANovelsList
 InfoForResourceTypeCDOTAPatchNotesList
 InfoForResourceTypeCDotaItemDefinitionResource
 InfoForResourceTypeCEntityLump
+InfoForResourceTypeCGcExportableExternalData
 InfoForResourceTypeCJavaScriptResource
 InfoForResourceTypeCModel
 InfoForResourceTypeCMorphSetData
 InfoForResourceTypeCNmClip
+InfoForResourceTypeCNmGraphDefinition
+InfoForResourceTypeCNmGraphVariation
 InfoForResourceTypeCNmSkeleton
 InfoForResourceTypeCPanoramaDynamicImages
 InfoForResourceTypeCPanoramaLayout
@@ -958,6 +970,7 @@ InfoForResourceTypeCVMixListResource
 InfoForResourceTypeCVPhysXSurfacePropertiesList
 InfoForResourceTypeCVSoundEventScriptList
 InfoForResourceTypeCVSoundStackScriptList
+InfoForResourceTypeCVoiceContainerBase
 InfoForResourceTypeCVoxelVisibility
 InfoForResourceTypeCWorldNode
 InfoForResourceTypeIAnimGraphModelBinding
@@ -969,7 +982,6 @@ InfoForResourceTypeIVectorGraphic
 InfoForResourceTypeManifestTestResource_t
 InfoForResourceTypeProceduralTestResource_t
 InfoForResourceTypeTestResource_t
-InfoForResourceTypeVSound_t
 InfoForResourceTypeWorld_t
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
@@ -991,13 +1003,13 @@ JPH9HP|
 January
 K&>.yC
 K0HcQ
-K2K!TpJ
 K32EnumProcessModules
 K32GetModuleFileNameExA
 KDLcC@
 KERNEL32.dll
 KPL;HP
 KPL;HP|
+K^gMI
 KeyValueCache001
 K|LcCx
 K}*n:	
@@ -1024,6 +1036,7 @@ L$@H3
 L$Ht<H
 L$XH;
 L$pfH
+L9=t(
 L9t$ t
 L9t$(t
 L9|$ t
@@ -1039,6 +1052,7 @@ Lc3D;
 Lc;D;{
 LcA<E3
 LcK(H
+LcK8H
 LcL$0H
 LcM0H
 LcO8H
@@ -1106,8 +1120,9 @@ Only wrote %d (of %d) values when saving map!
 OpenProcess
 Ordered constructor wrapped type has no default constructor.
 PA\][
+PA^A\]
 PA^_]
-PA_A\_^[
+PA^_^
 PA_A^A\_^][
 PA_A^A]A\_^]
 PA_A^_^]
@@ -1120,6 +1135,10 @@ ParticleSystemMgr003
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 PhysicsBuilderMgr001
 Plat_DebugPrint
+Plat_EventActivityIdControl
+Plat_EventRegister
+Plat_EventUnregister
+Plat_EventWriteTransfer
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
@@ -1130,7 +1149,6 @@ Plat_MicroSecTickDiff
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
 Plat_RelativeTicks
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffMilliSec
 Plat_TickDiffMilliSecF
 Plat_TickDiffSecF
@@ -1143,7 +1161,6 @@ Pz}b!
 QueryPerformanceCounter
 R(fff
 READ_ONLY
-RESLH
 RESOURCE_MANIFEST_HANDLE_INVALID
 RESOURCE_TYPE_NONE
 RESOURCE_TYPE_RESOURCE_MANIFEST
@@ -1169,6 +1186,7 @@ Resource "%s" was not precached but was loaded by a just in time blocking load.
 Resource leak tracking is not supported in this build.
 Resource system profile mode %s
 ResourceBinding_t
+ResourceBlockUntilManifestLoaded
 ResourceCompilerSystem001
 ResourceHandleUtils001
 ResourceId_t
@@ -1176,6 +1194,7 @@ ResourceManifestRegistry001
 ResourceSystem
 ResourceSystem/SpewBlockingLoads
 ResourceSystem013
+ResourceSystemFrame
 ResourceSystemWaitingForFutureWork
 RtlCaptureContext
 RtlLookupFunctionEntry
@@ -1190,10 +1209,9 @@ SUATH
 SUVWATAUAVAWH
 SUVWATAVAWH
 SVAUAWH
+SVAUH
 SVWATAUAVAWH
-SWAUAVAWH
 SWAUAWH
-SWAUH
 Saturday
 Scan all of the loaded modules and validate any resource manifests found
 SceneSystem_002
@@ -1242,7 +1260,6 @@ T$@fD
 T$PE3
 T$`H;
 T$hDi
-T$pE3
 T@8{UuNH
 TUUUU
 TerminateProcess
@@ -1271,6 +1288,7 @@ Tried to release UGC that hasn't been referenced: %lld
 Tuesday
 UATAUAVAWH
 UATAUH
+UATAVH
 UAVAWH
 UINT16
 UINT32
@@ -1281,6 +1299,7 @@ USVWATAUAVAWH
 USVWATAVAWH
 USVWAVH
 USWATAVAWH
+USWAUAVH
 USWAVAWH
 UUUUUU
 UUUUUUUUH
@@ -1295,7 +1314,6 @@ UVWAVAWH
 UWATAVAWH
 UWAUAVAWH
 UWAVH
-UWAWH
 UnhandledExceptionFilter
 Unknown exception
 UnregisterNamedManifest called, but we are not shutting down!!!
@@ -1306,6 +1324,7 @@ Usage: resource_repeated_reload <count> <resource_name>
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
 UtlMemory_FailedAllocation
+V+wNR
 V6E>`"(5
 VApplication001
 VAsyncFileSystem2_001
@@ -1332,6 +1351,7 @@ VWATAVAW
 VWATAVAWH
 VWAUAWH
 VWAVH
+VWAWH
 V_DoubleToString_Unsafe
 V_GetFileExtension
 V_Int32ToString_Unsafe
@@ -1360,6 +1380,7 @@ V_atoi
 V_~]	,
 Valve Corp.0
 Valve Corp.1
+Valve.Source
 VariableInfo_t
 Vector
 VisBuilder_001
@@ -1383,7 +1404,6 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-XA_A^_[
 Y u!H
 Y9"SD
 [% 5ims alloc] [% 5ims async] [% 5ims final] [% 5i / %10s] %s
@@ -1391,9 +1411,8 @@ Y9"SD
 [% 5ims cb] [% 5ims async cb] [% 5i / %10s] %s
 [% 5ims cb] [% 5ims async cb] [% 5i / %10s] TOTAL
 [K]taM?
-[refcount % 4d] 
+[refcount % 4d]
 \$ 9\$0|LH
-\$ AVH
 \$ UH
 \$ UVWAVAWH
 \$ UVWH
@@ -1404,12 +1423,12 @@ Y9"SD
 \$0H;
 \$0Hc
 \$0I#
+\$0[I
 \$0eH
 \$0u%f
 \$8I;
 \$@E3
 \$@H;
-\$@Hc
 \$@fD
 \$@u!H
 \$HA8^Dt
@@ -1417,7 +1436,7 @@ Y9"SD
 \$Pfff
 \$Pt1H
 \$`f	H
-\$`u1H
+\$pu3H
 ]@9]P|EH
 ]J<0"0i3
 _ ;_$t
@@ -1450,6 +1469,7 @@ _multibase
 _not_pickable
 `.rdata
 `A^_^
+`A^_^][H
 `A_A\]
 `A_A^A]A\_^]
 `A_A^_^]
@@ -1491,61 +1511,95 @@ _not_pickable
 `virtual displacement map'
 a7hIw
 abcdefghijklmnopqrstuvwxyz
+address family not supported
+address in use
+address not available
+already connected
 anonymous 
+argument list too long
+argument out of domain
 array
+bad address
 bad exception
+bad file descriptor
+bad message
 badresources_whitelist.txt
 binary_blob
 bp(=>?g
+broken pipe
 c [1>H'
 c(>\,
 child
 color
 command
+connection aborted
+connection already in progress
+connection refused
+connection reset
+cross device link
 curve
+d$ E3
 d$ UAVAWH
 d$0E3
 d$H;Q
 d$PD;m(
 d$XIc
 dddd, MMMM dd, yyyy
-dkD]M
+destination address required
+device or resource busy
+directory not empty
 double
-e	Warning
 e L;eX
 e0A_A^A]A\]
 ehA_A^A]A\_^[]
 enable_profiling
-error
+executable format error
 f9)u4H9j
 fB9<A}1L
 fD91uTL9r
 fD94H}aD
-fD95g
 fD9t$b
 false
 fffff
 ffffff
 fffffff
 fieldtype_t
+file exists
+file too large
+filename too long
 filesystem_stdio
+flc_columns
+flc_count
+flc_file_ids
+flc_file_list
+flc_lines
 float32
 float64
 fltx4
+function not supported
 generic
 generic_data_type
 hA_A^A]A\_^[]
+host unreachable
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
+identifier removed
+illegal byte sequence
+inappropriate io control operation
 ineID
 int16
 int32
 int64
+interrupted
 invalid
+invalid argument
+invalid seek
 invalid_parameter
+io error
+is a directory
 jj@0HK4
 k0i0$
 kernel32.dll
@@ -1553,6 +1607,7 @@ l$ AVH
 l$ Hc
 l$ HcA
 l$ Lci
+l$ Lcy
 l$ Mc
 l$ VWATAVAWH
 l$ VWAVH
@@ -1566,14 +1621,16 @@ l$0Lc
 l$0Lc)
 l$8E3
 l$@E3
-l$@Hc
 l$@u!H
 l$H9~@~{H
 l$HA_A^A]A\_^
 l$HI;
+l$HLck
 l$Pf#
 l$ht A
+l$xu7M
 l2|X/gGe
+lX\[.P
 log10
 m0k0$
 mL+7H
@@ -1610,18 +1667,47 @@ m_variables
 m_variablesRead
 m_variablesWritten
 mathlib_extended
+message size
 mwtMH
 n03>Pu
 nTries < 10000000
+network down
+network reset
+network unreachable
+no buffer space
+no child process
+no link
+no lock available
+no message
+no message available
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+not a directory
+not a socket
+not a stream
+not connected
+not enough memory
+not supported
 ntelA
 oD$ H
 oD$ f
 oD$@H
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
 operator
 operator "" 
 operator co_await
 operator<=>
 ot$ H
+owner dead
 p UWAVH
 p WATAUAVAWH
 p WAVAWH
@@ -1629,14 +1715,20 @@ p*W4H
 p0R^G'
 p;>}	H
 p;Y>u
+pA]^[
 pA_A^A]A\_^[
 panorama_image
+permission denied
+protocol error
+protocol not supported
 psapi.dll
 purecall
 qangle
-q{,z-
 r	Vr.>T
 range check failure
+read only file system
+resource deadlock would occur
+resource unavailable try again
 resource_leaks
 resource_leaks <resource_name>: Show resource leaks for the named resource
 resource_leaks: Invalid resource name '%s'
@@ -1654,22 +1746,27 @@ resourcesystem
 resourcesystem.dll
 resourcesystem_multiframe_finalize_time_msec
 restrict(
+result out of range
 rs_dump_stats
 rs_dump_stats - Dump resourcesystem stats.
 s8fff
 schemasystem
 set_profile_mode
-smT73
 stack buffer overrun (/GS failure)
+state not recoverable
+stream timeout
 string
+success
 t	D8?t
-t"L9;t	H
+t#fff
 t$ AVH
 t$ AWH
 t$ D9t$0|LH
 t$ E3
 t$ L97t	H
 t$ L9?t	H
+t$ Lc
+t$ UWATAVAWH
 t$ WATAUAVAWH
 t$ WATAVH
 t$ WATAWH
@@ -1677,7 +1774,6 @@ t$ WAVAWH
 t$ WH
 t$ f!H
 t$(E3
-t$(fI
 t$0E3
 t$0Hc
 t$8;;
@@ -1692,29 +1788,36 @@ t$HH;
 t$H}[H
 t$XI;
 t$`L#
-t*@8xDu$E3
+t&H9;t	H
 t-Lck
+t.S[]
 t0@8nGt*
-t0H9=
+t0H9=M
 t0L9%
-t3H9-0
-t3H9-2
-t3H9-r
-t3L9% 
-t6L9=q
+t0L9%\
+t3H9-
+t3H9-R
+t3H9-p
+t3L9%`
+t6L9=
 t7HcP
-t9H9=TM
+t9H9=
 tRLcY
 table
-thfff
+text file busy
 tier0.dll
+timed out
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
 tvD9~
 twIcF
 u$D8r(t
 u%@8j(t
 u%HcH
-u+HcH
 u,!T$(H!T$ 
+u0Lc@
 u3HcH
 u3HcH<H
 u4I9}(
@@ -1731,21 +1834,24 @@ v@D8s(t
 vAD8s(t
 vKfffff
 vagrp
+value too large
 vanim
 vanmgrpheconitemvents
 vcdlist
-vclip
 vcompmat
-vdacdefsvsvg
 vdata
 vector2
 vector3
 vector4
 ventl
 ventr
+vgcxdatavxml
 vmesh
 vmorf
 vmtst
+vnmgraphvnmclip
+vnmskel
+vnmvar
 vphys
 vpost
 vptest
@@ -1753,7 +1859,6 @@ vpulse
 vrgrp
 vrman
 vrnmd
-vskel
 vsmart
 vsnap
 vsndevts
@@ -1762,7 +1867,7 @@ vsurf
 vtest
 vwnod
 vwrld
-w>`'o
+wrong protocol type
 www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
@@ -1772,6 +1877,7 @@ xA_A^A]A\_^][
 xC;_(}>;_<
 y\PD>!
 {0x%x}
+{@9s8|AH
 {un'%
 |$ 9H
 |$ ATAVAWH
@@ -1779,7 +1885,7 @@ y\PD>!
 |$ D!
 |$ E3
 |$ Hc=
-|$ UAVAWH
+|$0E3
 |$0H;|$8
 |$0Hc
 |$0Lc?H
@@ -1792,9 +1898,12 @@ y\PD>!
 |$@E#
 |$@Hc
 |$DD9;
+|$PE3
 |$P}[H
 |$XD;
+|$`L;
 |$hHc
+|$pu1H
 |)L9c
 |Lu?c
 |b=})>
@@ -1807,7 +1916,6 @@ y\PD>!
 }cfE;
 }wfD;K
 }}fD;
-~	_V_StringAfterPrefix
 ~0McS
 ~2LcQ
 ~2fff

@@ -1,16 +1,17 @@
 						
 								
 																	
+																			
+																																								
 	!s99
 	#jT$
 	2K2K
 	D$0H
 	JR>8o
-	V_qsort_s
-	V_sincosf
-	V_snprintf
+	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	[builtin#%d]:
+	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
 	_V_strncmp
 	_V_strncpy
@@ -84,7 +85,6 @@
  Hc)H
  Lc)H
  Type Descriptor'
- [+\8
  ]Acosh
  ]Asinh
  at %p
@@ -107,7 +107,6 @@
 ";YDs(H
 "HcV$H+
 "e?<<<<<<l?
-#?lb=
 #D$(u-A
 #bML"
 #t'fA
@@ -118,7 +117,6 @@ $Ib?s
 $L9x0
 $`<@u
 $`<`t
-%	V_stricmp_fast
 %016llx
 %12.6f
 %GoU?*
@@ -196,6 +194,7 @@ $`<`t
 (for state)
 (for step)
 (null)
+(r&_W
 (t$ 3
 (t$ A
 (t$ H
@@ -232,6 +231,7 @@ $`<`t
 )|$@H
 )|$`H#
 )|B?d!
+*	V_qsort_s
 *H+^(H
 *HcV$H+
 *StO9>T
@@ -252,8 +252,7 @@ $`<`t
 ,I<%w
 ,W5y+
 ,X< w
-,|$8E
--	"LE
+,t$0D
 -;GDH
 -BH>t
 -luadbg_inspector
@@ -391,6 +390,7 @@ $`<`t
 0C1X4
 0H;C(s
 0Hc)L
+0M3\9
 0X8b?~
 0ffffff
 0iN>/
@@ -413,7 +413,7 @@ $`<`t
 220323000000Z
 220801000000Z
 230714000000Z
-230926000050Z0/
+240522183328Z0/
 241009235959Z0a1
 258EAFA5-E914-47DA-95CA-C5AB0DC85B11
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -431,6 +431,7 @@ $`<`t
 3>fvw
 3mq+<
 3u:D#
+4	V_sincosf
 4$u.A
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 4w2A+
@@ -484,6 +485,7 @@ $`<`t
 8u_E3
 8w>Hc
 8|u9H
+9	V_snprintf
 9)~P3
 91t@H
 98t H
@@ -496,7 +498,6 @@ $`<`t
 9ERCP
 9ERCPt2L
 9QX~BMc
-9T$8D
 9\$hu
 9g>@3
 9i(~xH
@@ -607,7 +608,7 @@ $`<`t
 >+>ZQ"v
 >0<0:
 ><![CDATA[%s]]>
->@8=-8
+>@8=}3
 >H;A uCH
 >Mp$d
 >ffffff
@@ -633,12 +634,12 @@ $`<`t
 ?AddKey@KeyValues@@QEAAPEAV1@PEBD@Z
 ?AddNullTermination@CUtlBuffer@@IEAAXXZ
 ?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
+?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?AppendRepeat@CBufferString@@QEAAPEBDDH_N@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
-?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?ERCPtcL
 ?EncodeAsNativePointer@CVirtualMachineCallStackTranslationEncoder@@QEAAPEAXPEBD0I@Z
@@ -659,7 +660,6 @@ $`<`t
 ?JV8f
 ?LoadKV3FromJSON@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBD2@Z
 ?Lock@CThreadSpinMutex@@AECAXPEBDHII@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?N]TUUU
 ?Printf@CUtlBuffer@@QEAAXPEBDZZ
@@ -695,6 +695,7 @@ $`<`t
 ?Update@CSHA1@@QEAAXPEBXI@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
+?fp9U
 ?t_v>
 ?{Q}<
 @.data
@@ -706,6 +707,7 @@ $`<`t
 @8i(u:
 @8j(t
 @8k(t
+@8kHu
 @8q2u}H
 @8q4u
 @8q<uuH
@@ -810,7 +812,7 @@ $`<`t
 @b;zO]
 @not enough memory
 @t	D9A
-@t(D8[\u
+@t(D8[du
 @u}E;
 A	AAAAAAAAA
 A	BlA;rh~
@@ -851,6 +853,7 @@ A;vX|
 A;zX|
 A;zX}
 A;~0s
+A<VbK
 A>l$/
 A>pP&
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -929,7 +932,6 @@ Bad file descriptor
 BakedLODBuilderMgr001
 Balinese
 Bamum
-Bd$8E
 Bellevue1
 BenchmarkService001
 Bengali
@@ -943,9 +945,10 @@ Braille
 Breakpoint type (%s) not supported.
 Broken pipe
 Browser.
+Bt$0D
 Buginese
 Buhid
-B|$8E
+B|$0E
 C H!)H
 C H9B 
 C H;C(s
@@ -971,8 +974,6 @@ C8D+C@H
 C9,A$
 C9< t8<#t+<+t
 C:\buildworker\csgo_rel_win64\build\_build_\vscript\_vpc_vscript\default\win64\_msvc_\Retail\vscript.pdb
-C:\buildworker\csgo_rel_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
 C:\buildworker\csgo_rel_win64\build\src\vscript\languages\lua\vlua\vlua.cpp
 C:fA;
 C<;C4A
@@ -1006,7 +1007,6 @@ CompareStringEx
 CompareStringW
 Compressed message sent without compression enabled
 Conditional breakpoints are not supported
-ConnectInterfaceSingletons
 Connection
 Connection: Upgrade
 Connection:Close
@@ -1027,6 +1027,7 @@ Cuneiform
 Cy2@K>
 Cypriot
 Cyrillic
+D	V_stricmp_fast
 D W?{W
 D!l$xA
 D#C|D
@@ -1062,6 +1063,7 @@ D$0HcH
 D$0I+
 D$0L+
 D$0f;
+D$0fA
 D$0u+A;
 D$0u9A;
 D$18F(u
@@ -1069,9 +1071,9 @@ D$49C
 D$4E3
 D$8A*
 D$8E3
+D$8Ic
 D$8L9
 D$8f;
-D$8fA
 D$@2t'
 D$@7!
 D$@9D$<tpD
@@ -1133,7 +1135,7 @@ D$xf9
 D$xf;
 D$|E3
 D)e(u
-D)k`A
+D)khA
 D)u(u
 D)v(u
 D)~(u
@@ -1151,10 +1153,9 @@ D81uUL9r
 D8L$0u`
 D8[(u
 D8c:u
-D8cvt
-D8cwt
+D8c~t
 D8f!t9H
-D8f_u[
+D8fgu[
 D8i(u
 D8i2uvH
 D8k2u
@@ -1162,10 +1163,9 @@ D8l$pt
 D8l$ptGH
 D8q(u
 D8t$ht
-D8v]t@
-D8v]tg
-D8{vt
-D8{wt
+D8vet@
+D8vetg
+D8{~t
 D8|$`
 D8|$`u
 D8|$ht!I
@@ -1173,7 +1173,9 @@ D8|$pu
 D8|$xu
 D8}/t
 D8}?t	H
-D95[C
+D95#M
+D953\
+D95GR
 D9T$xt7
 D9e t
 D9e u
@@ -1414,10 +1416,9 @@ H0+HX
 H9(t8
 H9+uhD
 H90tR
-H95px
+H954x
 H97u+A
 H99tjH
-H9=]1
 H9A s
 H9A u
 H9A uT
@@ -1425,8 +1426,8 @@ H9C(u
 H9D$Pt
 H9K(r
 H9K(v
-H9L$8D
-H9T$8D
+H9L$0D
+H9T$0
 H9X r
 H9_ht L
 H9_ht$
@@ -1502,8 +1503,7 @@ Hanunoo
 Hc@\D
 HcC H
 HcC0H
-HcC`D
-HcCxD
+HcChD
 HcD$0L
 HcD$@L
 HcD$P
@@ -1517,6 +1517,7 @@ HcG H
 HcG(H
 HcGtH
 HcK H
+HcL$`D+
 HcMgH
 HcO H
 HcO8Hc
@@ -1529,13 +1530,11 @@ HcT$HH
 HcT$LH
 HcT$PH
 HcT$TH
-HcT$`+
 HcUgH
 HcV$H
 HcV$H+
 Hc[(H
 Hcl$HH
-Hct$8L
 Hcu`M
 HcwP;w`
 Hcy0H
@@ -1548,7 +1547,6 @@ HvfA9
 HvfA9	rj
 HvfD;
 I H;K(
-I$PQ^
 I+4$H
 I;M0r>H
 I;u>A
@@ -1565,7 +1563,6 @@ Ic7A;w
 IcB\A
 IcB\H
 IcD$,
-IcFxE
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 IiGM>nw
 Il?333333c?
@@ -1744,7 +1741,6 @@ L9vPteL9v`t_L9vhtYH
 L9{8t
 L9{PtVH
 L9{Pte
-L;5`y
 L;A u
 L;G0L
 L;I(r
@@ -1760,7 +1756,6 @@ LCMapStringW
 LD D+
 LD@fD
 LOADLIB: %s
-LOG_GENERAL
 LUA Memory usage warning: The VM has hit a new high usage of %s bytes.
 LUA Memory usage: The VM has a usage of %s bytes.
 LUA_CPATH
@@ -1771,7 +1766,8 @@ LcA<E3
 LcG H
 LcO8H
 LcO`I
-Lcd$@M
+Lcd$0M
+Lcd$PM
 Lc|$dA
 Lc|$dL
 LeaveCriticalSection
@@ -1813,6 +1809,7 @@ LuaTable
 Lycian
 Lydian
 L|4f;
+M'&&,
 M'y>0y
 M(H9A
 M(H;M0r
@@ -1829,7 +1826,6 @@ Malformed VMDbg Runtime.getProperties for '%s'
 MapListService_001
 March
 MaterialUtils_001
-MathLib_Init
 Mcu,A
 Md$@A
 Meetei_Mayek
@@ -1854,7 +1850,6 @@ Myanmar
 N0+NXH
 N3`d?
 N>O=I9
-N@5h?
 NAN(IND)
 NAN(SNAN)
 NJ2"v
@@ -1948,7 +1943,6 @@ Plat_MSTime64
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
 Plat_RelativeTicks
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffSec
 Plat_TicksAfterMilliSecs
 Plat_VirtualAlloc
@@ -2332,7 +2326,6 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-X	V_vsnprintf
 X @8u
 X @8u/t
 X D8e
@@ -2639,7 +2632,7 @@ _wscanf_s_l
 `eh vector destructor iterator'
 `eh vector vbase constructor iterator'
 `eh vector vbase copy constructor iterator'
-`hpBP~
+`hpB@
 `local static guard'
 `local static thread guard'
 `local vftable constructor closure'
@@ -2702,7 +2695,6 @@ attempt to compare two %s values
 attempt to load chunk with wrong mode
 attempt to use a closed file
 attempt to yield across C-call boundary
-b,D.(
 b?^Cy
 bad FPU precision (use D3DCREATE_FPU_PRESERVE with DirectX)
 bad action while in __gc metamethod
@@ -2836,7 +2828,6 @@ double
 duplicate label '%s'
 duplicate table key
 dwgIc
-e	Warning
 e+000
 e0A_A^A]A\]
 eHA_A^A]A\_^[]
@@ -2866,11 +2857,11 @@ exceptionId
 executionContextId
 expression
 external hook
-ez#f+m
 f!D$*H
 f!D$ZH
 f!D$jH
 f!D$zH
+f!\$:L
 f9)u4H9j
 f98u	
 f9V4s%
@@ -2936,6 +2927,11 @@ file:///
 file:///e:/work/valve/source2/main/game/core/scripts/vscripts/animationsystem/animationsysteminit.lua
 filename
 fileuri
+flc_columns
+flc_count
+flc_file_ids
+flc_file_list
+flc_lines
 flnSu
 float
 float32
@@ -2987,6 +2983,7 @@ gfffffffH
 gfind
 global
 globalThis.__jsDebugIsReady = true; 
+globalsymbol
 gmatch
 graph
 h>1my
@@ -3517,6 +3514,7 @@ t$ AVAW3
 t$ AVH
 t$ AWH
 t$ E3
+t$ Lc
 t$ Mc
 t$ UH
 t$ UWATAVAWH
@@ -3535,10 +3533,10 @@ t$0A_A^
 t$0tdI
 t$8;;
 t$8A;
+t$8D+
 t$8E2
 t$8H+
 t$8Hc
-t$@E3
 t$@H+
 t$@Ic
 t$H@2
@@ -3546,6 +3544,7 @@ t$HA_A^A]A\_
 t$HH;
 t$HuPH
 t$H}[H
+t$PE3
 t$Pff
 t$X;t$\H
 t$XD;
@@ -3781,6 +3780,7 @@ vwprintf_s
 vwscanf
 vwscanf_s
 v}`[>
+w	V_vsnprintf
 w fff
 w&fA+
 w+OQvr
@@ -3808,6 +3808,7 @@ x AUAVAWH
 x AVH
 x UAVAWH
 x86_64
+x:Nfo@
 x<H9{0
 x=`sTH
 xC;_(}>;_<
@@ -3836,6 +3837,7 @@ zY;>u:m
 {&1q>
 {(L+{ I
 {,D+{HD+
+{0@8kHu
 {4)uF
 {4,u!H
 {:gt	3
@@ -3864,6 +3866,7 @@ zY;>u:m
 |$0E3
 |$8;}(r
 |$8L;
+|$8fD
 |$@-D
 |$@D+
 |$@Hc;
@@ -3904,7 +3907,6 @@ zY;>u:m
 }^<]u?
 }fMcU,M
 ~	;~d
-~	_V_StringAfterPrefix
 ~ $s%r
 ~(L+}(H
 ~,*u<I

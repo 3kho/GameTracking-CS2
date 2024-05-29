@@ -12,24 +12,23 @@
 	La0+
 	Not suitable for ECDSA.
 	Questionable extension field!
-	V_qsort
-	V_qsort_s
-	V_setvbuf
-	V_snprintf
+	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+	_V_ComposeFileName
+	_V_FileBase
+	_V_StringAfterPrefix
+	_V_hextobinary
 	_V_strncmp
 	_V_strncpy
 	_V_strnicmp_fast
 	`'>W
 	``@ PP@
-	g_VProfCurrentProfile
 	g_pMemAlloc
 	kE>fvw
 	l^f^
 	tqE5
 	}1Hc
 	}BzJ88
- 	V_sscanf
                     
                           
             Not After : 
@@ -76,10 +75,12 @@
  A^_]
  A^_^
  A^_^][
+ A^_^][H
  A_A\^
  A_A\_
  A_A\_^]
  A_A]A\^]
+ A_A]A\_^
  A_A^A\
  A_A^A\H
  A_A^A\_]
@@ -121,6 +122,7 @@
  ^LXjt
  _$7*xq?"
  _GDK	Z
+ _^]H
  characters
  delete
  delete[]
@@ -170,6 +172,7 @@
 "; boundary="----%s"%s%s
 ">|vG
 "Ks</
+"[O`OC
 "`bB303
 "cs73KI
 "l7ql`R2lWf
@@ -189,6 +192,7 @@ $+=	U
 $6.:$6.:
 $>Mm/JhA
 $?$6n
+$@8=-
 $@D4Z
 $Cw!R
 $E3L$
@@ -205,7 +209,6 @@ $d`D-laM
 $f;Zv9l
 $g#8lu#
 $hRh 
-%	V_stricmp_fast
 %'%1%=%C%K%O%s%
 %)(*$J
 %*s            
@@ -339,7 +342,6 @@ $hRh
 &dbF:xrJ'$#
 &q6}A,
 &x	nY
-'	V_strlower_fast
 '#^QTy
 '&&h#
 '()+,-./:=?
@@ -358,7 +360,6 @@ $hRh
 (	]zV
 (!(1(=(?(I(Q([(](a(g(u(
 ((long)msg_hdr->msg_len) > 0
-(,R}4
 (0'yX
 (1O\,n
 (A]A\^[
@@ -367,6 +368,7 @@ $hRh
 (A_A^A\[
 (A_A^A\]
 (A_A^A\_
+(A_A^A]A\_^][H
 (A_A^^[
 (A_A^_^
 (A_[H
@@ -411,6 +413,7 @@ $hRh
 (|$ D
 (|$PH
 (|$pD
+)	V_qsort
 )	~,Vg
 )!)#)?)G)])e)i)o)u)
 )'9W:
@@ -448,6 +451,7 @@ $hRh
 )|$ D
 )|$PD
 )|$pD
+*	V_qsort_s
 *	W/'
 *%*/*O*U*_*e*k*m*s*
 *,vJEd
@@ -472,6 +476,7 @@ $hRh
 +A*Z<Z
 +C$Hc
 +C-.c
++D$8E3
 +D$dH
 +D$dHc
 +H9u t
@@ -540,7 +545,6 @@ $hRh
 -LTY/:]
 -U`5K
 -\6G5
--async_memory_map
 -disable_auto_vpk_loading
 -fake_workshop_dir
 -log_opened_files
@@ -549,7 +553,6 @@ $hRh
 -recordPerfStats
 -tools
 -unbuffered_io
-.	V_strtoui64
 .%.-.3.7.9.?.W.[.o.y.
 .%X&1
 ....................
@@ -964,7 +967,6 @@ $hRh
 0123456789ABCDEF
 0123456789abcdef
 02V8[
-08|c|
 0:Off, 1:All (for tracking accumulated duplicate read times), >1:Microsecond threashold
 0:Off, 1:Always, 2:Not during load
 0:Off, 1:Warn main thread, 2:Warn other threads
@@ -994,6 +996,7 @@ $hRh
 0A_A^A]
 0A_A^A]A\]
 0A_A^A]A\_
+0A_A^A]A\_H
 0A_A^A]A\_][
 0A_A^A]A\_^[
 0A_A^A]A\_^]
@@ -1014,6 +1017,7 @@ $hRh
 0D$5H
 0D$6H
 0H	O 
+0HcD3
 0L2@2
 0M2~@p
 0\$/H
@@ -1040,6 +1044,7 @@ $hRh
 1u+@A
 2	"n@
 2	0!&
+2	V_setvbuf
 2)252Y2]2c2k2o2u2w2{2
 2)Ab`
 2+~,@
@@ -1048,7 +1053,7 @@ $hRh
 220323000000Z
 220801000000Z
 230714000000Z
-230926152926Z0/
+240522183348Z0/
 241009235959Z0a1
 2:3maJ
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
@@ -1199,6 +1204,7 @@ $hRh
 851Pe
 8= zp
 8A\^][
+8A^A\
 8A^A]A\_][
 8A^A]^]
 8A_A\_^
@@ -1208,6 +1214,7 @@ $hRh
 8A_A^A]A\_^[]
 8A_A^A]^
 8A_A^_^
+8A__][
 8A__^[
 8B9<	u6I
 8B9|	
@@ -1230,6 +1237,7 @@ $hRh
 8q-S*]X
 8ruKA
 8{u L
+9	V_snprintf
 9#9%9)9/9=9A9M9[9k9y9}9
 9)~P3
 9.u(H
@@ -1259,7 +1267,7 @@ $hRh
 9h@tjL
 9k(~$
 9k,uGH
-9o(~u
+9o(~v
 9r#xV
 9s,uIH
 9s8uj@87ue@8w
@@ -1273,6 +1281,7 @@ $hRh
 :BAD OBJECT
 :Blowfish part of OpenSSL 1.0.2j  26 Sep 2016
 :EXTERNAL TYPE %s
+:NfxO
 :cwd|
 :c|w{
 :fffffff
@@ -1398,12 +1407,13 @@ $hRh
 >o}-XH
 >p00<
 ?	U.S)
+?	V_sscanf
 ?".P"
 ?456789:;<=
 ?7?;?=?A?Y?_?e?g?y?}?
 ?7zQ6$
 ?:kP<
-??0CCountedStringPool@@QEAA@W4StringPoolCase_t@@@Z
+??0CCountedStringPool_CI@@QEAA@XZ
 ??0CDirIterator@@QEAA@PEBDI@Z
 ??0CThread@@QEAA@XZ
 ??0CThreadBarrier@@QEAA@I@Z
@@ -1412,11 +1422,12 @@ $hRh
 ??0CThreadRWLock_FastRead@@QEAA@XZ
 ??0CThreadSemaphore@@QEAA@HHPEBD_N@Z
 ??0CUtlBuffer@@QEAA@HHH@Z
+??0CUtlBuffer@@QEAA@PEBXHH@Z
 ??0CUtlMemoryBlockAllocator@@QEAA@HIW4RawAllocatorType_t@@@Z
 ??0CUtlString@@QEAA@AEBVCBufferString@@@Z
 ??0CUtlSymbolTable@@QEAA@HH_N@Z
 ??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
-??1CCountedStringPool@@UEAA@XZ
+??1CCountedStringPool_CI@@UEAA@XZ
 ??1CDirIterator@@QEAA@XZ
 ??1CThread@@UEAA@XZ
 ??1CThreadBarrier@@QEAA@XZ
@@ -1426,6 +1437,7 @@ $hRh
 ??1CThreadSyncObject@@QEAA@XZ
 ??1CUtlMemoryBlockAllocator@@QEAA@XZ
 ??1CUtlSymbolTable@@QEAA@XZ
+??1KeyValues@@QEAA@XZ
 ??2KeyValues@@SAPEAX_K@Z
 ??4CUtlString@@QEAAAEAV0@AEBVCBufferString@@@Z
 ??8CUtlString@@QEBA_NAEBV0@@Z
@@ -1444,14 +1456,12 @@ $hRh
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
-?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DirName@CUtlString@@QEBA?AV1@XZ
 ?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?EnsureCapacity@CBufferString@@QEAAHHPEAPEAD_N1@Z
 ?EnsureCapacity@CUtlBuffer@@QEAAXH@Z
 ?EnsureTrailingSlash@CBufferString@@QEAAPEBDD_N@Z
-?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
-?ExitScope@CVProfile@@QEAAXXZ
+?EnterScopeInternalBudgetFlags@?$VProfScopeHelper@$0A@$0A@@@SAP6AXXZPEBDAEAUVProfBudgetGroupCallSite@@@Z
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD_N@Z
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD_N@Z
 ?ExtractFileExtension@CBufferString@@QEAAPEBDPEBD@Z
@@ -1475,14 +1485,20 @@ $hRh
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
 ?Get@CUtlBuffer@@QEAA_NPEAXH@Z
 ?GetBaseFilename@CUtlString@@QEBA?AV1@XZ
+?GetDataType@KeyValues@@QEBA?AW4types_t@CKeyValues_Data@@PEBD@Z
 ?GetExtensionAlloc@CUtlString@@QEBA?AV1@XZ
+?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
+?GetName@KeyValues@@QEBAPEBDXZ
+?GetNextKey@KeyValues@@QEAAPEAV1@XZ
 ?HAI	81	9dcG'
 ?HaveWriteLock_BlockReadsNow@CThreadRWLock_FastRead@@QEAAX_N@Z
 ?Init@CThread@@MEAA_NXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
+?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
 ?IsThreadRunning@CThread@@MEAA_NXZ
 ?Join@CThread@@QEAA_NI@Z
+?LoadFromBuffer@KeyValues@@QEAA_NPEBDAEAVCUtlBuffer@@PEAVIFileSystem@@0P6A_N0PEAX@ZPEAVIKeyValuesErrorSpew@@30@Z
 ?LoadFromFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1P6A_N1PEAX@Z21@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?Lock@CThreadSpinMutex@@AECAXPEBDHII@Z
@@ -1555,20 +1571,19 @@ $hRh
 @8i(u:
 @8j(t
 @8k(t
-@8s^uRL9
 @8s^uVL9
 @8s_t
 @8u't
 @8uwt
 @8w$t
 @8w^u@L9
+@8w^uWL9
 @8y:t
 @8z$u
 @8z%u
 @8{(u
 @8{:t
 @8{^uVL9
-@8{^uWL9
 @8|$Pu
 @8~0t
 @8~0tM
@@ -1635,6 +1650,7 @@ $hRh
 @SUVWATAU
 @SUVWATAUAV
 @SUVWATAUAVAW
+@SUVWATAUAVAWH
 @SUVWATAUAVH
 @SUVWATAUAW
 @SUVWATAV
@@ -1643,7 +1659,6 @@ $hRh
 @SUVWATAW
 @SUVWAU
 @SUVWAUAVAW
-@SUVWAUAVH
 @SUVWAUH
 @SUVWAV
 @SUVWAVAW
@@ -1676,7 +1691,6 @@ $hRh
 @SWATAW
 @SWAUAV
 @SWAUAVAW
-@SWAUH
 @SWAV
 @SWAW
 @UATAUAVAW
@@ -1985,6 +1999,7 @@ ATAUL
 ATAUM3
 ATAVAW
 ATAVAWH
+ATAVH
 AUAVAWH
 AUTHORITY_INFO_ACCESS
 AUTHORITY_KEYID
@@ -2031,11 +2046,13 @@ A_A]A\_^[]
 A_A]A\_^]
 A_A]A\_^][
 A_A]_^[
+A_A]_^]
 A_A^A\
 A_A^A\^]
 A_A^A\_[
 A_A^A\_]
 A_A^A\_^
+A_A^A\_^[
 A_A^A\_^[]
 A_A^A\_^][
 A_A^A]
@@ -2057,9 +2074,10 @@ A_A^A][
 A_A^A]^[]
 A_A^A]^]
 A_A^A]^][
+A_A^A]_]
 A_A^A]_^
-A_A^A]_^[H
 A_A^A]_^][
+A_A^[]
 A_A^]
 A_A^^[]
 A_A^^]
@@ -2069,6 +2087,7 @@ A_A^_][
 A_A^_^[]
 A_A^_^]
 A_A^_^][
+A__^[
 A__^[]
 Acceptable OCSP Responses
 Add N ms of delay to every low-level read operation, to simulate a slow disk
@@ -2165,7 +2184,6 @@ B64_READ_ASN1
 B64_READ_PKCS7
 B64_WRITE_ASN1
 B64_WRITE_PKCS7
-B840u
 B8<#u
 B8Z"h
 B9|9(
@@ -2323,11 +2341,12 @@ C:\buildworker\csgo_rel_win64\build\src\filesystem\asyncfilesystem2.cpp
 C:\buildworker\csgo_rel_win64\build\src\filesystem\basefilesystem.cpp
 C:\buildworker\csgo_rel_win64\build\src\filesystem\filetracker.cpp
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\threadtoolstypes.h
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utldict.h
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlsortvector.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlsymboltable.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlsymboltablelarge.h
 C:\buildworker\csgo_rel_win64\build\src\public\zip\zip_utils.cpp
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
 C:\buildworker\csgo_rel_win64\build\src\vpklib\packedstore.cpp
 C;\5X
 CA Compromise
@@ -2537,10 +2556,6 @@ COPY_ISSUER
 COpenSSLConnection
 COpenSSLContext
 CPHcSdH
-CPackedStore::BuildHashTables
-CPackedStore::CPackedStore
-CPackedStore::TestHashChunkFraction
-CPackedStore::VerifyPackRead
 CRC32_ProcessBuffer
 CRL Sign
 CRL has expired
@@ -2565,6 +2580,10 @@ CT Precertificate Poison
 CT Precertificate SCTs
 CT Precertificate Signer
 CUtlBlockMemory overflow!
+CUtlDict<class CFileInfo *,class CDefFastCaselessStringIgnoreSlashesLess>::Insert
+CUtlDict<class CPathIDFileList *,class CDefFastCaselessStringLess>::Insert
+CUtlDict<class CUtlVector<class CStoreIDEntry,int,class CUtlMemory<class CStoreIDEntry,int> > *,class CDefFastCaselessStringLess>::Insert
+CUtlDict<int,class CDefFastCaselessStringLess>::Insert
 CUtlFixedMemory overflow!
 CUtlLinkedList overflow! (exhausted index range)
 CUtlLinkedList overflow! (exhausted memory allocator)
@@ -2572,6 +2591,8 @@ CUtlMemory_RawAllocator<class CUtlHashtableEntry<unsigned int,struct empty_t> >:
 CUtlMemory_RawAllocator<unsigned int>::EnsureCapacity
 CUtlMemory_RawAllocator<unsigned int>::Grow
 CUtlRBTree overflow with %u elements!
+CUtlRBTree<class CZipFile::CZipEntry,class CZipFile::CZipEntryLessFunc,int,class CUtlMemory<struct UtlRBTreeNode_t<class CZipFile::CZipEntry,int>,int> >::Insert
+CUtlRBTree<struct `public: virtual void __cdecl CBaseFileSystem::PrintSearchPaths(void)'::`2'::sort_search_paths_t,class CDefLess<struct `public: virtual void __cdecl CBaseFileSystem::PrintSearchPaths(void)'::`2'::sort_search_paths_t>,int,class CUtlMemory<struct UtlRBTreeNode_t<struct `public: virtual void __cdecl CBaseFileSystem::PrintSearchPaths(void)'::`2'::sort_search_paths_t,int>,int> >::Insert
 CUtlSortVector<struct ChunkHashFraction_t,class ChunkHashFractionLess_t,class CUtlVector<struct ChunkHashFraction_t,int,class CUtlMemory<struct ChunkHashFraction_t,int> > >::Find
 CUtlSymbolTableLargeBase
 C\lVQ
@@ -2585,7 +2606,7 @@ Certificate Sign
 Certificate:
 Cessation Of Operation
 Char=
-Chunk not found %d 
+Chunk hash not found.
 ClQ(|
 Clear the list of files that have been opened.
 ClientToolsInfo_001
@@ -2598,12 +2619,12 @@ Cofactor:
 CommandLine
 CompareStringEx
 CompareStringW
-ConnectInterfaceSingletons
 Content being marked corrupt.  bMissingFilesOnly = %s, pFile specified as '%s', reason: '%s'
 Content file %s is corrupt (Chunk: %s). Verify integrity of game files.
+Content file %s is corrupt. Hashing could not be verified. Verify integrity of game files.
 Content file %s is corrupt. Verify integrity of game files.
-Content is corrupt
-Content is corrupt. Verify integrity of game files
+Content file %s is corrupt; Chunk hash not found (expected: %d, found: %d)
+Content file %s is corrupt; signature couldn't be verified. Verify integrity of game files
 Content-Disposition: attachment;
 Content-Length: %d
 Content-Transfer-Encoding: base64%s
@@ -2632,8 +2653,8 @@ CryptGenRandom
 CryptReleaseContext
 Current
 CweHc
-C}HD8m3
 D	!|H
+D	V_stricmp_fast
 D 7D9
 D g)*
 D!l$xA
@@ -2644,6 +2665,7 @@ D$  N
 D$ *	
 D$ 1	
 D$ @	
+D$ A;
 D$ E3
 D$ E;n
 D$ H	
@@ -2659,6 +2681,8 @@ D$ c
 D$ fff
 D$ m	
 D$ r	
+D$#,0<	
+D$$,0<	
 D$$A;
 D$$D9s8
 D$$D9s8u	
@@ -2672,7 +2696,6 @@ D$(H!L$ E3
 D$(H1C
 D$(H3
 D$(H;
-D$(HcS
 D$(L#
 D$(Lc
 D$(SUATAUAVAWH
@@ -2699,7 +2722,6 @@ D$0f;
 D$0ff
 D$18F(u
 D$49C
-D$4E3
 D$4f9A
 D$8+L$4+D$<
 D$8A"
@@ -2713,7 +2735,7 @@ D$8H1C
 D$8Hc
 D$8HcD$8H
 D$8HcH
-D$8I;E
+D$8I;F
 D$8L9
 D$8L;
 D$8f;
@@ -2722,6 +2744,7 @@ D$8fH
 D$>fD
 D$@+D$HD
 D$@A8s	t
+D$@A;
 D$@D+
 D$@D;
 D$@E3
@@ -2747,6 +2770,7 @@ D$HI;
 D$Hf;
 D$HtOH
 D$LD#
+D$LH;D$,u
 D$P.A
 D$PD;
 D$PE3
@@ -2758,6 +2782,7 @@ D$PI;
 D$PL;
 D$Pf;
 D$PfE
+D$TH;D$4u
 D$XE3
 D$XH;
 D$XL;
@@ -2769,6 +2794,7 @@ D$`L+
 D$`Lc
 D$`PK
 D$`f;
+D$`fA;
 D$`fD
 D$`fE
 D$df9A
@@ -2778,7 +2804,6 @@ D$hHc
 D$hM#
 D$hf;
 D$lE#
-D$lH;D$Lu
 D$pA+
 D$pA;
 D$pE3
@@ -2786,7 +2811,6 @@ D$pH1
 D$pM;
 D$pf;
 D$pfA;
-D$tH;D$Tu
 D$xA;
 D$xH1D9
 D$xf;
@@ -2795,7 +2819,7 @@ D)l$0
 D+@tD+B
 D+A@H
 D+D$,
-D+d$LH
+D+d$\H
 D+s$D+s D;
 D.Hog^
 D.]ppM
@@ -2868,7 +2892,7 @@ D514p
 D7@fA
 D7q/;M
 D8$(u
-D8(tW
+D8(tXA
 D8,(u
 D81uUL9r
 D83t$A
@@ -2877,24 +2901,22 @@ D8<(t4
 D8[(u
 D8c:u
 D8c^uQL9
-D8c^uRL9
-D8hAt
+D8g^uRL9
 D8i(u
 D8k^uQL9
 D8k^uRL9
 D8k_u
 D8l$0u
-D8m1t
-D8m3H
 D8q(u
 D8s^uLL9
-D8s^uWL9
 D8t$ht
+D8w^uRL9
 D8}?t	H
 D8~	t
 D9'uFA
 D9)t[
-D90~>
+D90~)
+D98~A
 D9L$`
 D9`Pu7H
 D9cDt
@@ -2909,6 +2931,7 @@ D9t$$
 D9t$0
 D9t$8t)H
 D9|$(t\D
+D9|$0
 D9|$8}O
 D9|$<
 D9|$`t
@@ -3161,11 +3184,12 @@ E,;uP
 E-mail Protection
 E0HcH
 E0Lc`
-E2tdH
 E8<$t#H
+E8>t.H
+E8>t.J
 E8HcE,H
 E8g	t
-E8n	t
+E8n1H
 E8q(u
 E8|$p
 E9&~&A
@@ -3453,10 +3477,10 @@ Enter
 Enter PEM pass phrase:
 EnterCriticalSection
 Enterprises
-EofA;
 EovVY
 Eric Young's PKCS#1 RSA
 Error in encoding
+Error reading from loaded packed store "%s"
 Ew`)9Q
 Excluded
 Exec format error
@@ -3467,10 +3491,13 @@ Exponent:
 Extended OCSP Status
 Extension
 Extension Request
+F	V_strlower_fast
 F#bgn?MwN|%
 F$9~ s
 F$A9~ s
 F,mZq
+F8<0u
+F8M9n8tGH
 FALSE
 FATAL ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 FATAL ERROR: unable to register all schema data: %s
@@ -3507,6 +3534,7 @@ FS:  Tried to Write NULL file pointer inside valid file handle!
 FS: Specified two path IDs (%s, %s).
 FV|FgUV
 Failed
+Failed to load file (%s)!
 Failed to load module %s
 Failed to read
 Failed to read %d bytes
@@ -3535,6 +3563,8 @@ FlushConsoleInputBuffer
 FlushFileBuffers
 Fm{#t
 FontManager_001
+Found existing value when inserting into dict - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound.
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
@@ -3550,9 +3580,8 @@ G2xVo\?
 G:   
 G@ u5
 GBd<}v
-GD$8I
+GD$8E3
 GD$hD
-GD$hE3
 GD$hH
 GENERALIZEDTIME
 GENERALSTRING
@@ -3574,7 +3603,6 @@ GET_SERVER_FINISHED
 GET_SERVER_HELLO
 GET_SERVER_STATIC_DH_KEY
 GET_SERVER_VERIFY
-GExE3
 GF(2^m) Multiplication for x86_64, CRYPTOGAMS by <appro@openssl.org>
 GHASH for x86_64, CRYPTOGAMS by <appro@openssl.org>
 GHH9^PtRH
@@ -3618,6 +3646,7 @@ GT$8E3
 GT$8H
 GT$8I
 GT$8L
+GT$HE3
 GT$HH
 GT$HL
 GT$XI
@@ -3626,6 +3655,7 @@ GT$xE3
 GU8E3
 GXL9f 
 G[R{(
+G\$8H
 G\$HH
 G\$HL
 G\A8E
@@ -3690,14 +3720,14 @@ Gt$HA
 Gt$h3
 Gt$hM
 Gt$xH
+G|$8H
 G|$8I
 G|$HH
 G|$h3
-G|$hH
 G|A_A^A\
 H!D$ I
-H!FXH
 H!T$0D
+H!UXL
 H#OXD
 H#OXH
 H$$lH$$l
@@ -3705,7 +3735,8 @@ H'H	O
 H(h`O?|s
 H)|$@H
 H+D$@H
-H+D$PH
+H+D$HH
+H+D$xu
 H-^Eu
 H0+G+R
 H1GHM;
@@ -3732,14 +3763,13 @@ H9/u&L
 H97u+A
 H99tjH
 H99uFH
-H9==:
 H9A u
 H9A u'
 H9D$XH
 H9D$xs
 H9D$xu3I
 H9D$xurH
-H9FPw	H
+H9EPw	H
 H9L$8v"H
 H9X teH
 H9_ u'
@@ -3760,7 +3790,6 @@ H9u`u
 H9{ t
 H9{Pt=
 H9|$`
-H9|$ht(H
 H9~@u
 H;0ti
 H;8te
@@ -3790,7 +3819,6 @@ HA^A\_^][
 HA^A]A\_^[
 HA^A]][
 HA^A]_[
-HA^A]_^][
 HA^_^[
 HA_A\
 HA_A\_[
@@ -3817,7 +3845,6 @@ H[;L$`s"
 HammerMapLoader001
 Hash Algorithm: 
 HbAta
-Hc+;k
 Hc/;o
 Hc8a"
 Hc@ H
@@ -3826,7 +3853,7 @@ HcC H
 HcC0H
 HcC`A
 HcD$0
-HcD$0+
+HcD$0A+
 HcD$8H
 HcD$8L
 HcD$@
@@ -3856,8 +3883,8 @@ HcT$0
 HcT$0HcL
 HcT$0L
 HcT$4L
+HcT$<
 HcT$@L
-HcT$L
 HcT$p
 HcU4I
 HcUPA
@@ -3931,7 +3958,7 @@ ISSUING_DIST_POINT
 ITU-T
 IV block
 Ic6A;v
-IcM(3
+IcN(3
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 IiA@(
 IiF@(
@@ -4002,7 +4029,6 @@ KlLcE
 Ksg4X
 KuBEN
 K{"Kb,p
-K|oiaL
 K}*n:	
 K~Je#>!
 L!|$(L!
@@ -4024,7 +4050,6 @@ L$ SVW
 L$ USVWAVAW
 L$ UVWATAUAVAW
 L$ UVWATAUAVAWH
-L$ UVWATAWH
 L$ UVWAVAWH
 L$ UWATAVAWH
 L$ VWATAUAV
@@ -4108,6 +4133,7 @@ L$`E3
 L$`H3
 L$`H;
 L$`Hc
+L$`I;
 L$`Lc
 L$`LcB
 L$`f;
@@ -4157,7 +4183,6 @@ L9cPu
 L9d$h
 L9g`u
 L9l$h
-L9m@uGH
 L9nPu*
 L9q8t
 L9sPu&
@@ -4169,6 +4194,7 @@ L9{ u
 L9{Pu*
 L9{Pu/
 L9|$(w
+L9|$ht)H
 L;D$pu
 L;d$PA
 L;l$PA
@@ -4185,12 +4211,12 @@ LG.HK
 LINEBUFFER_CTRL
 LIST_ADD
 LOAD_IV
-LOG_GENERAL
 LOG_MESSAGE
 LONG_C2I
 Lc"E3
 Lc&D;f
 Lc'D;g
+Lc3D;
 Lc7D;w
 Lc?D;
 LcA<E3
@@ -4199,7 +4225,6 @@ LcB(H
 LcB@H
 LcC 3
 LcC H
-LcC(H
 LcC`D
 LcCdA
 LcD$0H
@@ -4208,6 +4233,7 @@ LcD$8H
 LcD$@H
 LcD$@Hc
 LcEgH
+LcG(H
 LcL$@HcT$DH
 LcL$PH
 LcL$pH
@@ -4240,12 +4266,14 @@ LoggingSystem_RegisterLoggingChannel
 Loose
 LqH!)8
 LwH'LwH'LwH'LwH'LwH'LwH'LwH'LwH'
+M	V_strtoui64
 M'Ezb
 M-laO
 M08E0t
 M0A;	
 M8t$`
 M9"t`
+M9n8t
 MASK:
 MATCHFRAMEWORK_001
 MB(iVR
@@ -4320,7 +4348,6 @@ N'L&R/l
 N.8U}
 N5dIn9
 N7CJ'
-N7J@A
 N=JR_"
 N=Knn
 NAME_CONSTRAINTS
@@ -4744,7 +4771,6 @@ PSK-AES256-CBC-SHA
 PSK-RC4-SHA
 PSPECIFIED
 PUBLIC KEY
-PXHcT$x
 Packed store %s with refcount > 0.
 Packedstore failed checks: %s 
 Packedstore passes all checks: %s 
@@ -4782,7 +4808,6 @@ Plat_RemoveDirectory
 Plat_RemoveFile
 Plat_RenameFile
 Plat_SetFileReadOnly
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffMicroSec
 Plat_TickDiffMicroSecF
 Plat_TranslateSymbolicLinks
@@ -4810,10 +4835,9 @@ Proxy Certificate Information
 Public Key
 Public-Key
 Public-Key: (%d bit)
-PxHcD$P
+PxHcD$@
 Pz}b!
 P~AeS~AeS
-Q	V_tmpnam
 Q/xtJ2
 Q3`bS
 Q8uOH
@@ -5161,7 +5185,7 @@ STATUS_ABORTED: Request canceled
 STATUS_PENDING: Request still pending
 STATUS_UNDEFINED: Internal filesystem error
 STEAMAPPS_INTERFACE_VERSION008
-STEAMUGC_INTERFACE_VERSION018
+STEAMUGC_INTERFACE_VERSION019
 STRENGTH
 STR_COPY
 SUATAUAV
@@ -5187,6 +5211,7 @@ SUITEB192
 SUVATAU
 SUVATAV
 SUVATAVAW
+SUVATAVH
 SUVATAW
 SUVAUAVAW
 SUVAVAW
@@ -5210,15 +5235,18 @@ SUWAU
 SUWAUAV
 SUWAUAW
 SUWAW
+SUWAWH
 SVATAU
 SVAWH
 SVWATAUAVAW
 SVWATAUAVAWH
+SVWATAVAW
 SVWATAW
 SVWAUAVAWH
 SVWAUAW
 SVWAVAW
 SVWAVH
+SVWAWH
 SWATAW
 SWAVAW
 SXNET
@@ -5257,6 +5285,7 @@ SetStdHandle
 SetUnhandledExceptionFilter
 Show the filesystem path.
 Signature failed for %s (reason: %d)
+Signature verification failed.
 Signature verified for %s.
 Signature was invalid for %s (reason: %d), allowing anyways.
 Size of per file buffers. 0 for none
@@ -5309,6 +5338,7 @@ T$ Lc
 T$ fA
 T$(3D$@3\$D3L$H3T$LM
 T$(3E
+T$(Ic
 T$,A3
 T$,fA
 T$08L$0t
@@ -5335,7 +5365,7 @@ T$@L#
 T$DD#
 T$HE3
 T$HHc
-T$HIc
+T$HL#
 T$HMc
 T$PA+
 T$PD+
@@ -5343,7 +5373,6 @@ T$PE3
 T$PHc
 T$PI+
 T$PIk
-T$PL#
 T$PM3
 T$XE3
 T$XLc
@@ -5499,15 +5528,18 @@ URI:%s
 USATAUAVAW
 USATAUAVAWH
 USATAVAWH
+USAVAWH
 USER32.dll
 USERNOTICE
 USVAUAVAWH
 USVAVAWH
+USVWATAUAVAWH
 USVWATAUAWH
 USVWATAVAWH
 USVWAVAWH
 USVWAVH
 USVWAWH
+USVWH
 USWATAWH
 USWATH
 UTCTIME
@@ -5527,7 +5559,6 @@ UVATAV
 UVATAVAW
 UVATAVH
 UVAUAVAW
-UVAUAVAWH
 UVAUH
 UVAVH
 UVWAT
@@ -5545,6 +5576,7 @@ UWATAVAW
 UWATAVAWH
 UWATAW
 UWAUAVAW
+UWAUAVAWH
 UWAVH
 UY6[E
 Unable to remove %s!
@@ -5653,6 +5685,7 @@ V_StringToUint64
 V_StringToVector
 V_StringToVector2D
 V_StringToVector4D
+V_StripFilename
 V_UnqualifiedFileName
 V_atoi
 V_a|I
@@ -5744,7 +5777,6 @@ WrgoI
 WriteConsoleW
 WriteFile
 W}9D*
-X	V_vsnprintf
 X @8u/t
 X @l(&
 X D8e
@@ -5970,6 +6002,7 @@ ZwKiZwKi
 \$ UVW
 \$ UVWATAUAVAW
 \$ UVWATAW
+\$ UVWAUAWH
 \$ UVWH
 \$ UWAV
 \$ UWAW
@@ -5981,6 +6014,7 @@ ZwKiZwKi
 \$ VWAUAVAW
 \$ VWAV
 \$ VWAWH
+\$ WAVAWH
 \$ WH
 \$(E#
 \$(E3
@@ -6049,7 +6083,6 @@ ZwKiZwKi
 ]J<0"0i3
 ][LK~lO
 ]i7,>
-]ofA;
 ]r}R{
 ^ I;~8u
 ^,tyI
@@ -6059,6 +6092,7 @@ ZwKiZwKi
 ^J_spY
 ^RB!r
 ^W,|*
+^uWL9
 _ ;_$t
 _$D,!
 _%s.tmp
@@ -6099,7 +6133,6 @@ _}eOk
 `28)fk
 `:zQF
 `@ `QE
-`A]_[H
 `A]_^][
 `A^A]_][
 `A^A]_^]
@@ -6112,7 +6145,6 @@ _}eOk
 `A_A^A]A\_^[
 `A_A^A]A\_^]
 `A_A^A]_[
-`A_A^A]_^[]
 `A_A^_
 `A_A^_^]
 `Ch.	(,R
@@ -6121,6 +6153,7 @@ _}eOk
 `RTTI
 `VX:H
 `]Bo2'
+`_][H
 `anonymous namespace'
 `bB"(!	)
 `cC#( 
@@ -6704,6 +6737,7 @@ d$,E3
 d$0E3
 d$0L3
 d$0fA
+d$0u)
 d$0~'H
 d$4D3
 d$8D3
@@ -6977,7 +7011,6 @@ duplicate compression id
 duplicate zone id
 dynamic
 dynlock
-e	Warning
 e	cCPtH
 e A_A^A\_]
 e$ChX f~&]
@@ -7091,7 +7124,6 @@ entityUInfo
 enveloped-data
 err asn1 lib
 err ec lib
-error
 error adding recipient
 error converting private key
 error converting zone
@@ -7197,7 +7229,7 @@ f;\$L
 f;\$Lr
 f;\$T
 f;\$\
-f;|$*
+f;t$*
 fA9	t	I
 fA9,@u
 fA9,vu
@@ -7334,6 +7366,7 @@ hA_A]A\_^]
 hA_A^A]A\][
 hA_A^A]A\_^[]
 hA_A^A]A\_^][
+hA_A^A]_^[H
 hA_A^_[
 hA_A^_]
 hA_A^_^][
@@ -7702,6 +7735,7 @@ internal list error
 internalFileAttribs
 international-organizations
 internationaliSDNNumber
+invalid
 invalid CA certificate
 invalid argument
 invalid asnumber
@@ -7911,6 +7945,7 @@ krb5 server tkt not yet valid
 krb5 server tkt skew
 kw.6#
 l <= sizeof(c->iv)
+l!/Sh5
 l$ AV
 l$ AVH
 l$ D8d$ 
@@ -7925,14 +7960,15 @@ l$ Mc
 l$ VATAUAVAW
 l$ VAVAW
 l$ VAVAWH
+l$ VWATAUAWH
 l$ VWATAVAWH
 l$ VWAUAVAW
 l$ VWAV
 l$ VWAVH
 l$ VWAW
+l$ VWAWH
 l$ WATAW
 l$ WAVAW
-l$ WAVAWH
 l$$E3
 l$$E;
 l$(E3
@@ -7956,9 +7992,9 @@ l$HE3
 l$HHc
 l$Ht4H
 l$PI;
-l$PIc
 l$PM3
 l$PfD
+l$PurM
 l$XE3
 l$XHc
 l$XHci
@@ -8032,6 +8068,7 @@ mac_size <= EVP_MAX_MD_SIZE
 mailPreferenceOption
 malloc failure
 manager
+mapping
 maskGenAlgorithm
 maskGenFunc
 master secret
@@ -8076,6 +8113,7 @@ mime-mhs-bodies
 mime-mhs-headings
 minimum
 minsize=
+missing
 missing asn1 eos
 missing ceripend info
 missing close square bracket
@@ -8105,6 +8143,7 @@ missing tmp rsa pkey
 missing value
 missing verify message
 mobileTelephoneNumber
+module
 module initialization error
 module=
 modulus too large
@@ -8561,7 +8600,7 @@ o{PfE
 o|$@fD
 o|$PH
 o} fA
-p	_V_ComposeFileName
+p	V_tmpnam
 p $D#
 p $E3
 p AWH
@@ -8592,6 +8631,7 @@ pA_A^A\^]
 pA_A^A]A\_
 pA_A^A]A\_^[
 pA_A^A]A\_^]
+pA_A^A]_^[]
 pA_A^_[]
 pG_*h
 pHhXpHhX
@@ -8604,6 +8644,8 @@ padding check failed
 pagerTelephoneNumber
 pak%02d.vpk
 pak*_dir.vpk
+pakxx
+pakxx=off
 parameter
 parameter encoding error
 parameters
@@ -8798,6 +8840,7 @@ r7f;\$|
 r99Kr99K
 r:   
 r:f;\$|
+rA9>tmA
 rB2pBB
 rC3rp
 rEt#L
@@ -9380,6 +9423,7 @@ string too short
 string=
 string_to_hex
 strlen(objstr) + 23 + 2 * enc->iv_len + 13 <= sizeof buf
+subdirectory
 subgroup factor:
 subgroup order:
 subject
@@ -9406,15 +9450,14 @@ system library
 t	D88t
 t	E9'
 t	H9s
-t	H;}HH
 t	Hcp
 t	L9w
 t >= 0
+t E8n7t
 t!D9k
 t!HcC
 t!L;	t
 t#HcU
-t#g+J"a
 t$ ATAVAW
 t$ AV
 t$ AVH
@@ -9482,6 +9525,7 @@ t$XH;
 t$XI+
 t$`@8
 t$`D+
+t$`D8
 t$`E3
 t$`L#
 t$`L9
@@ -9522,6 +9566,7 @@ t3HcK`A
 t4L;C
 t6HcH
 t79(~$H
+t7D9|$0
 t7HcP
 t8D9c
 t9E8i
@@ -9536,7 +9581,6 @@ tA`KO/3G!
 tAfff
 tG9(t
 tGHcT$0A
-tID8m9tCH
 tIHcX H
 tLY^m`6
 tM(ie-V
@@ -9544,7 +9588,7 @@ tNfA;
 tRLcY
 tSLcF
 tTL9q t-H
-tUH95
+tUH95u
 tWH+\$
 tZHcX H
 tZfff
@@ -9576,7 +9620,6 @@ there must be one signer
 thisUpdate
 thread=%lu, 
 tier0.dll
-tifff
 time not ascii format
 time stamp routines
 time syscall error
@@ -9618,7 +9661,6 @@ tlsv1 bad certificate status response
 tlsv1 certificate unobtainable
 tlsv1 unrecognized name
 tlsv1 unsupported extension
-tmfff
 to8\$ uE
 toE88tjH9
 token not present
@@ -9637,12 +9679,11 @@ tried to use unsupported cipher
 trust
 trustRoot
 ts datasign
-tsHcE
 tsa name mismatch
 tsa untrusted
 tst info setup error
 tt@8(toH
-tuL9=1
+tuL9=
 tvLcs
 tw8\$4
 twIcF
@@ -9656,7 +9697,6 @@ type not enveloped data
 type not primitive
 type: 
 type_id
-tzf9>tu
 t~H9}Pt_H9{
 u	A9w
 u HcM
@@ -9751,6 +9791,7 @@ uncompressedSize
 undefined
 undefined generator
 undefined order
+unexpected
 unexpected eoc
 unexpected message
 unexpected record
@@ -9921,13 +9962,17 @@ version incompatibility
 versionMadeBy
 versionNeededToExtract
 vparams
+vpk.signatures
+vpkname
 vv == NULL
 vzcrR
+w	A8w
+w	V_vsnprintf
 w,Q)#I
 w0A4k
 w3t*=
 w8i_q
-wEfA;
+wH9w<
 wH@8o@
 wOUigi<
 wOfD9J
@@ -10008,7 +10053,6 @@ x<<Dx<<D%
 xA_A\_^
 xA_A^A\_
 xA_A^A]A\_^[]
-xA_A^A]A\_^][
 xBD9+A
 xFH;A
 xI;_ }D;_4
@@ -10061,7 +10105,6 @@ ynl$<M
 z$9)~
 z+4/\M
 z/B,9d
-z1I*"
 z1_|'B
 z==Gz==G
 zF):O4
@@ -10123,6 +10166,7 @@ zxNIjo
 |$":uq
 |$(A^
 |$(E3
+|$(E;g ~&B
 |$(Lc
 |$0A_A^
 |$0E3
@@ -10140,7 +10184,6 @@ zxNIjo
 |$@-D
 |$@9X
 |$@A_A^A]A\
-|$@E3
 |$@H+
 |$@H;
 |$@PK
@@ -10148,7 +10191,6 @@ zxNIjo
 |$DE3
 |$H<-u
 |$HE3
-|$HE;g ~&B
 |$HH9u
 |$Hu#H
 |$JE3
@@ -10163,7 +10205,7 @@ zxNIjo
 |$XPK
 |$XtfI
 |$`<-u
-|$`@8
+|$`D8
 |$hHc
 |$pE;w
 |$pL+
@@ -10191,7 +10233,6 @@ zxNIjo
 }=\x]y1
 }A;_$
 }CQBf
-}EfA;
 }HcRTH
 }HfD9#A
 }LuHO
@@ -10206,15 +10247,15 @@ zxNIjo
 }{f;W
 }|aR!
 ~	D8~
-~	_V_StringAfterPrefix
 ~ $s%r
 ~ 9~ s
 ~"D;#t
+~)L9{ t#H
 ~*LcE,A
 ~,*u<I
+~,I9N
 ~,M9~
 ~,ue`
-~-H9k t'H
 ~-HcC
 ~-fff
 ~2HcE,I

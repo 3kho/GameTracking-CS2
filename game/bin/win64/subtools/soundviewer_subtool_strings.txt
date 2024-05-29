@@ -5,8 +5,7 @@
 	?data@QTreeWidgetItem@@UEBA?AVQVariant@@HH@Z
 	?dataChanged@QAbstractItemView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 	?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
-	V_qsort_s
-	V_snprintf
+	V_log10f
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	g_bUpdateStringTokenDatabase
@@ -95,7 +94,6 @@
 (|$ H
 (|$0D
 (|$0r+
-(|$@A
 (|$@I
 (|$PD
 (|$pD
@@ -109,9 +107,10 @@
 )t$@H
 )t$PH
 )|$0A
-)|$@D
 )|$@H
+*	V_qsort_s
 *StO9>T
+*mV7/
 + ?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
 +D$<D+D$8
 +M<7>
@@ -234,6 +233,7 @@
 .xdata
 .xdata$x
 />58d%
+0A]^[
 0A^_^
 0A_A^A]
 0A_A^A]A\_
@@ -248,11 +248,11 @@
 130801120000Z
 1<.	/>:
 1ClearSolo()
-1GJR|
 1OnSoloButtonChanged( int )
 1PlayExecSelected( int, int )
 1PlaySelected( int, int )
 1Reset()
+1ResetMaxVoiceCount()
 1StartSampling()
 1StateChangedNeedToUpdateApp()
 1StopSampling()
@@ -267,7 +267,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-230926000320Z0/
+240522183426Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -295,6 +295,7 @@
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+6!e^|
 6*f(_
 6I]Dc
 6OB,n_
@@ -303,14 +304,15 @@
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+9	V_snprintf
 9)~P3
 98t H
 99~CE
 9>~@H
-9C$t	
 9i(~xH
 9p@u+
 9t$Pu	
+:NfApYM.x_;
 ;H9>&X
 ;I9}(tiH
 ;^H}/Hc
@@ -407,13 +409,13 @@
 ??YQString@@QEAAAEAV0@AEBV0@@Z
 ?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?DoesMatchString@CFilterString@@QEBA_NPEBDW4FilterStringMatchFlags_t@@@Z
 ?Format@CUtlString@@QEAAHPEBDZZ
 ?Free@CRawAllocator@@SAXW4RawAllocatorType_t@@PEAX_K@Z
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?RestoreFromBuffer@CUtlSymbolTable@@QEAA_NAEAVCUtlBuffer@@@Z
@@ -913,6 +915,7 @@
 @SUVWATAWH
 @SUVWAWH
 @SUWH
+@SVAUH
 @SVWATAUAVAWH
 @SWAWH
 @UATAUAVAWH
@@ -943,6 +946,7 @@ A\_^[
 A]A\_^[]H
 A^A]A\
 A^A]A\_^[]
+A^A]_^[H
 A^_^[
 A^_^[]
 A_A\_^][H
@@ -983,7 +987,7 @@ C ;C$t
 C H!)H
 C0Hc	H
 C:\buildworker\csgo_rel_win64\build\_build_\utils\vconsole2\subtools\soundviewer\_vpc_soundviewer_subtool\default\win64\_msvc_\Retail\soundviewer_subtool.pdb
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\csgo_rel_win64\build\src\utils\vconsole2\subtools\soundviewer\soundviewerwidgets.cpp
 CD$8D
 CMixInputs
@@ -1033,19 +1037,19 @@ CQConnectHelper_voidvoid
 CQGroupsWidget
 CQMixingConsoleWidget
 CQMouseDragWidget
+CQSmartTextEdit
 CQSoundEventHistoryTableWidget
 CQSoundEventWidget
 CQSoundTableWidget
 CQSoundToolWidget
-CQTextEditWithFocusOutSignal
 CQTracksWidget
 CUtlRBTree overflow with %u elements!
+CUtlRBTree<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQSoundToolWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,class CUtlOrderedMapBase<class IVConsoleDevice *,class CQSoundToolWidget *,class CDefLess<class IVConsoleDevice *>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IVConsoleDevice *,class CQSoundToolWidget *,class CDefLess<class IVConsoleDevice *>,int>::Node_t,int>,int> >::Insert
 CVMixViewer
 Clear
 ClearSolo
 ClientToolsInfo_001
 CloseHandle
-ConnectInterfaceSingletons
 Copy 
 CorExitProcess
 Courier New
@@ -1100,7 +1104,6 @@ Events %d
 Events %d (of %d)
 Events:
 ExitProcess
-F.80`	3
 FATAL ERROR: unable to register all schema data: %s
 February
 Filter Audio
@@ -1115,12 +1118,15 @@ FlsGetValue
 FlsSetValue
 FlushFileBuffers
 FontManager_001
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
 G ;G$t
 G8fff
 GT$8H
+GT$HA
+GT$hA
 G\$hA
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -1151,7 +1157,7 @@ GetStdHandle
 GetStringTypeW
 GetSystemTimeAsFileTime
 Groups
-H SVWAUH
+H SVWAUAVH
 H!D$ I
 H!T$0D
 H-^Eu
@@ -1238,7 +1244,6 @@ L;|$X
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
-LOG_GENERAL
 LcA<E3
 LcN@H
 LcO@H
@@ -1252,7 +1257,6 @@ Lj[;>
 LoadLibraryExW
 LocaleNameToLCID
 Localize_001
-LoggingSystem_IsChannelEnabled
 LoggingSystem_RegisterLoggingChannel
 MATCHFRAMEWORK_001
 MB(iVR
@@ -1281,6 +1285,7 @@ Monday
 MultiByteToWideChar
 N?greenF@QColor@@QEBANXZ
 N?height@QFontMetrics@@QEBAHXZ
+N\#,Y{
 NavGameTest001
 NavSystem001
 NetworkClientService_001
@@ -1317,7 +1322,6 @@ Plat_FatalErrorFunc
 Plat_FloatTime
 Plat_IsInDebugSession
 Plat_RegisterModule
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Play Soundevent: 
 PlayExecSelected
 PlaySelected
@@ -1330,6 +1334,7 @@ Qt5Core.dll
 Qt5Gui.dll
 Qt5Widgets.dll
 QueryPerformanceCounter
+R>'$6=>{LaR
 RXMSH
 RaiseException
 RegisterConCommand: Unknown error registering con command "%s"!
@@ -1342,7 +1347,9 @@ RenderHardwareConfig002
 RenderService_001
 RenderUtils_001
 Reset
+Reset Max
 ResetEvent
+ResetMaxVoiceCount
 ResourceCompilerSystem001
 ResourceHandleUtils001
 ResourceManifestRegistry001
@@ -1355,10 +1362,11 @@ RtlUnwind
 RtlUnwindEx
 RtlVirtualUnwind
 Running.
+S%ta'1g
 S0Q0O
 S?palette@QGuiApplication@@SA?AVQPalette@@XZ
 SA|X=G
-SDNSH
+SDNSL
 SDNSLc
 SDNStZA
 SPRGH
@@ -1487,13 +1495,13 @@ VWATAVAWH
 VWAVH
 V_PrettifyMem
 V_fmodf
-V_log10f
 V_~]	,
 Valve Corp.0
 Valve Corp.1
 VisBuilder_001
 Visualize SoundEvents
 Voices
+Voices: %-3d Max: %-3d
 Volume ( L , R )
 Vrad3_001
 WATAUAVAWH
@@ -1506,7 +1514,6 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-X	V_vsnprintf
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setColor@QPalette@@QEAAXW4ColorRole@1@AEBVQColor@@@Z
 Y9"SD
@@ -1551,6 +1558,7 @@ __thiscall
 __unaligned
 __vectorcall
 _gUT^
+_k*K\P
 `.rdata
 `A^_^
 `A_A^A]A\_^]
@@ -1616,7 +1624,6 @@ e0A_A^A]A\]
 elapsed
 entity index
 entity: position
-error
 event
 event type
 f ?topLevelItemCount@QTreeWidget@@QEBAHXZ
@@ -1629,14 +1636,21 @@ false
 fffff
 ffffff
 fffffff
+flc_columns
+flc_count
+flc_file_ids
+flc_file_list
+flc_lines
 game:tools/images/showbudgettool/start.png
 game:tools/images/showbudgettool/stop.png
 game:tools/images/soundviewer/wireframe.png
+ghosts
 graph
 group
 group stop
 hA_A]
 hA_A^A]A\_^[]
+hKBQO
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
@@ -1645,6 +1659,7 @@ http://www.digicert.com/CPS0
 ineID
 invalid_parameter
 itemChanged
+i{1`YN
 jj@0HK4
 k0i0$
 l$ VH
@@ -1663,6 +1678,7 @@ lay-solo
 lay-vol
 layer trig
 level
+lhsnx%~
 log10
 m0k0$
 mL+7H
@@ -1707,6 +1723,7 @@ stack buffer overrun (/GS failure)
 start
 substring
 t$ E3
+t$ Lc
 t$ WATAUAVAWH
 t$ WATAVH
 t$ WATAWH
@@ -1752,6 +1769,7 @@ v@D8s(t
 vAD8s(t
 vKfffff
 volume
+w	V_vsnprintf
 w8Icn
 wHIcn
 wwH9Q
@@ -1759,7 +1777,6 @@ www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
 x AVH
-xA]_^[H
 xA_A^_^][H
 xC;_(}>;_<
 y\PD>!

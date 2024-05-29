@@ -3,14 +3,12 @@
 	game 		"CSGO Core"
 	title 		"CSGO Core"
 	
-	type		singleplayer_only
+	type		multiplayer_only
 	nomodels 1
 	nohimodel 1
 	l4dcrosshair 1
 	nodegraph 0
 	perfwizard 0
-	SupportsXbox360 0
-	SupportsDX8	0
 	tonemapping 1 // Show tonemapping ui in tools mode
 	configconflictresolutiondialog 0
 	GameData	"csgo.fgd"
@@ -90,6 +88,8 @@
 			"cables.vfx" "128 64 64"
 			"spritecard.vfx" "240 240 0"
 		}
+
+		"ErrorMaterialIsFatalError"	"1"
 	}
 
 	MaterialEditor
@@ -100,8 +100,9 @@
 	
 	Panorama
 	{
-		"UsesSvg" "1"
 		"AllowGlobalPanelContext" "1"
+		"HtmlUserAgent" "CSGO Client"
+		"AllowCustomGameUI" 0
 	}
 
 	Engine2
@@ -136,41 +137,35 @@
 		"MSAADefaultNonVR"	"4" 
 		"DefensiveConCommands"	"1"
 		"PauseSinglePlayerOnGameOverlay" "1"
+		"PauseOnCtrlConsole" "0" // Src2 issues a 'setpause' on holding down CTRL + toggleconsole key, disable this for CS2.
+		"RestrictConsoleCloseKey" "`"	// This setting stipulates that if the binding for toggleconsole is set to anything other
+										// than the default KEY_BACKQUOTE, then it only works for opening the console, not closing.
+										// ESC can always be used to close the console regardless of this setting.
+										// This matches csgo src1 behaviour.
 	}
 
 	NetworkSystem
 	{
 		BetaUniverse
 		{
-			// Throughout the day our lag and loss default to zero except for specific forced test time slices
-			"FakeLag"			"0"
-			"FakeLoss"			"0"
-			"FakeReorderPct"	"0"
-			"FakeReorderDelay"	"0"
+			"FakeLag"			"20"
+			"FakeLoss"			".1"
 
-// We're shipping tomorrow. Disable fake lag for now  -McJohn
-//			"TimeTable"
-//			{
-//				// Begin lag at 10:10:00 AM local time
-//				"101000"
-//				{
-//					"FakeLag"	"50"
-//				}
-//				// Back to zero lag at 11:00:00 AM local time
-//				"110000"
-//				{
-//				}
-//				// Begin lag at 3:10:00 PM local time
-//				"151000"
-//				{
-//					"FakeLag"	"50"
-//				}
-//				// Back to zero lag at 5:00:00 PM local time
-//				"170000"
-//				{
-//				}
-//
-//			}
+			"TimeTable"
+			{
+				// LAN conditions at noon local time
+				"120000"
+				{
+					"FakeLag"			"0"
+					"FakeLoss"			"0"
+					"FakeReorderPct"	"0"
+					"FakeReorderDelay"	"0"
+				}
+				// Back to more realistic internet conditions 2:45:00 PM local time
+				"144500"
+				{
+				}
+			}
 		}
 	}
 
@@ -191,9 +186,11 @@
 		"GpuLightBinner" "1"
 		"GpuLightBinnerSunLightFastPath" "1"
 		"GpuLightBinnerBinEnvMaps" "1"
+		"GpuLightBinnerBinLPVs" "0"
 		"GpuLightBinnerSupportViewModelCascade" "1"
 		"DefaultShadowTextureWidth" "4096"
 		"DefaultShadowTextureHeight" "4096"
+	//	"ShadowTextureImageFormat_D16" "1"
 		"PointLightShadowsEnabled" "1"
 		"Tonemapping"	"1"
 		"NonTexturedGradientFog" "1"
@@ -220,11 +217,14 @@
 		}
 
 		"TransformTextureRowCount" "512"
-		"CMTAtlasWidth" "512"
-		"CMTAtlasHeight" "256"
+		"TransformTextureRowCountToolsMode" "4096"
+		"CMTAtlasWidth" "1024"
+		"CMTAtlasHeight" "512"
 		"CMTAtlasChunkSize" "128"
 
 		"DynamicDecalsUseShrinkWrap" "1"	// enable shrinkwrap optimization for dynamic decal materials using F_FASTAPPROX
+
+		"ComputeShaderSkinning" "1"
 	}
 
 	ToolsEnvironment
@@ -259,6 +259,7 @@
 		"DefaultGrassMaterial"			"materials/grass/grassquad1.vmat"
 		"SteamAudioEnabled"				"1"
 		"AddonMapCommand"				"map_workshop"
+		"LatticeDeformerEnabled"		"1"
 	}
 
 	RenderPipelineAliases
@@ -298,6 +299,8 @@
 			"nav"		"1"	// Generate nav mesh data
 			"light"		"0"	// Using per-vertex indirect lighting baked from within hammer
 			"envmap"	"0"	// this is broken
+			"sareverb"	"1" // Bake Steam Audio reverb
+			"sapaths"	"1" // Bake Steam Audio pathing info
 		}
 
 		MeshCompiler
@@ -326,7 +329,7 @@
 
 		PhysicsBuilder
 		{
-			DefaultHammerMeshSimplification		"0.1"
+			DefaultHammerMeshSimplification		"0.0"
 		}
 
 		BakedLighting
@@ -334,6 +337,8 @@
 			Version 2
 			DisableCullingForShadows 1
 			MinSpecLightmapSize 4096
+            ImportanceVolumeTransitionRegion 120            // distance we transition from high to low resolution charts 
+                                                            // when a triangle is outside an importance volume
 			LPVAtlas 1
 			LPVOctree 0
 			LightmapChannels
@@ -366,24 +371,25 @@
 
 		SteamAudio
 		{
-			Probes
+			ReverbDefaults
 			{
 				GridSpacing			"3.0"
 				HeightAboveFloor	"1.5"
-			}
-			Reverb
-			{
+				RebakeOption		"1"						// 0: cleanup, 1: manual, 2: auto
 				NumRays				"32768"
 				NumBounces			"64"
 				IRDuration			"1.0"
 				AmbisonicsOrder		"1"
 			}
-			Pathing
+			PathingDefaults
 			{
+				GridSpacing			"3.0"
+				HeightAboveFloor	"1.5"
+				RebakeOption		"1"						// 0: cleanup, 1: manual, 2: auto
 				NumVisSamples		"1"
-				ProbeVisRadius		"0.0"
-				ProbeVisThreshold	"0.5"
-				ProbePathRange		"1000.0"
+				ProbeVisRadius		"0"
+				ProbeVisThreshold	"0.1"
+				ProbeVisPathRange	"1000.0"
 			}
 		}
 
@@ -396,6 +402,7 @@
 			CompressMinRatio        "95"
 			AllowNP2Textures		"1"
 			AllowPanoramaMipGeneration	"1"
+			PublicToolsDefaultMaxRes "2048"
 		}
 	}
 
@@ -448,12 +455,13 @@
 		"GrassCompressDensity" "0"
 		"GrassDilateColors"	"0"
 		"GrassNoHalfTexel"	"1"
+		"LPVEdgeBlending"	"0"	// Don't apply the edge fade distance to LPV bounds, we don't blend LPVs in CS2 shaders
 	}
 
 	ModelDoc
 	{
 		"models_gamedata"			"models_gamedata.fgd"
-		"features"					"modelconfig;animgraph;animgraph_compatibility_force;editorconfig;gamepreview"
+		"features"					"cs2;modelconfig;animgraph;animgraph_compatibility_force;editorconfig;gamepreview"
 		"firstpersoncamerapreview"	"1"
 	}
 
@@ -469,11 +477,12 @@
 		//"AlwaysPreloadTexturesInGame"				"1"
 		//"MaxPreloadTextureResolution"				"256"
 		"GraphicsPipelineLibrary"					"1"
-		"IndexBufferPoolSizeMB"						"32"
+		"IndexBufferPoolSizeMB"						"64"
 		"LowLatency"								"1"
 		"MinDXLevel"								"110" // DX 11.0 is the minimum
 		"MinStreamingPoolSizeMB"					"500"
 		"MinStreamingPoolSizeMBTools"				"2048"
+		"UseHardwareGammaRamp"						"0" // Fullscreen gamma controlled in postprocessing
 	}
 
 	Manifest
@@ -498,5 +507,10 @@
 	{
 		//OodleTexture    "0"
 		//OodleLZ         "0"
+	}
+
+	ConVars
+	{
+		"cl_usesocketsforloopback" "1"
 	}
 }

@@ -1,5 +1,4 @@
 	!s99
-	V_snprintf
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
@@ -10,16 +9,15 @@
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  %41g
  'L>[
- A^_]
  A_A^A\
  A_A^A\_^
  A_A^A]A\_
- A_A^]
  A_A^_
  Base Class Array'
  Base Class Descriptor at (
  Class Hierarchy Descriptor'
  Complete Object Locator'
+ HcA L
  Type Descriptor'
  delete
  delete[]
@@ -27,10 +25,8 @@
  tDE3
 !>6'Y
 !hn7!
-%	V_stricmp_fast
 %s%c%04i%02i%02i-%02i%02i%02i-%s
 %s%cbug.txt
-'	V_strlower_fast
 ',=?k
 (f*^[0
 (t$PH
@@ -42,6 +38,7 @@
 +h->|
 +o'q)}
 ,/<-w
+,A"4&
 ,W5y+
 .00cfg
 .?AVCBugReporter@@
@@ -91,7 +88,7 @@
 .xdata
 .xdata$x
 />58d%
-0A_A]]
+0:qT?$
 0A_A^A]
 0A_A^A]A\_
 0A_A^A]A\_^[
@@ -107,7 +104,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-230925235924Z0/
+240522172416Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -120,7 +117,6 @@
 380115120000Z0b1
 3>N;kU
 3>fvw
-3l5t6$jT
 3mq+<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
@@ -133,9 +129,11 @@
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
+9	V_snprintf
 9)~P3
 98t H
-;(}*H
+9\?zr 
+;8}'H
 ;H9>&X
 ;I9}(tiH
 < t=<	t9
@@ -157,13 +155,15 @@
 ??3KeyValues@@SAXPEAX@Z
 ?AddNullTermination@CUtlBuffer@@IEAAXXZ
 ?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
+?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?Find@CUtlSymbolTable@@QEBA?AVCUtlSymbol@@PEBD@Z
 ?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z
+?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
-?GetFirstSubKey@KeyValues@@QEBAPEAV1@XZ
+?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
 ?GetName@KeyValues@@QEBAPEBDXZ
-?GetNextKey@KeyValues@@QEBAPEAV1@XZ
-?GetString@KeyValues@@QEAAPEBDPEBD0PEAD_K@Z
+?GetNextKey@KeyValues@@QEAAPEAV1@XZ
+?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
 ?LoadFromBuffer@KeyValues@@QEAA_NPEBD0PEAVIFileSystem@@0P6A_N0PEAX@ZPEAVIKeyValuesErrorSpew@@20@Z
 ?LoadFromFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1P6A_N1PEAX@Z21@Z
 ?Put@CUtlBuffer@@QEAAXPEBXH@Z
@@ -186,14 +186,16 @@
 @A^_^
 @A_A^A\_^][
 @A_A^A]
+@SUATH
 @SUVWATAVAWH
 @SUWH
 @SVWATAUAVAWH
 @SVWH
 @UATAUAVAWH
-@UAUAWH
+@UAWH
 @USVWATAUAVAWH
 @USVWATAUAVH
+@USVWAVH
 @_RDATA
 A8}(u
 A>pP&
@@ -209,7 +211,6 @@ A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^]
-A_A^_^]
 AppPolicyGetProcessTerminationMethod
 April
 AreFileApisANSI
@@ -221,10 +222,13 @@ Bellevue1
 BinaryProperties_GetValue
 BugReporter005
 Build
+C ;C$t
 C0Hc	H
 C847u
 C:\buildworker\csgo_rel_win64\build\_build_\utils\bugreporter_filequeue\_vpc_bugreporter_filequeue\default\win64\_msvc_\Retail\bugreporter_filequeue.pdb
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 CUtlRBTree overflow with %u elements!
+CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbol,class CUtlVector<class CUtlSymbol,int,class CUtlMemory<class CUtlSymbol,int> > *,struct CBugReporter_UtlSymbol_LessThan,int>::Node_t,class CUtlOrderedMapBase<class CUtlSymbol,class CUtlVector<class CUtlSymbol,int,class CUtlMemory<class CUtlSymbol,int> > *,struct CBugReporter_UtlSymbol_LessThan,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CUtlSymbol,class CUtlVector<class CUtlSymbol,int,class CUtlMemory<class CUtlSymbol,int> > *,struct CBugReporter_UtlSymbol_LessThan,int>::Node_t,int>,int> >::Insert
 Category
 CloseHandle
 CompareStringEx
@@ -233,6 +237,7 @@ Console
 CorExitProcess
 CreateFileW
 CreateInterface
+D	V_stricmp_fast
 D!l$xA
 D$ E3
 D$(H;
@@ -244,6 +249,7 @@ D$@H+
 D$@fB
 D$PH+
 D$PI;
+D$`ff
 D81uUL9r
 D8t$ht
 D8}?t	H
@@ -265,6 +271,7 @@ EH*?H
 EncodePointer
 EnterCriticalSection
 ExitProcess
+F	V_strlower_fast
 February
 FindClose
 FindFirstFileExW
@@ -274,6 +281,7 @@ FlsFree
 FlsGetValue
 FlsSetValue
 FlushFileBuffers
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
@@ -316,8 +324,6 @@ HcO H
 HcQ<H
 Hcu`M
 I+4$H
-IfA9,
-IfA9l
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
@@ -334,7 +340,6 @@ K&>.yC
 K0HcQ
 KERNEL32.dll
 KeyValuesFromJSON
-Kxr%>
 K}*n:	
 K~Je#>!
 L!|$(L!
@@ -353,7 +358,7 @@ L$@;|
 L$@E3
 L$@H3
 L$HH3
-L;553
+L;5eD
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
@@ -384,6 +389,7 @@ OptionsFile
 Ordered constructor wrapped type has no default constructor.
 Orientation
 Owner
+PA\][
 PA_A^A]A\_^]
 PAq=?Mp#
 Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
@@ -399,7 +405,6 @@ Position
 Priority
 Pz}b!
 QueryPerformanceCounter
-RMO)3d)
 RSDS[wv
 RaiseException
 RandomInt
@@ -425,8 +430,6 @@ Severity
 Source2
 Submitter
 Sunday
-T$8f;
-T$HfA;
 T$PE3
 TUUUU
 TerminateProcess
@@ -438,7 +441,6 @@ TlsFree
 TlsGetValue
 TlsSetValue
 Tuesday
-UAVAWH
 USVWATAUAVAWH
 USVWAVH
 UUUUUU
@@ -477,14 +479,14 @@ WriteFile
 Y9"SD
 [K]taM?
 \$ UH
-\$ UVWAVAWH
-\$ UWAVH
 \$ VWATAUAVH
+\$(fB
 \$0H;
 \$0eH
 \$8I;
-\$8fB
+\$@E3
 \$@H;
+\$PLc
 \\bugbait.valvesoftware.com\bugsub\config.txt
 ]J<0"0i3
 _RDATA
@@ -564,6 +566,7 @@ fB9<A}1L
 fD91uTL9r
 fD94H}aD
 fD9t$b
+false
 fffff
 ffffff
 fffffff
@@ -573,16 +576,13 @@ http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
-i[?*[
 ineID
 invalid_parameter
 jj@0HK4
 k0i0$
 l$ VWATAVAWH
-l$ WH
 l2|X/gGe
 log10
-lr5{6
 m0k0$
 mL+7H
 mwtMH
@@ -606,22 +606,19 @@ resource/bugreporter.res
 restrict(
 source2
 stack buffer overrun (/GS failure)
-t fA;
-t#fA;
 t$ E3
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
-t$0Hc
 t$8;;
 t$8H+
-t$PHc
-t$Pff
+t$XE3
 t$`L#
 t-Lck
 t7HcP
+t8IcA
 tRLcY
-tUH95]3
+tUH95
 tier0.dll
 twIcF
 u$D8r(t
@@ -638,26 +635,23 @@ vAD8s(t
 vKfffff
 valveusername
 vmc.com
-w&fA;
-wCfA;
-wVfA;
 www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
 x AVH
 x UAVAWH
 xWI96tRI
+xwPV 
 y\PD>!
 {un'%
 |$ ATAVAWH
 |$ AVH
 |$ D!
+|$0fB
 |$8E3
-|$@fB
-|$`E3
 |Lu?c
 |b=})>
-}0fA;
+});C$
 }LuHO
 ~qj#k"
 ~t&LN

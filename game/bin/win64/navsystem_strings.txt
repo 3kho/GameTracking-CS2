@@ -1,8 +1,9 @@
+																
 	!s99
 	6p7M
 	6p7MOf
 	Ic	L
-	V_qsort_s
+	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	_V_strncpy
 	_V_strnicmp_fast
@@ -12,6 +13,7 @@
 	j?l#
 	kE>fvw
                           
+ !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  %02d. %-30s  %s
@@ -19,7 +21,6 @@
  'L>[
  A]A\_^[
  A^A\_
- A^A]A\_^
  A^A]_
  A^_^
  A^_^][
@@ -47,6 +48,7 @@
  Hc)L
  Hc*L
  Hc2L
+ HcA L
  Lc)H
  Lc1H
  Type Descriptor'
@@ -57,9 +59,8 @@
  took %0.3f sec, produced %d polys
 !>6'Y
 !hn7!
+")_~,
 $Ic?;
-$Mc7I
-%	V_stricmp_fast
 %d %d %d
 %d %d %d %d
 %f %f
@@ -80,16 +81,20 @@ $Mc7I
 (A_A^
 (A_A^A]A\_^][
 (A_A^_^][
+(D$ E
 (D$ H
 (D$ I
 (D$ M
 (D$0D
 (D$0I
+(D$0f
+(D$@D
 (D$PD
 (D$PH
 (D$PL
 (D$`H
 (D$pD
+(L$ D
 (L$ H
 (L$0D
 (L$0H
@@ -102,6 +107,7 @@ $Mc7I
 (Lc)H
 (Output drawable)
 (T$ D
+(T$ H
 (T$ fD
 (T$0D
 (T$@D
@@ -129,7 +135,9 @@ $Mc7I
 (l$`L
 (l$pD
 (null)
+(t$ A
 (t$ D
+(t$ H
 (t$ I
 (t$ L
 (t$ f
@@ -146,17 +154,19 @@ $Mc7I
 (t$PL
 (t$`D
 (t$`H
+(t$`I
 (t$`L
 (t$pD
 (t$pH
 (t$pL
 (|$ D
 (|$ H
+(|$0A
 (|$0D
 (|$@D
-(|$@E
 (|$@I
 (|$PA
+(|$PD
 (|$PE
 (|$`D
 (|$`E
@@ -165,17 +175,16 @@ $Mc7I
 (|$pD
 (|$pI
 (|$pL
+)<$fD
 )>6{1n
+)D$ D
 )D$ H
 )D$ L+
 )D$0A
-)D$0D
 )D$0L
-)D$@B
 )D$@D
-)D$@H
 )D$PD
-)D$`B
+)D$pB
 )D$pD
 )D$pH
 )D$pI
@@ -183,13 +192,15 @@ $Mc7I
 )L$ D
 )L$ E
 )L$ HcA
+)L$0D
+)L$0Hc
 )L$@A
 )L$@uTH
-)L$PB
+)L$PHc
 )L$`D
 )L$pD
-)L$pM
 )L$pf
+)T$ D
 )T$ H
 )T$ fD
 )T$0Hc
@@ -207,10 +218,10 @@ $Mc7I
 )d$ D
 )d$ L
 )d$@f
-)d$`A
 )d$`D
 )d$pD
 )l$ L
+)l$ fD
 )l$0E
 )l$PD
 )l$`D
@@ -220,18 +231,21 @@ $Mc7I
 )t$ E
 )t$ H
 )t$0D
-)t$0E
+)t$0Hc
 )t$0M
 )t$@H
 )t$@L
 )t$@M
 )t$@f
 )t$PD
+)t$PL
 )t$`E
 )t$`L
+)t$pE3
+)t$pH
 )t$pI
-)|$ A
-)|$ L
+)|$ H;
+)|$0D
 )|$0H
 )|$0L
 )|$0M
@@ -245,6 +259,7 @@ $Mc7I
 )|$`E3
 )|$`H
 )|$pE
+*	V_qsort_s
 *D;	|
 *StO9>T
 +D$PD
@@ -252,6 +267,7 @@ $Mc7I
 +M<7>
 +Xt@(
 +YA1A
++YA1H
 +f)>0'
 +h->|
 +o'q)}
@@ -261,13 +277,17 @@ $Mc7I
 ,X< w
 ,YA1A
 ,y*Hi
+-> Success (%d attempts)
+-YA1H
 -YA1f
+-hX8 
 -sse2
 -sse3
 -sse4
 -tools
 .00cfg
 .?AU?$default_delete@VCNavGenPolyProcessorStageBase@@@std@@
+.?AUVDataInitInfo_t@@
 .?AV<lambda_1>@?1??BlockCustom@CNavTree@@QEAAXAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@
 .?AV<lambda_1>@?1??CalcClusters_A@CNavTree@@QEAAXXZ@
 .?AV<lambda_1>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@
@@ -277,10 +297,14 @@ $Mc7I
 .?AV<lambda_1>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@
 .?AV<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@Z@
 .?AV<lambda_1>@?4??CutTreeToPhysics@@YAXAEAVCNavTree@@HM_NMAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@
+.?AV<lambda_1>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV<lambda_1>@?BG@??SplitPolysByMarkup@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@_NNNN@Z@
 .?AV<lambda_2>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@
 .?AV<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@
+.?AV<lambda_2>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV<lambda_2>@?L@??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@
+.?AV<lambda_3>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
+.?AV<lambda_4>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@
 .?AV?$CBaseAppSystem@VINavSystem@@@@
 .?AV?$CRefCountServiceBase@VCRefMT@@@@
 .?AV?$CRefCounted1@VIRefCounted@@V?$CRefCountServiceBase@VCRefMT@@@@@@
@@ -308,6 +332,7 @@ $Mc7I
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@ZPEAV3@AEBU?$_Ph@$00@2@MMMM_NM_N@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEBV4@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@M@std@@
 .?AV?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EBA_NAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@ZPEAV3@AEBU?$_Ph@$00@2@@std@@
+.?AV?$_Func_base@VVecDouble3@@AEBV1@@std@@
 .?AV?$_Func_base@X$$V@std@@
 .?AV?$_Func_base@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@@std@@
 .?AV?$_Func_base@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV1@@std@@
@@ -325,10 +350,14 @@ $Mc7I
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@_NHPEBV?$Vec3D@M@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?3??GenerateConnections@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@NNNN_NN1@Z@X$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CutTreeToPhysics@@YAXAEAVCNavTree@@HM_NMAEBV?$function@$$A6A_NAEBUAABB_t@@@Z@std@@@Z@_NAEBUAABB_t@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_1>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?BG@??SplitPolysByMarkup@CNavGenPolyProcessor@@QEAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@_NNNN@Z@_NAEBVCNavGenPoly@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??CalcClusters_C@CNavTree@@QEAAXAEBV?$function@$$A6A_NHPEBV?$Vec3D@M@@@Z@std@@@Z@XAEBUTreeIter_t@3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??RunBuildTree@@YAXAEAVCNavTree@@HAEBUAABB_t@@AEBVIVPhysics2World@@PEAV?$CUtlHashtable@PEBVIPhysicsBody@@Uempty_t@@U?$DefaultHashFunctor@PEBVIPhysicsBody@@@@U?$DefaultEqualFunctor@PEBVIPhysicsBody@@@@Uundefined_t@@V?$CUtlMemory@V?$CUtlHashtableEntry@PEBVIPhysicsBody@@Uempty_t@@@@H@@$00@@@Z@_NAEBU4@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?L@??NavGenRunSpaceBuild@@YAXAEBVCNavGenInput@@AEBVIVPhysics2World@@PEAVCNavGenOutput@@@Z@X$$V@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_3>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
+.?AV?$_Func_impl_no_alloc@V<lambda_4>@?8??RunPolyClipInternal@CNavGenPolyProcessor@@AEAAXAEBVCNavGenInput@@AEAV?$CUtlVector@V?$Vec3D@M@@HV?$CUtlMemory@V?$Vec3D@M@@H@@@@AEAV?$CUtlVector@IHV?$CUtlMemory@IH@@@@AEAV?$CUtlVector@UNavGenProcessorMovableMeshInput_t@@HV?$CUtlMemory@UNavGenProcessorMovableMeshInput_t@@H@@@@AEAVCNavGenDebugData@@_NHPEAV?$shared_ptr@VCNavGenPolyProcessorStageBase@@@std@@H6@Z@VVecDouble3@@AEBVVecDouble3@@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V?$_Binder@U_Unforced@std@@P8CNavGenPolyProcessor@@EAAXAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@0AEBVCNavGenParams@@N@ZPEAV3@AEBU?$_Ph@$00@2@AEBU?$_Ph@$01@2@AEBV5@M@std@@XAEAV?$CUtlVector@VCNavGenPoly@@HV?$CUtlMemory@VCNavGenPoly@@H@@@@AEAV3@@std@@
@@ -387,10 +416,15 @@ $Mc7I
 .CRT$XCC
 .CRT$XCU
 .CRT$XCZ
+.CRT$XDA
+.CRT$XDU
+.CRT$XDZ
 .CRT$XIA
 .CRT$XIC
 .CRT$XIZ
 .CRT$XLA
+.CRT$XLC
+.CRT$XLD
 .CRT$XLZ
 .CRT$XPA
 .CRT$XPX
@@ -438,10 +472,10 @@ $Mc7I
 /@4w0
 /C r2
 /C$r%
-/D/(wR
+/D/(wZ
 /E v#H
+/F v"H
 /G v"H
-/T8 vb
 /\$XvOA
 /x4w)
 0 0 0
@@ -460,6 +494,7 @@ $Mc7I
 0A_A^A]A\_^]
 0A_A^_
 0A_A^_^]
+0YA1H
 0iN>/
 0w0c1
 0}0i1
@@ -473,7 +508,7 @@ $Mc7I
 220323000000Z
 220801000000Z
 230714000000Z
-230926000542Z0/
+240522183519Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -489,11 +524,12 @@ $Mc7I
 3>N;kU
 3>fvw
 3mq+<
-4@Mc$
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+5%llu
 5FjiT
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
+6D8$.u
 6I]Dc
 6OB,n_
 6p7MOf
@@ -501,31 +537,33 @@ $Mc7I
 7YA1A
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
 80tWD
-8A_A]
 8A_A]_^
 8A_A^A]A\_^][
 8Csinf
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
-8HcA\
 9)t/A
 9)~P3
 90t*A
 90tLD;
 98t H
 98tHD;
-98~k3
+98~_3
+98~sL
+99~CE
 9>~@H
 9T$LD
 9W0|<
 9YA1i
 9\$hu
 9i(~xH
+9p@u+
+9t$Pu	
 9|$(u
-:VN<H-
 ;1#INF
-;8}NH
+;8}TH
+;?0123456789:;<=>?
 ;D$PL
 ;H9>&X
 ;I9}(tiH
@@ -534,7 +572,10 @@ $Mc7I
 <	u\L
 <	w	@
 < t=<	t9
+<(L;t$`
 <0:08
+<9bk*8
+<@Lc<
 <Ct-<D
 <St[@:
 <array: %u elements>
@@ -554,7 +595,6 @@ $Mc7I
 =imb;D
 =rIQU
 >%H5<mN
->%llu
 >0 = watershed, 1 = monotone, 2 = layers
 >0<0:
 >>NAVGEN MOVABLE: Skipping movable mesh... no polys present
@@ -573,11 +613,11 @@ $Mc7I
 >>NAVGEN: pass %d/%d: orig tris %d
 >>NAVGEN: stage %02d / %02d: 
 >>NAVGEN: stage %02d / %02d: %s, disabled
+>D8$/u
 >Mp$d
 >c;j1
 >jtm}S
 >vAA;
-?/IxGs
 ?333333
 ?7zQ6$
 ?:kP<
@@ -594,27 +634,33 @@ $Mc7I
 ?AllocAligned@CUtlScratchMemoryPool@@QEAAPEAXHH@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?DevMsg@@YAXPEBDZZ
 ?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z
+?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Format@CUtlString@@QEAAHPEBDZZ
 ?Free@CRawAllocator@@SAXW4RawAllocatorType_t@@PEAX_K@Z
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
 ?GetFloat@KeyValues@@QEBAMPEBDM@Z
 ?GetInt@KeyValues@@QEBAHPEBDH@Z
-?GetString@KeyValues@@QEAAPEBDPEBD0PEAD_K@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
+?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
 ?IsEmpty@KeyValues@@QEBA_NPEBD@Z
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?LockForRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?Purge@CUtlMemoryBlockAllocator@@QEAAXXZ
 ?Purge@CUtlString@@QEAAXXZ
 ?QY^&
+?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?SaveKV3@@YA_NAEBUKV3ID_t@@0PEBVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@I@Z
+?SaveKV3Text_NoHeader@@YA_NPEBVKeyValues3@@PEAVCUtlString@@1I@Z
 ?Set@CUtlString@@QEAAXPEBD@Z
 ?SetDirect@CUtlString@@QEAAXPEBDH@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?StartsWith@CBufferString@@QEBA_NPEBD@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?TrimTail@CBufferString@@QEAAPEBDPEBD@Z
 ?UUUUUU
@@ -627,7 +673,9 @@ $Mc7I
 ?ujJcL.
 @.data
 @.reloc
+@83t8
 @84)u
+@8=If
 @8j(t
 @8k(t
 @8w$t
@@ -637,6 +685,7 @@ $Mc7I
 @>%>b
 @A^A]A\_^
 @A^_^
+@A^_^][
 @A_A^A\
 @A_A^A\_^][
 @A_A^A]
@@ -645,6 +694,7 @@ $Mc7I
 @A_A^A]_^
 @A_A^_
 @A_][
+@A__^
 @H9AhH
 @HcD$HH
 @HcD$L
@@ -667,6 +717,7 @@ $Mc7I
 @SWAWH
 @UATAUAVAWH
 @UAVH
+@UAWH
 @USVWATAUAVAWH
 @USVWATAUAVH
 @USVWATAVAWH
@@ -677,7 +728,9 @@ $Mc7I
 @UWAWH
 @VAVAWH
 @VAWH
+@VWAWH
 @WATAUAWH
+@WATH
 @WAUAVH
 @WAVAWH
 @WAWH
@@ -685,6 +738,7 @@ $Mc7I
 @b;zO]
 @ffffff
 @p8Ap
+@t9Gt
 A+P@H
 A0E9L$,
 A8}(u
@@ -704,15 +758,17 @@ ATAUH
 ATAVAWH
 ATAVH
 AUAVAWH
-AUAWH
 AVAWH
 AVOID
+A\_^]
 A]A\[
 A]A\_]
 A]A\_^[
 A]A\_^][
+A]_[]
 A]_^[
 A]_^[]
+A^A\[
 A^A\[]
 A^A\^[]
 A^A\_]
@@ -720,37 +776,34 @@ A^A\_^[
 A^A]A\
 A^A]A\[]
 A^A]A\_^[]
-A^A]A\_^]
 A^A]A\_^][
-A^A]^
 A^A]_
-A^A]_^[]
+A^^[]
 A^_^[]
-A^_^][
 A_A\[]
 A_A]A\
 A_A]A\]
+A_A]A\_^[
 A_A]A\_^[]
-A_A]A\_^][
 A_A]^[]
 A_A]^]
-A_A]_[
 A_A]_[]
 A_A]_^[]
 A_A^A\
-A_A^A\[H
 A_A^A\^[
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
-A_A^A\_^[]H
+A_A^A\_^]
 A_A^A\_^][
 A_A^A]A\]
 A_A^A]A\^][
 A_A^A]A\_
+A_A^A]A\_^[
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
+A_A^A][]
 A_A^A]_]H
 A_A^A]_^
 A_A^A]_^[]
@@ -759,10 +812,9 @@ A_A^]
 A_A^^
 A_A^^]
 A_A^_
-A_A^_^[
-A_A^_^]
+A_A^_[]
+A_A^_^]H
 A__^]
-A`IcE
 AddJumps
 AlignedByteArray not properly aligned
 Always false
@@ -770,6 +822,7 @@ Always true
 AnimGraphEditorUtils001
 AnimationSystemUtils_001
 AnimationSystem_001
+ApIcE
 AppPolicyGetProcessTerminationMethod
 April
 AreFileApisANSI
@@ -778,7 +831,6 @@ AssetPreviewSystem_001
 AssetRenameSystem_001
 AssetSystem001
 AssetSystemTest001
-Atexcoord
 August
 B(HcQ
 B(I9A(
@@ -796,51 +848,58 @@ BenchmarkService001
 BinaryProperties_GetValue
 BoneConstraintList
 Buffer to add to agent radius before passing to nav gen
+C ;C$t
 C H!)H
 C H9A
+C0@84
 C0Hc	H
 C:\buildworker\csgo_rel_win64\build\_build_\navsystem\_vpc_navsystem\default\win64\_msvc_\Retail\navsystem.pdb
-C:\buildworker\csgo_rel_win64\build\src\mathlib\mathlib.cpp
-C:\buildworker\csgo_rel_win64\build\src\navlib\nav_gen_recast.cpp
 C:\buildworker\csgo_rel_win64\build\src\navlib\nav_space_tree.cpp
-C:\buildworker\csgo_rel_win64\build\src\schemalib\schemaclassinfo.cpp
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
+C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\vnotifyapi.cpp
 CD$8D
 CKeyValues3Context::Root
 CMemAllocSystemInitialize
-CNavGenRecast::SetInput
-CNavGenRecastTile::BuildPolyMesh
-CNavGenRecastTile::CreateContours
-CNavGenRecastTile::CreateVoxels
-CNavGenRecastTile::PartitionIntoSimpleRegions
 CNavHullPresetVData
 CNavHullVData
-CSchemaClassInfo::ReportClassError
+CONTENT
+CONTENTROOT
 CThreadedJob
 CUtlMemory_RawAllocator<class CUtlHashtableEntry<unsigned int,struct empty_t> >::EnsureCapacity
 CUtlMemory_RawAllocator<unsigned int>::EnsureCapacity
 CUtlMemory_RawAllocator<unsigned int>::Grow
+CUtlRBTree overflow with %u elements!
+CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullPresetVData *,class CDefLess<int>,int>::Node_t,int>,int> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CNavHullVData *,class CDefLess<int>,int>::Node_t,int>,int> >::Insert
 CXL;m
 Cannot allocate abstract class
 Cast of %s loses value information (returning %s)
+Class does not allow allocation from its schema binding
 ClientToolsInfo_001
 ClipPolysToHullClearance
 ClipPolysToHullClearanceInternal - too many non-reducing passes
+Close the group automatically after a short wait (good for 'success' messages)
+Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
 CloseHandle
 CommandLine
 Compact Heightfield
-ConnectInterfaceSingletons
 CorExitProcess
 CreateEventW
 CreateFileW
 CreateInterface
 CreateNewThreadPool
+CxE;<$
+D	V_stricmp_fast
 D!l$xA
+D$ D;
 D$ D;B,
 D$ E3
 D$ E;
 D$ Hc
+D$ I9P
+D$ I;R
 D$ L;
+D$ p9
 D$$;n
 D$$A;D$
 D$$E;
@@ -867,12 +926,12 @@ D$4Hc
 D$4fD
 D$8A;r,
 D$8D;
-D$8E3
 D$8H;
 D$8Hc
 D$8L9
 D$8L;
 D$8fff
+D$<E3
 D$<Hc
 D$@D;
 D$@E3
@@ -882,7 +941,9 @@ D$@H+
 D$@H;
 D$@H;F
 D$@H=
+D$@HcL
 D$@Ic
+D$@Nc
 D$DE3
 D$DHc
 D$FI;
@@ -890,7 +951,9 @@ D$H!0
 D$HA;B
 D$HA;Gh
 D$HE3
+D$HH=
 D$HIcD
+D$HL9gXt
 D$HfA
 D$Hff
 D$HtP
@@ -904,18 +967,18 @@ D$PH=
 D$PHc
 D$PI;
 D$PIcD
-D$PLcd$0
-D$TD+
 D$THc
 D$TM;
-D$XD;
+D$TfA
 D$XE3
 D$XE;
 D$XH;
 D$XH=
+D$XHc
 D$XHcC
 D$XLc
 D$_E3
+D$`D;
 D$`E3
 D$`E;
 D$`H;
@@ -928,9 +991,9 @@ D$h;t$H
 D$hE3
 D$hH=
 D$hHc
-D$hHcD
+D$hIcD
 D$hLcM
-D$lD;
+D$lE3
 D$pD8
 D$pE3
 D$pHc
@@ -939,11 +1002,7 @@ D$tE3
 D$xA;GP
 D$xA;Gh
 D$xD9
-D$xD9?
 D$xH;
-D$xH=
-D$xLc8
-D$|E3
 D(`H;
 D(`L;
 D+A@H
@@ -956,6 +1015,7 @@ D8$2u1H
 D8$2u4H
 D8$2u5A
 D81uUL9r
+D8L$0u`
 D8[(u
 D8`I;
 D8`L;
@@ -971,17 +1031,16 @@ D9)~,E
 D90t>
 D9B u
 D9D$<u
-D9L$Tt1D
+D9L$Tt.
 D9d$@
 D9t$ t
 D;T$X|"A+
 D;T$p|&A+
-D;d$8
 D;sHu
-D;|$8
+D;|$<
+DGsN6`
 DNnW'
 DV6Hk
-DdHKT
 December
 DeleteCriticalSection
 DemoUpconverterVersion001
@@ -1006,7 +1065,7 @@ E;l$,
 E;t$(
 EH*?H
 EHHcI
-EL$@H
+EPA;@`
 ERROR: CUtlSymbolTableLarge element limit of %u exceeded
 ERROR: Ladders starting at index %d are lacking connectivity info during IslandRemoval.
 ERROR: Unable to compute distance to poly %d from point at ( %g, %g, %g )
@@ -1022,6 +1081,7 @@ Enable/disable overhang detection
 EncodePointer
 EngineServiceMgr001
 EnterCriticalSection
+Error (problem that prevents task success)
 ExitProcess
 F H9H
 F Jc<
@@ -1036,21 +1096,28 @@ FindClose
 FindFirstFileExW
 FindNextFileW
 FindOverlaps
+FixupResourceName: Illegal full path passed in ("%s")!
+FixupResourceName: Illegal path, missing extension passed in ("%s")!
 FlattenedSerializersVersion001
 FlsAlloc
 FlsFree
 FlsGetValue
 FlsSetValue
 FlushFileBuffers
+Follow user preference
 FontManager_001
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
+Fx@8x
 G 9(t
+G ;G$t
+GAMEROOT
 GD$8A
+GL$8A
 GT$8A
 GT$8H
-GT$hH
 G_ rr
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -1063,6 +1130,7 @@ GetCommandLineA
 GetCommandLineW
 GetConsoleMode
 GetConsoleOutputCP
+GetCurrentPackageId
 GetCurrentProcess
 GetCurrentProcessId
 GetCurrentThreadId
@@ -1082,30 +1150,38 @@ GetStartupInfoW
 GetStdHandle
 GetStringTypeW
 GetSystemTimeAsFileTime
-Gffffff
+GetSystemTimePreciseAsFileTime
+GetTempPath2W
+GetThreadLocalStackAllocator
+Gl$HI
+Gt$8H
+GxHcD$P
+G|$8L
 H SVH
 H SVWH
 H UATH
-H USVWAVH
-H UVWAVAWH
+H USWAVAWH
 H!D$ I
 H!T$0D
 H-^Eu
 H9(t8
+H91t?H9q
 H97u+A
 H99tjH
 H9;t	H
-H9=Uk
 H9s@H
 H9sHH
 H9sPH
+H9t$pt
 H9{8H
 H9{@H
 H9{HH
 H;+|T~UH
 H;;|X~YH
 H;XXs
+H;\$`
 H;\$x
+H;t$@
 H;xXu5
 H;|$8
 HA^A\_^
@@ -1123,23 +1199,25 @@ Hc;HcCH;
 HcC H
 HcCHH
 HcD$ H
-HcD$0
 HcD$<
+HcD$@
 HcD$@I
 HcD$DH
-HcD$H
-HcD$P
+HcD$PH
 HcD$`H
+HcD$p
 HcD$pH
 HcD$x
-HcD$xJ
 HcE L
 HcE_H
-HcEpE
+HcE_L
+HcEgH
 HcF(H
 HcF0H
+HcF\H
 HcG H
 HcG0H
+HcG\H
 HcH H
 HcH I
 HcI(Hc
@@ -1151,11 +1229,14 @@ HcO H
 HcQ<H
 HcT$@
 HcWPH
+Hcl$PL
 Hcp D;
 Hct$@H
 Hcu`M
+Hc|$P
 Hc|$xH
 HelpSystem_001
+Hide unless error/warning occurs
 HostStateMgr001
 I+4$H
 I0IcG
@@ -1169,10 +1250,12 @@ Ic4$A;t$
 Ic4$M
 Ic6A;v
 Ic<$E
-Ic<$H
+Ic<$M
+Ic?A;
 IcB,I
 IcD$,3
 IcE(I
+IcF\H
 IcL$,3
 IcL$,I
 IcS,B
@@ -1182,8 +1265,8 @@ IcT$,L
 IcU0E3
 Ic\$ A;\$0u
 Ic^(A
+Ic^@A
 Ic_XA;_hu
-If true, nav areas will be placed flush with the ground when split.
 Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
@@ -1199,6 +1282,7 @@ IsDebuggerPresent
 IsProcessorFeaturePresent
 IsValidCodePage
 IslandRemoval
+IslandRemoval - unable to find a poly near navlink location %g %g %g
 J>@G_
 January
 K&>.yC
@@ -1206,19 +1290,20 @@ K(H;K0}
 K(H;K0} H
 K0D9}
 K0HcQ
-K4LcC0
 KERNEL32.dll
 KeyValueCache001
-KlLcCh
 K}*n:	
 K~Je#>!
+L!d$(L!d$@D
 L!|$(L!
 L$ A;
+L$ AUH
 L$ E;
 L$ Hc
 L$ I;
 L$ L;
 L$ Lc
+L$ SH
 L$ USATH
 L$ UVWATAUAVAWH
 L$ VWATAUAVAW
@@ -1227,59 +1312,61 @@ L$ WATAUAVAWH
 L$ WH
 L$ fff
 L$ |+L;
-L$$E3
 L$&8\$&t,8Y
 L$(D;
 L$(E3
 L$(Hc
 L$(Lk
+L$,;o
 L$,D;
 L$0A+
+L$0D;(
 L$0D;l$ 
 L$0E+
 L$0E;
 L$0H3
 L$0H;
 L$0I;
-L$0Lc
 L$0fA
-L$4A;n
 L$4E3
 L$4HcD$<H
+L$8;HH
+L$8;k
+L$8A+
 L$8A;
-L$8A;@`
 L$8E3
 L$8H3
+L$8Lc
 L$8f;
 L$8fI
 L$<fB
 L$@;|
-L$@A9I
-L$@D;|$$
-L$@E3
+L$@D;d$$
 L$@H3
 L$@Hc
 L$@I;
 L$@Mc
 L$@fff
-L$@sp
 L$DD;
 L$DL+
-L$Dff
 L$HD;X
 L$HLc
+L$Hff
 L$PE;
+L$PfA
 L$XE+
 L$XE;
 L$XL9L$p
+L$XLc
 L$XLk
+L$`;M
 L$`A;^
 L$`E+
-L$lD;
+L$h;M
 L$pA;
 L$pE3
-L$pHcL
-L$tH;
+L$pE;
+L$pHc
 L$xE3
 L$xH;
 L$xLcF(A
@@ -1287,16 +1374,15 @@ L9` u
 L9t$ht
 L;\$ 
 L;l$8
+L;|$X
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
 LD$L+D$HD
-LOG_GENERAL
 LadderConnect
 Lc!E3
-Lc#D;c
+Lc'D;g
 Lc)E3
-Lc3D;s
 Lc6D;v
 Lc7D;w
 Lc7L+
@@ -1310,8 +1396,6 @@ LcD$HL
 LcL$0
 LcL$0H
 LcL$8E;
-LcL$@H
-LcL$XH
 LcMhA
 LcO(H
 LcT$`
@@ -1328,7 +1412,7 @@ Lct$8
 Lct$hJ
 Lc{8D;{H
 Lc{xE
-Lc|$<E;
+Lc|$@E;
 Lc|$HE;
 LeaveCriticalSection
 Level of validation for nav system.  Higher will be slower.
@@ -1343,6 +1427,7 @@ LoadLibraryExW
 LocaleNameToLCID
 Localize_001
 LoggingSystem_IsChannelEnabled
+LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LookAtList
 Lt$@A
@@ -1352,23 +1437,23 @@ MB(iVR
 MGD;}
 MM/dd/yy
 MODEL_PROCESSING_SERVICES_INTERFACE_001
+MPHcA
 MT$ E;
 MapListService_001
+MapViewOfFile
 March
 MatchPolysToGround
 MaterialUtils_001
-MathLib_Init
 Mc&E;f
 Mc'E;g
-Mc4$@
 Mc4$E;t$
 Mc7E;w
 Mc>E;~
 McL$HI
 McOPI
 McOhI
-Mcw0A
 Mc|$4
+Mc~0A
 MemAlloc_AllocFunc
 MemAlloc_FreeFunc
 MemAlloc_StrDupFunc
@@ -1407,6 +1492,7 @@ NavDetailSampleMaxError
 NavEdgeMaxError
 NavEdgeMaxLen
 NavGameTest001
+NavGravity_t
 NavHullsPreset
 NavMesh
 NavRegionMergeSize
@@ -1415,7 +1501,6 @@ NavSmallAreaOnEdgeRemovalSize
 NavSystem
 NavSystem001
 NavTileSize
-NavVertexAttributeVertexNormal
 NavVertsPerPoly
 NetworkClientService_001
 NetworkMessagesVersion001
@@ -1423,16 +1508,23 @@ NetworkP2PService_001
 NetworkServerService_001
 NetworkService_001
 NetworkSystemVersion001
+Never close the group automatically (used to indicate an error like the process exiting unexpectedly)
 Not safe to 'new' this class due to alignment requirements
 November
+O4LcG0
 O8HcB
 October
+OlLcGh
+OpenFileMappingA
+OpenMutexA
 Ordered constructor wrapped type has no default constructor.
+OverlayProjectionDirection
 P HcK
 P HcM
 P Hc{
 P IcL$
 P IcO
+P"IAN
 P(D8s	t
 PA;~`
 PA\][
@@ -1444,7 +1536,6 @@ PA_A^A]A\_^]
 PA_A^_
 PA_A^_^]
 PAq=?Mp#
-PE;,$
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
@@ -1457,10 +1548,12 @@ Plat_DebugPrint
 Plat_ExitProcess
 Plat_FatalErrorFunc
 Plat_FloatTime
+Plat_GetEnv
 Plat_IsInDebugSession
+Plat_IsInHeadlessMode
+Plat_IsRunningOnCustomerMachine
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Please move your current gameinfo.gi agent settings to a %s file and create a %s file with a 'default' entry containing all the nav nulls. Then add "NavHullsPreset" "default" to your gameinfo.gi file. For now we'll continue to load the agent settings but this path is deprecated ( antonioc@ ).
 Pointers cannot be used as numeric values
 Polyclip : Adding Jumps...
@@ -1470,11 +1563,11 @@ Polyclip pipeline:
 PostProcessingSystem_001
 PropWorldOrigin
 PropertyEditorSystem_001
-PyNE3
 Pz}b!
 Q HcB
 QueryPerformanceCounter
 RaiseException
+RandomInt
 Raw Contours
 Recast
 Recast: 
@@ -1483,6 +1576,7 @@ RegisterConCommand: Unknown error registering con command "%s"!
 RegisterConVar: Unknown error registering convar "%s"!
 RegisterStringToken
 Release
+ReleaseMutex
 RemoveDegens
 RemovePolysMarkedNoNav
 RemoveSmallAreasOnEdge
@@ -1501,19 +1595,19 @@ ReturnJobManualEventToPool
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlPcToFileHeader
+RtlUnwind
 RtlUnwindEx
 RtlVirtualUnwind
 S0Q0O
 SATAUAWH
 SATAUH
-SATAVAWH
+SATAVH
 SA|X=G
 SSE and SSE2 are required.
 SUATH
 SUVATAUAVAWH
 SUVWATAUAVAWH
 SUVWATAUAVH
-SUVWATAUAWH
 SUVWATAUH
 SUVWATAVAWH
 SUVWATH
@@ -1525,12 +1619,11 @@ SUWATAWH
 SVATAVAWH
 SVAUAVAWH
 SVWATAUAVAWH
+SVWATAUAWH
 SVWATAUH
 SVWATAVH
 SVWAUH
-SVWAVAWH
 SWATH
-SWAUAWH
 SWAUH
 SWAVH
 SWAWH
@@ -1549,8 +1642,8 @@ SetLastError
 SetStdHandle
 SetUnhandledExceptionFilter
 Show areas that are potentially visible from the current nav area
+Show regardless of user setting
 Simplified Contours
-SkeletalInputSettings
 SleepConditionVariableCS
 SoundOpSystem001
 SoundOpSystemEdit001
@@ -1568,7 +1661,7 @@ Source2GameEntities001
 Source2Host001
 Source2Server001
 Source2V8System001
-Space gen: %d / %d finished
+Space gen: %d / %d finished, %d cells
 SplitBottleneckPolys
 SplitBoundaryPolysWithConnections
 SplitPolysByMarkup
@@ -1582,20 +1675,15 @@ T$ D8
 T$ D;&
 T$ E3
 T$ fD
-T$(D;
 T$(E;
 T$(H;
 T$(L;
-T$(fff
-T$0;Y`
 T$0D8O
 T$0E3
 T$0H;
 T$0Ic
-T$0ff
 T$4I;
 T$4u#
-T$8;Q
 T$8D;
 T$8D;~
 T$8E3
@@ -1604,14 +1692,14 @@ T$@A;Q
 T$@D;N,
 T$@E3
 T$@E;S
-T$@Hc
 T$HA;A
 T$HA;W
-T$HI;
+T$HH;
 T$HLcL$0E3
 T$P9D
 T$PE3
 T$PH;M
+T$PHc
 T$`D9L$<
 T$`L+
 T$`L;
@@ -1619,13 +1707,15 @@ T$hE3
 T$pE#
 T$pH;
 T$pHcL
-T$xfff
+T$|HcL
 TUUUU
 TerminateProcess
 TestBoxHullForClipDir - polyBack is empty
 TestScriptMgr001
 TextLayout_001
 This convar is being accessed prior to ConVar_Register being called
+ThreadGetCurrentProcessId
+ThreadSleep
 Thursday
 Tile Boundaries
 TlsAlloc
@@ -1636,39 +1726,43 @@ Too much Recast debug data; skipping tile
 ToolFramework2_002
 ToolSceneNodeFactory_001
 ToolService_001
+TransformRecastNonZup
+TrySendVNotify - SendKV3 failed
 Tuesday
 U IcE
+U&oLX3
 U8E;`
 UATAUAVAWH
 UATAUAWH
 UAVAWH
-UPIcL
+UP9W`
+UPMcm
 USATAUAVH
 USATAVH
 USATAWI
+USAUAVAWH
 USAVAWH
+USAVH
 USVATAVH
 USVAUAWH
 USVWATAUAVAWH
 USVWATAUAWH
-USVWATAVAWH
 USVWAUAVAWH
-USVWAUAVH
 USVWAUAWH
-USVWAUH
 USVWAVH
 USWAUAWH
+USWAUH
 UT$@A
 UUUUUU
 UUUUUUUUH
 UVATH
-UVAUAWH
 UVAUAWI
 UVAVAWH
 UVAVH
 UVAWH
 UVWATAUAVAWH
-UVWATAUAVH
+UVWATAVAWH
+UVWATH
 UVWAUAVH
 UVWAUAWH
 UVWAVAWH
@@ -1680,8 +1774,10 @@ UWAUH
 UWAVH
 UWAWH
 U_0=1
+UnTransformRecastNonZup
 UnhandledExceptionFilter
 Unknown exception
+UnmapViewOfFile
 Unsupported KV3 basic type '%s' (%d)!
 UtlMemory_Alloc
 UtlMemory_CalcNewAllocationCount
@@ -1695,10 +1791,20 @@ VAsyncFileSystem2_001
 VAvi001
 VBik001
 VConComm001
+VData:%s
 VEngineCvar007
 VFileSystem017
 VMaterialSystem2_001
 VMediaFoundation001
+VNOTIFY_DISABLE
+VNotify
+VNotify Abandoned (ActiveProtocolIsNewer)
+VNotify Abandoned (No ProcessUtils)
+VNotify Abandoned (Not enabled)
+VNotify Sent
+VNotify StartProcess failed!
+VNotify: %s
+VNotify_Internal_PostOrLaunchIfNeeded
 VP4003
 VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
@@ -1710,10 +1816,10 @@ VScriptDbg
 VScriptManager010
 VStringTokenSystem001
 VUUUA
+VUUUE
 VUUUH
 VUUUI
 VUUUL
-VWATAUAVH
 VWATAVAW
 VWATAVAWH
 VWATAVH
@@ -1721,11 +1827,13 @@ VWAUAVAWH
 VWAUAWH
 VWAVH
 VWAWH
-VXHcD
 V_DoubleToString_Unsafe
 V_FloatToString_Unsafe
+V_GetFileExtension
 V_Int32ToString_Unsafe
 V_Int64ToString_Unsafe
+V_IsAbsolutePath
+V_RemoveDotSlashes
 V_StringParseError
 V_StringToBool
 V_StringToColor
@@ -1742,12 +1850,15 @@ V_StringToVector
 V_StringToVector2D
 V_StringToVector4D
 V_UInt64ToString_Unsafe
+V_UnqualifiedFileName
 V_cosd
 V_fpclassifyd
 V_~]	,
 ValidateVertices
 Valve Corp.0
 Valve Corp.1
+ValveSMMem:%s
+ValveSMMut:%s
 VertexElementAnnotation
 VertexGenericIntegerData
 VertexPaintBlendParams
@@ -1755,14 +1866,18 @@ VertexPaintBlendParams1
 VertexPaintTintColor
 VisBuilder_001
 Vrad3_001
+VxHcD
 WALKABLESEED
 WARNING: Failed to load %s: %s
+WARNING: VNotify abandoned after too many attempts:
 WATAUAVAWH
 WATAUAVH
 WAUAVH
 WAVAWH
+WaitForSingleObject
 WaitForSingleObjectEx
 WakeAllConditionVariable
+Warning (problem that doesn't prevent forward progress)
 Washington1
 Wednesday
 WeldVertices
@@ -1770,37 +1885,34 @@ WideCharToMultiByte
 WorldRendererMgr001
 WriteConsoleW
 WriteFile
-X	V_vsnprintf
 X D8e
 X SVWH
-X USVWAVH
-X USWH
+X USVAVH
 X!t5~
 XA]_^[
 XA^A]A\_
 XA_A^A]A\_^][
 XD$hA
 XL$HE9
-XL$|I
+XL$|H
 Y HcA
 Y u!H
 Y9"SD
-YL$0A
 YL$HA
 YT$xA
 Yd$ A
 ZdN=Y
+[Default] Determine a lifespan based on the warning/error state of the group
+[Default] General information
+[IcE\
 [K]taM?
 [aOni*{
-\$ AVH
 \$ D+
-\$ E9
 \$ I+
 \$ UAVAWH
 \$ UVWH
 \$ VH
 \$ VWATAUAVH
-\$(D;
 \$(_^
 \$0A+
 \$0E3
@@ -1808,19 +1920,20 @@ ZdN=Y
 \$0Hc
 \$0eH
 \$0ff
-\$0uMH
 \$8D;
 \$8E3
 \$8I;
 \$<D9]
-\$<E3
 \$@A+
 \$@E3
 \$@E9Z,
 \$@H;
 \$@I;
+\$@Ic
 \$@L;
+\$@t\D9g
 \$@u!H
+\$@uMH
 \$DfD
 \$Hfff
 \$PH;
@@ -1833,20 +1946,17 @@ ZdN=Y
 \$\D;
 \$`Hk
 \$`I+
-\$`fff
 \$pE3
 \$xIc
 \$xfE
-\$|A9X`
 \D$@A
 \D$`A
-\J(Lc
 \L;ug
 \T$`f
+\d$(A
 ]3E;|$H
 ]J<0"0i3
-]PIcEPI
-]pD;g
+]pIcEpI
 ^<V7w
 ^`LcD
 _ ;_$t
@@ -1920,15 +2030,26 @@ _not_pickable
 a7hIw
 abcdefghijklmnopqrstuvwxyz
 addEdge: Too many edges (%d/%d).
+address family not supported
+address in use
+address not available
+already connected
+argument list too long
+argument out of domain
 array
+bad address
 bad exception
+bad file descriptor
 bad function call
+bad message
 bentnormal
+binary
 binary_blob
 blendindices
 blendweight
 blendweights
 bp(=>?g
+broken pipe
 buildNavigation: Could not build compact data.
 buildNavigation: Could not build detail mesh.
 buildNavigation: Could not build distance field.
@@ -1951,9 +2072,17 @@ buildPolyDetail: Could not triangulate polygon (%d verts).
 c [1>H'
 c(>\,
 canRemoveVertex: Out of memory 'edges' (%d).
+clear_group
 color
 compressedtangentframe
+connection aborted
+connection already in progress
+connection refused
+connection reset
+content/
+cross device link
 curvature
+d$ D!
 d$ UAVAWH
 d$(Lc
 d$(fD
@@ -1961,6 +2090,8 @@ d$(fff
 d$0fE
 d$0u"H
 d$4H;S
+d$8E3
+d$8Ic
 d$8L;d$`
 d$@I;
 d$IfD
@@ -1969,30 +2100,36 @@ d$PHc0
 d$PI#
 d$PL+
 d$PfE
-d$Tfff
-d$XD;f
+d$XE3
 d$XHcD$PH
 d$XI;
 d$`I;
+d$`L;
 d$`fD
+d$dD;d$ltY
 d$hD;m
 d$hM;
 d$pIcL
 d$xA;
 d$xLcA
-d$xtRI
 dddd, MMMM dd, yyyy
 default
 delaunayHull: Removing dangling face %d [%d,%d,%d].
+destination address required
+device or resource busy
+directory not empty
 double
-e	Warning
 e+000
 e0A_A^A]A\]
+e0IcL
 eLK(w
 ePA_A^A]A\_^]
 ehD9ep
+end_as_info
+end_group
 erodeWalkableArea: Out of memory 'dist / relX / relY' (%d).
 error
+executable format error
 f9)u4H9j
 f94Bu	
 f94Ju
@@ -2023,11 +2160,23 @@ false
 fffff
 ffffff
 fffffff
+file exists
+file too large
+filename too long
+flc_columns
+flc_count
+flc_file_ids
+flc_file_list
+flc_lines
 float32
 float64
+forever
+function not supported
+game/
+generic
 generic_data_type
-gfff+
 gfffA
+gfffA+
 gfffD
 gfffH
 gfffffff
@@ -2037,24 +2186,37 @@ gfffffffL
 gfffffffL+
 gfffffffL;
 gffffffff
+group
+group_title
 h VWATAVAWH
 h WAVAWH
 h(E9H
+h4T/+G
 hA]A\_^][
 hA]A\_^][H
 hA^A]A\^
 hA_A^A]A\_^[]
+host unreachable
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
 http://ocsp.digicert.com0X
 http://ocsp.digicert.com0\
 http://www.digicert.com/CPS0
+i(A9I
+identifier removed
+illegal byte sequence
+inappropriate io control operation
 ineID
 int16
 int32
 int64
+interrupted
 invalid
+invalid argument
+invalid seek
 invalid_parameter
+io error
+is a directory
 iu+-,
 jj@0HK4
 k0i0$
@@ -2071,6 +2233,7 @@ l$ WH
 l$(Mc
 l$,Hc.
 l$0E+
+l$0E3
 l$0Hc
 l$0Lc)
 l$4D+
@@ -2078,8 +2241,7 @@ l$8D;(
 l$8E3
 l$8E;
 l$8Lc
-l$8fff
-l$@D9ix
+l$@A+
 l$@E3
 l$@Mc
 l$@Mk
@@ -2094,30 +2256,31 @@ l$HHk
 l$HI;
 l$LD9l$t
 l$PA_A^A]A\_^
+l$PE;/
 l$PM;
 l$Pfff
-l$XD9l$l
 l$XE3
 l$XHc
+l$XHcL
 l$XIc
-l$XIcL
+l$XIcM
+l$XL;
 l$XfA
 l$Xfff
 l$`A;
-l$`E3
+l$`D9l$t
 l$`E;
-l$`M;
 l$h@2
 l$hfD;
 l$pHc
 l$pL;
-l$xD;vP
-l$x~AA
 l2|X/gGe
+lifespan
 log10
 lowprecisionuv
 lowprecisionuv1
 m0k0$
+mHMc,$E3
 mL+7H
 mPIcE
 m_agentBorderErosion
@@ -2131,13 +2294,16 @@ m_agentRadius
 m_agentShortHeight
 m_agentShortHeightEnabled
 m_bAgentEnabled
+m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
+m_bDefault
 m_bDrawLast
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bIsNotMatchedToMaterial
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
+m_vGravity
 m_vecNavHulls
 medianFilterWalkableArea: Out of memory 'areas' (%d).
 mergeAndFilterLayerRegions: Out of memory 'regions' (%d).
@@ -2148,7 +2314,10 @@ mergeRegionHoles: Failed to allocated diags %d.
 mesh_calculate_curvature_smooth_invert
 mesh_calculate_curvature_smooth_pass_count
 mesh_calculate_curvature_smooth_weight
+message
+message size
 model_default_preview_sequence_name
+monitor_pid
 mwtMH
 n03>Pu
 n<	fE
@@ -2198,16 +2367,43 @@ nav_gen_split_multi_connection_polys_tol
 nav_gen_true
 nav_gen_vertical_limit
 nav_max_vis_delta_list_length
+nav_pathfind_multithread
 nav_show_potentially_visible
-nav_split_place_on_ground
 nav_validate
 navsystem
 navsystem.dll
+network down
+network reset
+network unreachable
+no buffer space
+no child process
+no link
+no lock available
+no message
+no message available
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
 normal
+not a directory
+not a socket
+not a stream
 not approved
+not connected
+not enough memory
+not supported
 ntelA
 o(HcL+
 obwQ4
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
 operator
 operator "" 
 operator co_await
@@ -2215,7 +2411,9 @@ operator<=>
 optionallycompressedtangentframe
 ot$ H
 ot$PfA
+owner dead
 o|$pfA
+p UWAVH
 p*W4H
 p0R^G'
 p7M}f
@@ -2223,12 +2421,18 @@ p;>}	H
 p;Y>u
 pA\_^][
 pA^A]_^]
+pA^_[
 pA_A^A]A\_^[
-pH;t$@
+permission denied
 position
 posxyz
+priority
+process
+protocol error
+protocol not supported
 purecall
 qangle
+quiet
 r	Vr.>T
 r'w.H;
 r'w2H
@@ -2289,6 +2493,7 @@ rcBuildRegionsMonotone: Out of memory 'src' (%d).
 rcBuildRegionsMonotone: Out of memory 'sweeps' (%d).
 rcFilterNonWalkableSurface: Out of memory 'dist / relX / relY' (%d).
 rcRasterizeTriangles: Out of memory.
+read only file system
 recast_mark_overhang
 recast_partitioning
 removeVertex: Out of memory 'edges' (%d).
@@ -2303,16 +2508,27 @@ removeVertex: Out of memory 'tris' (%d).
 removeVertex: Out of memory 'tverts' (%d).
 removeVertex: Too many polygons %d (max:%d).
 removeVertex: triangulate() returned bad results.
+resource deadlock would occur
+resource unavailable try again
 restrict(
+result out of range
+rknE?
 s AWH
-sWfff
 s`H9sHH
 scripts/nav_hulls.vdata
 scripts/nav_hulls_presets.vdata
 shH9sPH
+short
+source_column
+source_file
+source_file_searchpath
+source_line
 spH9sXH
 stack buffer overrun (/GS failure)
+state not recoverable
+stream timeout
 string
+success
 svDE3
 t	Hcp
 t!IcL
@@ -2324,18 +2540,22 @@ t$ AVH
 t$ AWH
 t$ E3
 t$ Hc
+t$ Lc
 t$ UH
 t$ WATAUAVAWH
 t$ WATAVH
 t$ WATAWH
 t$ WAVAWH
 t$ WH
+t$ eL
 t$$B;t
 t$(A^
 t$(E2
 t$(E3
+t$0D8
 t$0E3
 t$0E9
+t$0fff
 t$4I+
 t$8;;
 t$8H+
@@ -2347,10 +2567,12 @@ t$@D8s	t
 t$@D9t$P|LH
 t$@E3
 t$@E9s
-t$@Lc
+t$@Ic
 t$HE3
 t$HE;
 t$HH;
+t$HHc
+t$HIc
 t$H}[H
 t$PE3
 t$XH+
@@ -2359,7 +2581,6 @@ t$XL;
 t$XfE
 t$Xu	A
 t$`H;
-t$`Hc
 t$`L#
 t$`Lc
 t$`|NH
@@ -2374,29 +2595,40 @@ t$xfE
 t$xt*3
 t%E;P
 t'<Zt
-t'D;F
+t'D;N
+t'HcW
+t)IcV
 t)fA;
 t+x)H
 t-Lck
 t/fff
 t0L;Z
 t0M;Z
-t3H9-
+t1D8%
+t3H9-@
 t3I9@ u-I
 t4E;P
 t7HcP
+t9H9q
+t?HcS
 tCfff
+tEHcR
 tIxGH
 tRLcY
 table
 tangent
 tangentu_signv
+texcoord
+text file busy
 tier0.dll
+timed out
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
 to~8I
 tvD9~
 twIcF
-t{Z^P
-u Lcl$t
 u$D8r(t
 u%@8j(t
 u,!T$(H!T$ 
@@ -2405,25 +2637,32 @@ u4I9}(
 u<g~l<it[<ntP<ot,<pt
 uC9D$Pu=
 uED8r(t
+uED9|
 uQD9Q
 uint16
 uint32
 uint64
-ujI9H udH9Y
 upA97
 uzKs@>
 v HcT
 v2!L.2
 v=Y]Bv
 v?,	m2
+v?G(?
 v@D8s(t
 vAD8s(t
 vKfffff
+value too large
 vector2
 vector3
 vector4
+vnotify_ui
+w	V_vsnprintf
 wPD8s	t
 wPHcO
+waiting_group
+wrong protocol type
+wwH9Q
 www.digicert.com1!0
 www.digicert.com1$0"
 x ATAVAWH
@@ -2434,6 +2673,7 @@ x>V6'
 x>V6'?C
 xA^A]A\_][
 xA_A]A\[
+xA_A^_^][
 xC;_(}>;_<
 xOD;C
 xSE;H
@@ -2442,12 +2682,14 @@ x~fff
 y\PD>!
 z&u$A
 z/u-A
+z0u.H
 z8u6A
 zIcB,I
 { AUAVAWH
 { AVH
 { Lce
 {0x%x}
+{@9s8|AH
 {XH9{@H
 {`H9{HH
 {hH9{PH
@@ -2455,6 +2697,7 @@ zIcB,I
 |#tAM
 |$ ATAVAWH
 |$ AVAWL
+|$ AVD
 |$ AVH
 |$ AVL
 |$ AVM
@@ -2474,35 +2717,34 @@ zIcB,I
 |$0Lc?H
 |$0LcL$P
 |$0uE
+|$4;k
+|$8D9x
 |$8Hc
 |$8L;
-|$8Lc|$0I
 |$8fD
 |$@-D
-|$@Hc
 |$@fA
 |$@fD
 |$DE3
 |$HE3
+|$HH;
+|$HHcD$@L
 |$HIc8L
 |$HfB
 |$LE3
 |$PE3
 |$PfE
 |$P}[H
-|$XE3
 |$XHk
-|$XL;
-|$Xff
 |$`D;
 |$`E3
 |$hA+
+|$pA+
 |$pA;
 |$pE;
 |$pHc
 |$pLc
 |$pLc&Mc7E
-|$xD;p0
 |$xHc
 |(tFM
 |)L9c
@@ -2514,9 +2756,11 @@ zIcB,I
 |`~cH
 |b=})>
 |h~nH
-|u1$x
 } fff
 }&D8Z
+}(L9u
+});C$
+});G$
 }0HcA
 }>;_$
 }LuHO
@@ -2528,6 +2772,7 @@ zIcB,I
 ~ Ict$8M
 ~)IcD$
 ~4LcT$@H
+~5D8%
 ~BH98t
 ~Lfff
 ~PHcL

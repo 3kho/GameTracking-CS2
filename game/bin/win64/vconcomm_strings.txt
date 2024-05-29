@@ -1,8 +1,9 @@
 	!s99
 	%s@%d.%d.%d.%d, connected: %s
 	B9|1
-	V_qsort_s
+	Warning
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+	_V_StringAfterPrefix
 	_V_StringAfterPrefixCaseSensitive
 	_V_strEndsWith
 	_V_strncpy
@@ -36,7 +37,6 @@
  tDE3
 !>6'Y
 !hn7!
-%	V_stricmp_fast
 %2.2d:%2.2d:%2.2d.%3.3d
 %d %d %d
 %d %d %d %d
@@ -44,6 +44,7 @@
 %f %f %f
 %f %f %f %f
 ',=?k
+'V4$\)
 (A_A^A]A\_^][
 (D$ Ic
 (D$ L
@@ -52,13 +53,14 @@
 (D$0I
 (D$0L
 (f*^[0
-(t$0H
+(t$@I
 (t$PH
 (|$ H
 )>6{1n
-)t$ H
 )t$0H
-)|$ H
+)t$@H
+)|$0H
+*	V_qsort_s
 *StO9>T
 +M<7>
 +Xt@(
@@ -155,13 +157,11 @@
 .xdata
 .xdata$x
 />58d%
-/jGAlM
 0 0 0
 0 0 0 0
 0 0 0 255
 0A]A\[
 0A_A\_
-0A_A^A\_^
 0A_A^A]
 0A_A^A]A\_
 0A_A^A]A\_^[
@@ -176,7 +176,7 @@
 220323000000Z
 220801000000Z
 230714000000Z
-230926000037Z0/
+240522183323Z0/
 241009235959Z0a1
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
 2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
@@ -192,12 +192,14 @@
 3mq+<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
 5FjiT
+5b>^N
 5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 6*f(_
 6I]Dc
 6OB,n_
 70503
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+8$>u4
 8D$@t
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
 8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
@@ -218,7 +220,6 @@
 =============== VConsole Buffered Messages ===============
 ==========================================================
 ==============================================================
-=J}DX
 =NAHCu%
 =TNRP
 =imb;D
@@ -228,12 +229,14 @@
 >jtm}S
 ?7zQ6$
 ?:kP<
+??0CTSListBase@@QEAA@XZ
 ??0CThread@@QEAA@XZ
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??0CUtlBuffer@@QEAA@HHH@Z
 ??0CUtlBuffer@@QEAA@PEBXHH@Z
 ??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
+??1CTSListBase@@QEAA@XZ
 ??1CThread@@UEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
@@ -246,6 +249,7 @@
 ?CopySubkeys@KeyValues@@QEBAXPEAV1@@Z
 ?EnumerateEncodingIndices@CVirtualMachineCallStackTranslationEncoder@@QEAAXP6A_NPEAV1@IPEBD1IPEAX@Z2@Z
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD_N@Z
+?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Format@CUtlString@@QEAAHPEBDZZ
 ?FreeMemoryBlock@CUtlString@@AEAAXXZ
@@ -255,28 +259,29 @@
 ?GetLineOffsetBitMask@CVirtualMachineCallStackTranslationEncoder@@QEAA_KXZ
 ?GetLineOffsetBitShift@CVirtualMachineCallStackTranslationEncoder@@QEAAIXZ
 ?GetLineOffsetPostShiftedSignBitMask@CVirtualMachineCallStackTranslationEncoder@@QEAA_KXZ
-?GetString@KeyValues@@QEAAPEBDPEBD0PEAD_K@Z
 ?GetVMID@CVirtualMachineCallStackTranslationEncoder@@QEAA_KXZ
 ?Init@CThread@@MEAA_NXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
+?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
 ?IsAlive@CThread@@QEAA_NXZ
 ?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
 ?IsThreadRunning@CThread@@MEAA_NXZ
 ?Join@CThread@@QEAA_NI@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?LoggingSystem_IsChannelEnabled@@YA_NHW4LoggingVerbosity_t@@@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@VColor@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@VColor@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?OnExit@CThread@@MEAAXXZ
 ?ParseToken@CUtlBuffer@@QEAAHPEBUcharacterset_t@@PEADH_N@Z
+?Pop@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?Printf@CUtlBuffer@@QEAAXPEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?Purge@CUtlString@@QEAAXXZ
+?Push@CTSListBase@@QEAAXPEAUTSLNodeBase_t@@@Z
 ?PutString@CUtlBuffer@@QEAAXPEBD@Z
 ?QY^&
-?RecursiveSaveToFile@KeyValues@@QEAAXAEAVCUtlBuffer@@H_N1@Z
+?RecursiveSaveToFile@KeyValues@@QEBAXAEAVCUtlBuffer@@H_N1@Z
 ?RemoveToFileBase@CBufferString@@QEAAPEBD_N@Z
 ?Reset@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadEvent@@QEAA_NXZ
@@ -295,12 +300,14 @@
 @84)u
 @8j(t
 @8k(t
+@8kHu
 @8l$H
 @8w$t
 @8z$u
 @8z%u
 @8{(u
 @>%>b
+@A\_^][
 @A^A]A\_^
 @A^_^
 @A_A\_
@@ -312,7 +319,9 @@
 @SAVAWH
 @SAWH
 @SUAWH
+@SUVH
 @SUVWATAVAWH
+@SUVWATH
 @SUVWAVH
 @SUWH
 @SVWATAUAVAWH
@@ -321,7 +330,6 @@
 @USVWATAUAVAWH
 @USVWATAUAVH
 @UVAVAWH
-@UWAVH
 @VAWH
 @WATAWH
 @WAVAWH
@@ -339,7 +347,6 @@ A]_^]
 A^A]A\
 A^A]A\_^[]
 A^_^[]
-A^_^][
 A_A^A\
 A_A^A\_^
 A_A^A]A\]
@@ -370,7 +377,7 @@ C ;C$t
 C0Hc	H
 C:\buildworker\csgo_rel_win64\build\_build_\vconcomm\_vpc_vconcomm\default\win64\_msvc_\Retail\vconcomm.pdb
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\tslist.h
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\singletons.cpp
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\csgo_rel_win64\build\src\vconcomm\sockettransport.cpp
 C:\buildworker\csgo_rel_win64\build\src\vconcomm\vconcomm.cpp
 CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
@@ -378,11 +385,12 @@ CD$8D
 CD$XD
 CHANH
 CRC32_ProcessBuffer
-CTSListBase: Misaligned list
 CTSQueue corruption
 CTSQueue: Misaligned queue
 CTSQueue<struct VConCommMessage_t *,0>::Push
 CUtlRBTree overflow with %u elements!
+CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CUtlString,class CDefLess<unsigned int>,int>::Node_t,int>,int> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct MessageDataInfo_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int> >::Insert
 CVARH
 CVConComm::Init
 CVRBI
@@ -393,37 +401,30 @@ ClientToolsInfo_001
 Clients %d of %d:
 CloseHandle
 CommandLine
-ConnectInterfaceSingletons
 Connection in progress...
 Connection will timeout in %d seconds...
 CorExitProcess
 CreateEventW
 CreateFileW
 CreateInterface
+D	V_stricmp_fast
 D!l$xA
 D$ E3
 D$(H;
-D$(fH
 D$(fI
 D$0@8{
 D$0HcH
 D$0fH
-D$8Ic
 D$8L9
-D$8fH
 D$@H+
 D$HE3
-D$HfH
 D$HtOH
 D$PE3
 D$PH+
 D$PI;
-D$hfH
 D$t@8
 D81uUL9r
-D8<8u
 D8t$ht
-D8t$p
 DNMCH
 December
 DeleteCriticalSection
@@ -447,8 +448,10 @@ EnterCriticalSection
 EnumWindows
 Existing Process:
 ExitProcess
+F8</u
 FATAL ERROR: unable to register all schema data: %s
 FONA@
+FRqw_Z
 February
 FindClose
 FindFirstFileExW
@@ -460,6 +463,7 @@ FlsGetValue
 FlsSetValue
 FlushFileBuffers
 FontManager_001
+Found existing value when inserting into tree - replacing existing value with new value. If this is intended behavior, use InsertOrReplace. If leaving existing values alone is intended, use InsertIfNotFound. If duplicate entries are intended, use InsertWithDupes.
 FreeEnvironmentStringsW
 FreeLibrary
 Friday
@@ -555,22 +559,19 @@ L$ WH
 L$ fff
 L$ |+L;
 L$&8\$&t,8Y
-L$(fH
 L$0E3
 L$0H3
 L$0H;
 L$8H3
 L$@;|
 L$@H3
-L$HfH
 L$PE3
+L$XLcC
 L$pfH
-L$xLcG
 L$xLcG D
 L?n(Zy&
 LCMapStringEx
 LCMapStringW
-LOG_GENERAL
 LcA<E3
 LcG H
 LeaveCriticalSection
@@ -630,7 +631,6 @@ October
 OpenProcess
 Ordered constructor wrapped type has no default constructor.
 PA\^[
-PA^_]
 PA_A^A]A\_^]
 PAq=?Mp#
 PID %d @ %s
@@ -654,7 +654,6 @@ Plat_LoadModule
 Plat_MSTime
 Plat_NonFatalErrorFunc
 Plat_RegisterModule
-Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_WindowToOsSpecificHandle
 PostProcessingSystem_001
 PropertyEditorSystem_001
@@ -843,6 +842,7 @@ Xbox VDP is not supported on this platform.
 Y9"SD
 [K]taM?
 \$ VWATAUAVH
+\$ WH
 \$0H;
 \$0eH
 \$8I;
@@ -871,6 +871,7 @@ __vectorcall
 _gUT^
 `.rdata
 `A^_^
+`A^_^][H
 `A_A^A]A\_^]
 `RTTI
 `anonymous namespace'
@@ -919,11 +920,9 @@ clear
 clearall
 color
 commandline
-d$HE3
+d$XE3
 dddd, MMMM dd, yyyy
-e	Warning
 e0A_A^A]A\]
-error
 f9)u4H9j
 fB9<A}1L
 fD91uTL9r
@@ -955,7 +954,7 @@ l$0Hc
 l$8@2
 l$`Kc
 l$pA;
-l$pE3
+l$xHc
 l2|X/gGe
 log10
 m0k0$
@@ -986,17 +985,19 @@ stack buffer overrun (/GS failure)
 string
 t"D8(t
 t$ E3
+t$ Lc
 t$ WATAUAVAWH
 t$ WATAWH
 t$ WAVAWH
 t$ WH
 t$8;;
+t$8D+
 t$8H+
 t$8Hc
 t$@@8
+t$PE3
 t$XE3
 t$`L#
-t$xE3
 t-@89t(H
 t-Lck
 t7HcP
@@ -1007,9 +1008,7 @@ tier0
 tier0.dll
 tothread
 tothreadH
-tothreadI
 tothreadL9v
-tothreadM
 twIcF
 u$D8r(t
 u%@8j(t
@@ -1041,7 +1040,9 @@ www.digicert.com1$0"
 x ATAVAWH
 x AVH
 xA_A^A\_^]
+yHO%3
 y\PD>!
+{0@8kHu
 {un'%
 |$ ATAVAWH
 |$ AVH
@@ -1050,6 +1051,7 @@ y\PD>!
 |$0Hc
 |$@E3
 |$HA9
+|$`@8l$P
 |$pE3
 |)L9c
 |Lu?c
@@ -1057,6 +1059,5 @@ y\PD>!
 });C$
 }9;_$
 }LuHO
-~	_V_StringAfterPrefix
 ~qj#k"
 ~t&LN
